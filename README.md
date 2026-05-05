@@ -14,11 +14,7 @@ I use AI agents as part of my actual development workflow — orchestrating task
 **RepoGraph Intelligence** — An AI-native structural intelligence engine that analyzes codebases as dependency graphs. Extracts imports, exports, and symbols across JS, TS, and Python — calculates coupling metrics, estimates blast radius for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. Rust core in active development.
 `JavaScript · Rust · React Flow · Tree-sitter · MCP`
 
-**VaultX** — An Android password vault with AES-256-GCM encryption backed by Android Keystore, biometric auth, Firebase with Google Sign-In, and encrypted Firestore sync. Implements screenshot blocking, secure clipboard with auto-clear, and local password generation via SecureRandom.
-`Kotlin · Firebase · Android Keystore · Material Design`
 
-**Jaffa Group Website** — A production website for a luxury home builder featuring cinematic hero animations, scroll-triggered Framer Motion transitions, masonry portfolio with filtering, and a custom animated cursor. Live and deployed on Vercel.
-`TypeScript · React · Framer Motion · Tailwind CSS · Vite`
 
 ---
 
