@@ -14,6 +14,8 @@ I use AI agents as part of my actual development workflow — orchestrating task
 **RepoGraph Intelligence** — An AI-native structural intelligence engine that analyzes codebases as dependency graphs. Extracts imports, exports, and symbols across JS, TS, and Python — calculates coupling metrics, estimates blast radius for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. Rust core in active development.
 `JavaScript · Rust · React Flow · Tree-sitter · MCP`
 
+**Tessera** — A local-first AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Walks the project with Tree-sitter, embeds chunks via Ollama, and uses versioned prompts with JSON-Schema tool calling to generate test plans, test cases, defect reports, and bug reports — every artifact validated against a Zod contract before it lands in the review queue. Tauri desktop shell, layered Rust backend with AES-256-GCM-encrypted API keys, streaming tool-call previews, and pluggable LLM providers (Ollama, OpenAI, OpenRouter, Anthropic). Master is gated by Husky pre-push hooks, branch protection, and a CI matrix.
+`TypeScript · Rust · Tauri · React · Tree-sitter · Ollama · SQLite`
 
 
 ---
