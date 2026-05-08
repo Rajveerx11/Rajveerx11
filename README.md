@@ -41,9 +41,23 @@ I don't chase frameworks or trends. If something works, I want to understand *wh
 
 ## Connect
 
-Email — [rajveer11vadnal@gmail.com](mailto:rajveer11vadnal@gmail.com)
-LinkedIn — [rajveer-vadnal](https://www.linkedin.com/in/rajveer-vadnal-374664353)
-X — [@RajveerVadnal](https://x.com/RajveerVadnal)
-Discord — [Join server](https://discord.gg/ubJVpkhR2a)
-Reddit — [u/RajveerVadnal](https://reddit.com/user/RajveerVadnal)
-Instagram — [@rajveer_official_11_](https://instagram.com/rajveer_official_11_)
+<p>
+  <a href="mailto:rajveer11vadnal@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/rajveer-vadnal-374664353" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/RajveerVadnal" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://discord.gg/ubJVpkhR2a" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
+  <a href="https://reddit.com/user/RajveerVadnal" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
+  </a>
+  <a href="https://instagram.com/rajveer_official_11_" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
