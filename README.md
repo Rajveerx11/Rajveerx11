@@ -48,7 +48,7 @@ I don't chase frameworks or trends. If something works, I want to understand *wh
   <a href="https://www.linkedin.com/in/rajveer-vadnal-374664353" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/RajveerVadnal" target="_blank" rel="noopener noreferrer">
+  <a href="https://x.com/Rajveerx11" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
   </a>
   <a href="https://discord.gg/ubJVpkhR2a" target="_blank" rel="noopener noreferrer">
