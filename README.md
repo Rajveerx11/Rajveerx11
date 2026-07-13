@@ -53,20 +53,15 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 <img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-built.svg" alt="what I've built" />
 
-> ### 🧠 [Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) &nbsp;<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence/stargazers"><img src="https://img.shields.io/github/stars/Rajveerx11/obsidian-graph-intelligence?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
-> An Obsidian plugin that treats your knowledge vault as a **graph**. Detects orphan notes, discovers topic clusters, and suggests missing links using offline Transformers.js embeddings. Ships with an adaptive learning system that refines recommendations from user feedback, a batch **"Fix My Vault"** repair engine, and optional LLM integration via Ollama, OpenAI, and Anthropic.
->
-> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Transformers.js-FF6F00?style=flat-square&logo=huggingface&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
+<div align="center">
 
-> ### 🕸️ [RepoGraph Intelligence](https://github.com/Rajveerx11/repograph-intelligence)
-> An AI-native structural intelligence engine that analyzes codebases as **dependency graphs**. Extracts imports, exports, and symbols across JS, TS, and Python, calculates coupling metrics, estimates **blast radius** for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. *Rust core in active development.*
->
-> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/React_Flow-FF0072?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Tree--sitter-343B58?style=flat-square&logo=treehouse&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
+<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-obsidian.svg" alt="Obsidian Graph Intelligence" /></a>
 
-> ### 🧪 [Tessera](https://github.com/neuratile/Tessera) &nbsp;<a href="https://github.com/neuratile"><img src="https://img.shields.io/badge/⬡_neuratile-founder-a371f7?style=flat-square&labelColor=0f2027" alt="neuratile" /></a> <a href="https://github.com/neuratile/Tessera/stargazers"><img src="https://img.shields.io/github/stars/neuratile/Tessera?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
-> A **local-first** AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Parses the project with Tree-sitter, embeds chunks via Ollama, and generates test plans, test cases, and defect reports through versioned prompts with JSON-Schema tool calling. Every artifact is validated against a Zod contract before review. Tauri desktop shell, AES-256-GCM-encrypted API keys, streaming previews, pluggable LLM providers.
->
-> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
+<a href="https://github.com/Rajveerx11/repograph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-repograph.svg" alt="RepoGraph Intelligence" /></a>
+
+<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera" /></a>
+
+</div>
 
 <img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-shipped.svg" alt="also shipped" />
 
