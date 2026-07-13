@@ -130,10 +130,9 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Rajveerx11&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&include_all_commits=true&count_private=true" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Rajveerx11&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7" />
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="GitHub stats: contributions, commits, merged PRs, stars, followers, top languages" />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajveerx11&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&langs_count=8" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Rajveerx11&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7" alt="contribution streak" />
 
 </div>
 
