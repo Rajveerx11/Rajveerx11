@@ -17,8 +17,8 @@
 <br/><br/>
 
 <img src="https://img.shields.io/badge/Solapur,_India-2c5364?style=flat-square&labelColor=0f2027" />
-<img src="https://img.shields.io/badge/Diploma-Completed-2c5364?style=flat-square&labelColor=0f2027" />
 <img src="https://img.shields.io/badge/Focus-Agentic_AI_%26_Systems-36BCF7?style=flat-square&labelColor=0f2027" />
+<img src="https://img.shields.io/badge/🟢_Open_to-Agentic_AI_roles_%26_freelance-2ea44f?style=flat-square&labelColor=0f2027" />
 
 </div>
 
@@ -48,20 +48,30 @@ const rajveer = {
 
 ## ⟨ what I've built ⟩
 
-> ### 🧠 [Obsidian Graph Intelligence](https://github.com/Rajveerx11) &nbsp;`⭐ 15+`
+> ### 🧠 [Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) &nbsp;<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence/stargazers"><img src="https://img.shields.io/github/stars/Rajveerx11/obsidian-graph-intelligence?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
 > An Obsidian plugin that treats your knowledge vault as a **graph**. Detects orphan notes, discovers topic clusters, and suggests missing links using offline Transformers.js embeddings. Ships with an adaptive learning system that refines recommendations from user feedback, a batch **"Fix My Vault"** repair engine, and optional LLM integration via Ollama, OpenAI, and Anthropic.
 >
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Transformers.js-FF6F00?style=flat-square&logo=huggingface&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
 
-> ### 🕸️ [RepoGraph Intelligence](https://github.com/Rajveerx11)
+> ### 🕸️ [RepoGraph Intelligence](https://github.com/Rajveerx11/repograph-intelligence)
 > An AI-native structural intelligence engine that analyzes codebases as **dependency graphs**. Extracts imports, exports, and symbols across JS, TS, and Python — calculates coupling metrics, estimates **blast radius** for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. *Rust core in active development.*
 >
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/React_Flow-FF0072?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Tree--sitter-343B58?style=flat-square&logo=treehouse&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
 
-> ### 🧪 [Tessera](https://github.com/Rajveerx11)
+> ### 🧪 Tessera &nbsp;<img src="https://img.shields.io/badge/🔒_private_beta-in_active_development-8b949e?style=flat-square&labelColor=0f2027" alt="private beta" />
 > A **local-first** AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Parses the project with Tree-sitter, embeds chunks via Ollama, and generates test plans, test cases, and defect reports through versioned prompts with JSON-Schema tool calling — every artifact validated against a Zod contract before review. Tauri desktop shell, AES-256-GCM-encrypted API keys, streaming previews, pluggable LLM providers.
 >
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
+
+### ⟨ also shipped ⟩
+
+| | |
+|---|---|
+| 🧩 [**unified-memory-mcp**](https://github.com/Rajveerx11/unified-memory-mcp) | Local MCP server that fuses Claude memory, agent logs & Obsidian into second-brain tools — synthesized via Ollama/Anthropic |
+| ⚡ [**terax-ai**](https://github.com/Rajveerx11/terax-ai) | 7 MB AI terminal emulator (ADE) built in Rust · Tauri · React |
+| 🖥️ [**wmux**](https://github.com/Rajveerx11/wmux) | Windows terminal multiplexer built *for* AI agents — port of cmux |
+| 🔭 [**gfi-scout**](https://github.com/Rajveerx11/gfi-scout) | MCP server that hunts good-first-issues for open-source contributors |
+| 🎤 [**pitchr**](https://github.com/Rajveerx11/pitchr) | AI pitch-coaching app — live transcription, async analysis, deck generation |
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
@@ -124,8 +134,6 @@ const rajveer = {
 
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajveerx11&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&langs_count=8" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=Rajveerx11&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" />
-
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
@@ -151,6 +159,12 @@ I don't chase frameworks or trends. If something works, I want to understand *wh
 ## ⟨ connect ⟩
 
 <div align="center">
+
+**💼 Open to agentic-AI engineering roles & freelance work** — if you need agents, MCP servers, or AI dev-tooling built, my inbox is open.
+
+<a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/📬_Hire_me-rajveer11vadnal@gmail.com-2ea44f?style=for-the-badge&labelColor=0f2027" alt="Hire me" /></a>
+
+<br/>
 
 <a href="mailto:rajveer11vadnal@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
