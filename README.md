@@ -72,19 +72,11 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11/unified-memory-mcp"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-unified-memory-mcp.svg" alt="unified-memory-mcp" /></a><a href="https://github.com/Rajveerx11/gfi-scout"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-gfi-scout.svg" alt="gfi-scout" /></a>
+<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Project index: 20 projects, 11 public and 9 private" /></a>
+
+<sub>Public repos are one click away. The private column is what's cooking.</sub>
 
 </div>
-
-### ⟨ open-source contributions ⟩
-
-<div align="center">
-
-<a href="https://github.com/amirlehmam/wmux"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-wmux.svg" alt="wmux contributions" /></a>
-
-</div>
-
-Two merged pull requests into **[amirlehmam/wmux](https://github.com/amirlehmam/wmux)**, a Windows terminal multiplexer for AI agents: Authenticode release-signing wired into CI, and authentication for the agent pipe surface.
 
 ## ⟨ technical toolkit ⟩
 
