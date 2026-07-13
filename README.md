@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship,%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
@@ -46,15 +45,11 @@ const rajveer = {
 
 <a href="https://github.com/neuratile"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/neuratile-banner.svg" alt="neuratile: AI-first, open-source developer tools" /></a>
 
-</div>
-
-<div align="center">
-
-<img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/visage-banner.svg" alt="Visage AI: preview cosmetic procedures on your own face" />
+<a href="https://getvisageai.online/"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/visage-banner.svg" alt="Visage AI: preview cosmetic procedures on your own face" /></a>
 
 </div>
 
-Founder and owner of **[neuratile](https://github.com/neuratile)**, an org building AI-first, open-source developer tools where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)**, a local-first AI testing IDE, and **Visage AI**, a mobile app that previews cosmetic procedures on your own face.
+Founder and owner of **[neuratile](https://github.com/neuratile)**, an org building AI-first, open-source developer tools where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)**, a local-first AI testing IDE, and **[Visage AI](https://getvisageai.online/)**, a mobile app that previews cosmetic procedures on your own face.
 
 ## ⟨ what I've built ⟩
 
