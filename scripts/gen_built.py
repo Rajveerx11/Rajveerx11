@@ -88,21 +88,26 @@ for slug, mono, accent, url, starrepo, title, lines, tags, note in CARDS:
     parts.append(f'<rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="14" fill="none" stroke="{accent}" stroke-width="1.5" '
                  f'stroke-dasharray="80 {peri-80}" stroke-linecap="round" opacity="0.85">'
                  f'<animate attributeName="stroke-dashoffset" values="0;-{peri}" dur="9s" repeatCount="indefinite"/></rect>')
-    # monogram tile
-    parts.append(f'<rect x="30" y="30" width="44" height="44" rx="11" fill="{accent}" opacity="0.14"/>'
-                 f'<rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="{accent}" stroke-width="1.5"/>'
-                 f'<text x="52" y="60" text-anchor="middle" fill="{accent}" font-size="22" font-weight="700">{mono}</text>')
-    # pulsing status dot + title
-    parts.append(f'<circle cx="90" cy="40" r="3.5" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>')
-    parts.append(f'<text x="102" y="46" fill="#e6edf3" font-size="18" font-weight="700">{esc(title)}</text>')
+    # monogram tile — everything in the header row is centred on the tile's
+    # vertical centre (cy) so the box never looks dropped next to the title
+    tile = 44
+    ty = 30
+    cy = ty + tile / 2                       # 52
+    parts.append(f'<rect x="30" y="{ty}" width="{tile}" height="{tile}" rx="11" fill="{accent}" opacity="0.14"/>'
+                 f'<rect x="30" y="{ty}" width="{tile}" height="{tile}" rx="11" fill="none" stroke="{accent}" stroke-width="1.5"/>'
+                 f'<text x="52" y="{cy}" text-anchor="middle" dominant-baseline="central" fill="{accent}" font-size="23" font-weight="700">{mono}</text>')
+    # pulsing status dot + title, baseline-aligned to the tile centre
+    parts.append(f'<circle cx="90" cy="{cy}" r="3.5" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>')
+    parts.append(f'<text x="102" y="{cy}" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">{esc(title)}</text>')
     bx = round(102 + len(title) * 10.4 + 14)
+    chip_y = round(cy - 10)                   # 20px-tall chip centred on cy
     # org pill (Tessera only)
     if slug == "tessera":
-        s, w = chip(bx, 32, "neuratile", "#a371f7"); parts.append(s); bx += w + 6
-        s, w = chip(bx, 32, "founder", "#a371f7"); parts.append(s); bx += w + 6
+        s, w = chip(bx, chip_y, "neuratile", "#a371f7"); parts.append(s); bx += w + 6
+        s, w = chip(bx, chip_y, "founder", "#a371f7"); parts.append(s); bx += w + 6
     # star chip (skip when zero — a live "0" is negative signal)
     if sc > 0:
-        s, w = chip(bx, 32, f"★ {sc}", "#e3b341"); parts.append(s)
+        s, w = chip(bx, chip_y, f"★ {sc}", "#e3b341"); parts.append(s)
     # description
     for i, segs in enumerate(lines):
         parts.append(desc_line(34, body_top + i * line_h, segs))
@@ -113,7 +118,7 @@ for slug, mono, accent, url, starrepo, title, lines, tags, note in CARDS:
     for t in tags:
         s, w = chip(tx, tags_y, t, LANG.get(t, "#8b949e")); parts.append(s); tx += w + 8
     # click-through arrow
-    parts.append(f'<text x="{W-30}" y="46" text-anchor="end" fill="{accent}" font-size="16" font-weight="700">↗</text>')
+    parts.append(f'<text x="{W-30}" y="{cy}" text-anchor="end" dominant-baseline="central" fill="{accent}" font-size="16" font-weight="700">↗</text>')
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
            f'font-family="\'JetBrains Mono\', ui-monospace, SFMono-Regular, monospace">\n  '

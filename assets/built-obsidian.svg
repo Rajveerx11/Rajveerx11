@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 204" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
   <rect x="1.5" y="1.5" width="857" height="201" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
   <rect x="1.5" y="1.5" width="857" height="201" rx="14" fill="none" stroke="#a371f7" stroke-width="1.5" stroke-dasharray="80 2048" stroke-linecap="round" opacity="0.85"><animate attributeName="stroke-dashoffset" values="0;-2128" dur="9s" repeatCount="indefinite"/></rect>
-  <rect x="30" y="30" width="44" height="44" rx="11" fill="#a371f7" opacity="0.14"/><rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="#a371f7" stroke-width="1.5"/><text x="52" y="60" text-anchor="middle" fill="#a371f7" font-size="22" font-weight="700">O</text>
-  <circle cx="90" cy="40" r="3.5" fill="#a371f7"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
-  <text x="102" y="46" fill="#e6edf3" font-size="18" font-weight="700">Obsidian Graph Intelligence</text>
-  <rect x="397" y="32" width="48" height="20" rx="6" fill="#e3b341" opacity="0.14"/><rect x="397" y="32" width="48" height="20" rx="6" fill="none" stroke="#e3b341" stroke-width="1" opacity="0.5"/><text x="421" y="46" text-anchor="middle" fill="#e3b341" font-size="10.5" font-weight="600">★ 16</text>
+  <rect x="30" y="30" width="44" height="44" rx="11" fill="#a371f7" opacity="0.14"/><rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="#a371f7" stroke-width="1.5"/><text x="52" y="52.0" text-anchor="middle" dominant-baseline="central" fill="#a371f7" font-size="23" font-weight="700">O</text>
+  <circle cx="90" cy="52.0" r="3.5" fill="#a371f7"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  <text x="102" y="52.0" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">Obsidian Graph Intelligence</text>
+  <rect x="397" y="42" width="48" height="20" rx="6" fill="#e3b341" opacity="0.14"/><rect x="397" y="42" width="48" height="20" rx="6" fill="none" stroke="#e3b341" stroke-width="1" opacity="0.5"/><text x="421" y="56" text-anchor="middle" fill="#e3b341" font-size="10.5" font-weight="600">★ 16</text>
   <text x="34" y="92" font-size="12.5" fill="#8b949e">An Obsidian plugin that treats your knowledge vault as a <tspan fill="#e6edf3" font-weight="600">graph</tspan>. Detects orphan notes, discovers</text>
   <text x="34" y="114" font-size="12.5" fill="#8b949e">topic clusters, and suggests missing links using offline <tspan fill="#e6edf3" font-weight="600">Transformers.js</tspan> embeddings. Ships with an</text>
   <text x="34" y="136" font-size="12.5" fill="#8b949e">adaptive learning system, a batch <tspan fill="#e6edf3" font-weight="600">"Fix My Vault"</tspan> repair engine, and LLM integration via Ollama/OpenAI.</text>
@@ -12,5 +12,5 @@
   <rect x="131" y="164" width="54" height="20" rx="6" fill="#61dafb" opacity="0.14"/><rect x="131" y="164" width="54" height="20" rx="6" fill="none" stroke="#61dafb" stroke-width="1" opacity="0.5"/><text x="158" y="178" text-anchor="middle" fill="#61dafb" font-size="10.5" font-weight="600">React</text>
   <rect x="193" y="164" width="124" height="20" rx="6" fill="#ff6f00" opacity="0.14"/><rect x="193" y="164" width="124" height="20" rx="6" fill="none" stroke="#ff6f00" stroke-width="1" opacity="0.5"/><text x="255" y="178" text-anchor="middle" fill="#ff6f00" font-size="10.5" font-weight="600">Transformers.js</text>
   <rect x="325" y="164" width="41" height="20" rx="6" fill="#8b949e" opacity="0.14"/><rect x="325" y="164" width="41" height="20" rx="6" fill="none" stroke="#8b949e" stroke-width="1" opacity="0.5"/><text x="346" y="178" text-anchor="middle" fill="#8b949e" font-size="10.5" font-weight="600">MCP</text>
-  <text x="830" y="46" text-anchor="end" fill="#a371f7" font-size="16" font-weight="700">↗</text>
+  <text x="830" y="52.0" text-anchor="end" dominant-baseline="central" fill="#a371f7" font-size="16" font-weight="700">↗</text>
 </svg>
