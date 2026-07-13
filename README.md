@@ -7,7 +7,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship%20%E2%80%94%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Solapur%2C+India;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Solapur%2C+India;Founder+%40+neuratile+%C2%B7+Tessera+%C2%B7+Visage+AI;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -36,6 +36,7 @@ I treat LLMs as **collaborators** in my actual development workflow — orchestr
 ```ts
 const rajveer = {
   title:     "Agentic Engineer",
+  founder:   ["neuratile", "Tessera", "Visage AI"],
   location:  "Solapur, India",
   building:  ["local-first AI dev tools", "structural code intelligence"],
   workflow:  "AI agents as collaborators, not autocomplete",
@@ -43,6 +44,18 @@ const rajveer = {
   motto:     "understand *why* it works — not just how to call the API",
 };
 ```
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+## ⟨ founder ⟩
+
+<div align="center">
+
+<a href="https://github.com/neuratile"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/neuratile-banner.svg" alt="neuratile — AI-first, open-source developer tools" /></a>
+
+</div>
+
+Founder & owner of **[neuratile](https://github.com/neuratile)** — an org building AI-first, open-source developer tools, where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)** (local-first AI testing IDE) and **Visage AI** (mobile app that previews cosmetic procedures on your own face — currently in private development).
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
@@ -58,20 +71,22 @@ const rajveer = {
 >
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/React_Flow-FF0072?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Tree--sitter-343B58?style=flat-square&logo=treehouse&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
 
-> ### 🧪 Tessera &nbsp;<img src="https://img.shields.io/badge/🔒_private_beta-in_active_development-8b949e?style=flat-square&labelColor=0f2027" alt="private beta" />
+> ### 🧪 [Tessera](https://github.com/neuratile/Tessera) &nbsp;<a href="https://github.com/neuratile"><img src="https://img.shields.io/badge/⬡_neuratile-founder-a371f7?style=flat-square&labelColor=0f2027" alt="neuratile" /></a> <a href="https://github.com/neuratile/Tessera/stargazers"><img src="https://img.shields.io/github/stars/neuratile/Tessera?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
 > A **local-first** AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Parses the project with Tree-sitter, embeds chunks via Ollama, and generates test plans, test cases, and defect reports through versioned prompts with JSON-Schema tool calling — every artifact validated against a Zod contract before review. Tauri desktop shell, AES-256-GCM-encrypted API keys, streaming previews, pluggable LLM providers.
 >
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
 
 ### ⟨ also shipped ⟩
 
-| | |
-|---|---|
-| 🧩 [**unified-memory-mcp**](https://github.com/Rajveerx11/unified-memory-mcp) | Local MCP server that fuses Claude memory, agent logs & Obsidian into second-brain tools — synthesized via Ollama/Anthropic |
-| ⚡ [**terax-ai**](https://github.com/Rajveerx11/terax-ai) | 7 MB AI terminal emulator (ADE) built in Rust · Tauri · React |
-| 🖥️ [**wmux**](https://github.com/Rajveerx11/wmux) | Windows terminal multiplexer built *for* AI agents — port of cmux |
-| 🔭 [**gfi-scout**](https://github.com/Rajveerx11/gfi-scout) | MCP server that hunts good-first-issues for open-source contributors |
-| 🎤 [**pitchr**](https://github.com/Rajveerx11/pitchr) | AI pitch-coaching app — live transcription, async analysis, deck generation |
+<div align="center">
+
+<a href="https://github.com/Rajveerx11/unified-memory-mcp"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-unified-memory-mcp.svg" alt="unified-memory-mcp" /></a>&nbsp;<a href="https://github.com/Rajveerx11/terax-ai"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-terax-ai.svg" alt="terax-ai" /></a>
+
+<a href="https://github.com/Rajveerx11/wmux"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-wmux.svg" alt="wmux" /></a>&nbsp;<a href="https://github.com/Rajveerx11/gfi-scout"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-gfi-scout.svg" alt="gfi-scout" /></a>
+
+<a href="https://github.com/Rajveerx11/pitchr"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-pitchr.svg" alt="pitchr" /></a>
+
+</div>
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
