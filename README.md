@@ -1,10 +1,7 @@
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                            HEADER BANNER                            -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship%20%E2%80%94%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship,%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Solapur%2C+India;Founder+%40+neuratile+%C2%B7+Tessera+%C2%B7+Visage+AI;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
@@ -22,16 +19,14 @@
 
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
 ## ⟨ whoami ⟩
 
 > [!NOTE]
-> **⚡ Agentic Engineer** — I design and orchestrate **AI agents that do real engineering work**, not chatbots that answer once and forget.
+> **⚡ Agentic Engineer.** I design and orchestrate **AI agents that do real engineering work**, not chatbots that answer once and forget.
 
-I build AI-driven tools and systems that solve real problems — not proof-of-concepts that sit in a repo and collect dust. My approach: engage with the problem directly, break things, iterate, and ship something that works.
+I build AI-driven tools and systems that solve real problems, not proof-of-concepts that sit in a repo and collect dust. My approach: engage with the problem directly, break things, iterate, and ship something that works.
 
-I treat LLMs as **collaborators** in my actual development workflow — orchestrating task pipelines, automating repetitive engineering decisions, and wiring agents into the loop where they earn their place.
+I treat LLMs as **collaborators** in my actual development workflow: orchestrating task pipelines, automating repetitive engineering decisions, and wiring agents into the loop where they earn their place.
 
 ```ts
 const rajveer = {
@@ -41,23 +36,25 @@ const rajveer = {
   building:  ["local-first AI dev tools", "structural code intelligence"],
   workflow:  "AI agents as collaborators, not autocomplete",
   learning:  ["agentic systems", "MCP internals", "systems-level Rust"],
-  motto:     "understand *why* it works — not just how to call the API",
+  motto:     "understand *why* it works, not just how to call the API",
 };
 ```
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 ## ⟨ founder ⟩
 
 <div align="center">
 
-<a href="https://github.com/neuratile"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/neuratile-banner.svg" alt="neuratile — AI-first, open-source developer tools" /></a>
+<a href="https://github.com/neuratile"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/neuratile-banner.svg" alt="neuratile: AI-first, open-source developer tools" /></a>
 
 </div>
 
-Founder & owner of **[neuratile](https://github.com/neuratile)** — an org building AI-first, open-source developer tools, where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)** (local-first AI testing IDE) and **Visage AI** (mobile app that previews cosmetic procedures on your own face — currently in private development).
+<div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/visage-banner.svg" alt="Visage AI: preview cosmetic procedures on your own face" />
+
+</div>
+
+Founder and owner of **[neuratile](https://github.com/neuratile)**, an org building AI-first, open-source developer tools where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)**, a local-first AI testing IDE, and **Visage AI**, a mobile app that previews cosmetic procedures on your own face.
 
 ## ⟨ what I've built ⟩
 
@@ -67,12 +64,12 @@ Founder & owner of **[neuratile](https://github.com/neuratile)** — an org buil
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Transformers.js-FF6F00?style=flat-square&logo=huggingface&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
 
 > ### 🕸️ [RepoGraph Intelligence](https://github.com/Rajveerx11/repograph-intelligence)
-> An AI-native structural intelligence engine that analyzes codebases as **dependency graphs**. Extracts imports, exports, and symbols across JS, TS, and Python — calculates coupling metrics, estimates **blast radius** for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. *Rust core in active development.*
+> An AI-native structural intelligence engine that analyzes codebases as **dependency graphs**. Extracts imports, exports, and symbols across JS, TS, and Python, calculates coupling metrics, estimates **blast radius** for file changes, infers architecture boundaries, and audits supply-chain dependencies against OSV.dev advisories. Includes a React Flow live graph explorer with SSE streaming and an MCP server for AI assistants. *Rust core in active development.*
 >
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/React_Flow-FF0072?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Tree--sitter-343B58?style=flat-square&logo=treehouse&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white" />
 
 > ### 🧪 [Tessera](https://github.com/neuratile/Tessera) &nbsp;<a href="https://github.com/neuratile"><img src="https://img.shields.io/badge/⬡_neuratile-founder-a371f7?style=flat-square&labelColor=0f2027" alt="neuratile" /></a> <a href="https://github.com/neuratile/Tessera/stargazers"><img src="https://img.shields.io/github/stars/neuratile/Tessera?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
-> A **local-first** AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Parses the project with Tree-sitter, embeds chunks via Ollama, and generates test plans, test cases, and defect reports through versioned prompts with JSON-Schema tool calling — every artifact validated against a Zod contract before review. Tauri desktop shell, AES-256-GCM-encrypted API keys, streaming previews, pluggable LLM providers.
+> A **local-first** AI testing IDE that turns any codebase into a full QA dossier without sending source to the cloud. Parses the project with Tree-sitter, embeds chunks via Ollama, and generates test plans, test cases, and defect reports through versioned prompts with JSON-Schema tool calling. Every artifact is validated against a Zod contract before review. Tauri desktop shell, AES-256-GCM-encrypted API keys, streaming previews, pluggable LLM providers.
 >
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
 
@@ -87,8 +84,6 @@ Founder & owner of **[neuratile](https://github.com/neuratile)** — an org buil
 <a href="https://github.com/Rajveerx11/pitchr"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-pitchr.svg" alt="pitchr" /></a>
 
 </div>
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 ## ⟨ technical toolkit ⟩
 
@@ -138,8 +133,6 @@ Founder & owner of **[neuratile](https://github.com/neuratile)** — an org buil
 </tr>
 </table>
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
 ## ⟨ github in numbers ⟩
 
 <div align="center">
@@ -151,31 +144,25 @@ Founder & owner of **[neuratile](https://github.com/neuratile)** — an org buil
 
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
 ## ⟨ the loop I build in ⟩
 
 <div align="center">
 
 <img width="62%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/agentic-loop.svg" alt="Agentic reasoning loop: Reason, Act, Observe, Reflect" />
 
-<sub>Every agent I ship runs this cycle — <b>reason</b>, <b>act</b>, <b>observe</b>, <b>reflect</b> — until the work is actually done.</sub>
+<sub>Every agent I ship runs this cycle of <b>reason</b>, <b>act</b>, <b>observe</b> and <b>reflect</b> until the work is actually done.</sub>
 
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
 ## ⟨ how I think ⟩
 
-I don't chase frameworks or trends. If something works, I want to understand *why* it works — not just how to call the API. I learn by building, failing, and reading papers when the stack traces stop making sense. I'm skeptical of hype and **allergic to vague claims — including my own**.
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+I don't chase frameworks or trends. If something works, I want to understand *why* it works, not just how to call the API. I learn by building, failing, and reading papers when the stack traces stop making sense. I'm skeptical of hype and **allergic to vague claims, including my own**.
 
 ## ⟨ connect ⟩
 
 <div align="center">
 
-**💼 Open to agentic-AI engineering roles & freelance work** — if you need agents, MCP servers, or AI dev-tooling built, my inbox is open.
+**💼 Open to agentic-AI engineering roles & freelance work.** If you need agents, MCP servers, or AI dev-tooling built, my inbox is open.
 
 <a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/📬_Hire_me-rajveer11vadnal@gmail.com-2ea44f?style=for-the-badge&labelColor=0f2027" alt="Hire me" /></a>
 
