@@ -18,7 +18,7 @@
 
 </div>
 
-## ⟨ whoami ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-whoami.svg" alt="whoami" />
 
 > [!NOTE]
 > **⚡ Agentic Engineer.** I design and orchestrate **AI agents that do real engineering work**, not chatbots that answer once and forget.
@@ -39,7 +39,7 @@ const rajveer = {
 };
 ```
 
-## ⟨ founder ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-founder.svg" alt="founder" />
 
 <div align="center">
 
@@ -51,7 +51,7 @@ const rajveer = {
 
 Founder and owner of **[neuratile](https://github.com/neuratile)**, an org building AI-first, open-source developer tools where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)**, a local-first AI testing IDE, and **[Visage AI](https://getvisageai.online/)**, a mobile app that previews cosmetic procedures on your own face.
 
-## ⟨ what I've built ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-built.svg" alt="what I've built" />
 
 > ### 🧠 [Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) &nbsp;<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence/stargazers"><img src="https://img.shields.io/github/stars/Rajveerx11/obsidian-graph-intelligence?style=flat-square&logo=github&color=36BCF7&labelColor=0f2027" alt="stars" /></a>
 > An Obsidian plugin that treats your knowledge vault as a **graph**. Detects orphan notes, discovers topic clusters, and suggests missing links using offline Transformers.js embeddings. Ships with an adaptive learning system that refines recommendations from user feedback, a batch **"Fix My Vault"** repair engine, and optional LLM integration via Ollama, OpenAI, and Anthropic.
@@ -68,7 +68,7 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 >
 > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" /> <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
 
-### ⟨ also shipped ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-shipped.svg" alt="also shipped" />
 
 <div align="center">
 
@@ -78,7 +78,7 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 </div>
 
-## ⟨ technical toolkit ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-toolkit.svg" alt="technical toolkit" />
 
 <table>
 <tr>
@@ -126,7 +126,7 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 </tr>
 </table>
 
-## ⟨ github in numbers ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-numbers.svg" alt="github in numbers" />
 
 <div align="center">
 
@@ -137,7 +137,7 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 </div>
 
-## ⟨ the loop I build in ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-loop.svg" alt="the loop I build in" />
 
 <div align="center">
 
@@ -147,11 +147,11 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 </div>
 
-## ⟨ how I think ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-think.svg" alt="how I think" />
 
 I don't chase frameworks or trends. If something works, I want to understand *why* it works, not just how to call the API. I learn by building, failing, and reading papers when the stack traces stop making sense. I'm skeptical of hype and **allergic to vague claims, including my own**.
 
-## ⟨ connect ⟩
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-connect.svg" alt="connect" />
 
 <div align="center">
 

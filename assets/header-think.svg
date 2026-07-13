@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 64" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <text x="2" y="34" fill="#ff6b9d" font-size="26" font-weight="700">&#10216;<animate attributeName="opacity" values="1;0.35;1" dur="3s" repeatCount="indefinite"/></text>
+  <text x="26" y="34" fill="#e6edf3" font-size="23" font-weight="700">how I think</text>
+  <text x="187" y="34" fill="#ff6b9d" font-size="26" font-weight="700">&#10217;<animate attributeName="opacity" values="1;0.35;1" dur="3s" begin="1.5s" repeatCount="indefinite"/></text>
+  <text x="858" y="32" text-anchor="end" fill="#4d5866" font-size="13">// 08</text>
+  <line x1="2" y1="52" x2="858" y2="52" stroke="#26334a" stroke-width="2"/>
+  <line x1="2" y1="52" x2="858" y2="52" stroke="#ff6b9d" stroke-width="2" stroke-dasharray="70 786" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="856;-856" dur="6s" repeatCount="indefinite"/>
+  </line>
+  <rect x="2" y="51" width="197" height="2" fill="#ff6b9d" opacity="0.55"/>
+</svg>
