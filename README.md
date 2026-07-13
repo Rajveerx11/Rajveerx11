@@ -72,13 +72,19 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11/unified-memory-mcp"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-unified-memory-mcp.svg" alt="unified-memory-mcp" /></a>&nbsp;<a href="https://github.com/Rajveerx11/terax-ai"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-terax-ai.svg" alt="terax-ai" /></a>
-
-<a href="https://github.com/Rajveerx11/wmux"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-wmux.svg" alt="wmux" /></a>&nbsp;<a href="https://github.com/Rajveerx11/gfi-scout"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-gfi-scout.svg" alt="gfi-scout" /></a>
-
-<a href="https://github.com/Rajveerx11/pitchr"><img width="49%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-pitchr.svg" alt="pitchr" /></a>
+<a href="https://github.com/Rajveerx11/unified-memory-mcp"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-unified-memory-mcp.svg" alt="unified-memory-mcp" /></a><a href="https://github.com/Rajveerx11/gfi-scout"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-gfi-scout.svg" alt="gfi-scout" /></a>
 
 </div>
+
+### ⟨ open-source contributions ⟩
+
+<div align="center">
+
+<a href="https://github.com/amirlehmam/wmux"><img width="48%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/card-wmux.svg" alt="wmux contributions" /></a>
+
+</div>
+
+Two merged pull requests into **[amirlehmam/wmux](https://github.com/amirlehmam/wmux)**, a Windows terminal multiplexer for AI agents: Authenticode release-signing wired into CI, and authentication for the agent pipe surface.
 
 ## ⟨ technical toolkit ⟩
 
