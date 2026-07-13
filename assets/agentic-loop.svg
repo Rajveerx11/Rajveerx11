@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <defs>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#36BCF7"/>
+      <stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+    <path id="ring" d="M 280 60 A 110 110 0 0 1 390 170 A 110 110 0 0 1 280 280 A 110 110 0 0 1 170 170 A 110 110 0 0 1 280 60"/>
+  </defs>
+
+  <!-- guide ring -->
+  <use href="#ring" fill="none" stroke="#2c5364" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.55"/>
+
+  <!-- center core -->
+  <circle cx="280" cy="170" r="30" fill="#0d1117" stroke="url(#accent)" stroke-width="1.5"/>
+  <circle cx="280" cy="170" r="30" fill="none" stroke="#36BCF7" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="r" values="30;40;30" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="280" y="167" text-anchor="middle" fill="#36BCF7" font-size="13" font-weight="700" letter-spacing="1.5">AGENT</text>
+  <text x="280" y="182" text-anchor="middle" fill="#8b949e" font-size="8" letter-spacing="2">LOOP</text>
+
+  <!-- node: REASON (top) -->
+  <g>
+    <rect x="232" y="43" width="96" height="34" rx="8" fill="#0d1117" stroke="#36BCF7" stroke-width="1.2"/>
+    <rect x="232" y="43" width="96" height="34" rx="8" fill="none" stroke="#36BCF7" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.95;0" keyTimes="0;0.03;0.16" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="280" y="64" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="600" letter-spacing="1">REASON</text>
+  </g>
+
+  <!-- node: ACT (right) -->
+  <g>
+    <rect x="342" y="153" width="96" height="34" rx="8" fill="#0d1117" stroke="#36BCF7" stroke-width="1.2"/>
+    <rect x="342" y="153" width="96" height="34" rx="8" fill="none" stroke="#36BCF7" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.95;0" keyTimes="0;0.03;0.16" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="390" y="174" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="600" letter-spacing="1">ACT</text>
+  </g>
+
+  <!-- node: OBSERVE (bottom) -->
+  <g>
+    <rect x="232" y="263" width="96" height="34" rx="8" fill="#0d1117" stroke="#36BCF7" stroke-width="1.2"/>
+    <rect x="232" y="263" width="96" height="34" rx="8" fill="none" stroke="#36BCF7" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.95;0" keyTimes="0;0.03;0.16" dur="6s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="280" y="284" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="600" letter-spacing="1">OBSERVE</text>
+  </g>
+
+  <!-- node: REFLECT (left) -->
+  <g>
+    <rect x="122" y="153" width="96" height="34" rx="8" fill="#0d1117" stroke="#36BCF7" stroke-width="1.2"/>
+    <rect x="122" y="153" width="96" height="34" rx="8" fill="none" stroke="#36BCF7" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.95;0" keyTimes="0;0.03;0.16" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="170" y="174" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="600" letter-spacing="1">REFLECT</text>
+  </g>
+
+  <!-- traveling token -->
+  <circle r="6" fill="#36BCF7" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+      <mpath href="#ring"/>
+    </animateMotion>
+  </circle>
+  <circle r="2.5" fill="#ffffff">
+    <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+      <mpath href="#ring"/>
+    </animateMotion>
+  </circle>
+</svg>
