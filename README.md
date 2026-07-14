@@ -3,7 +3,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship,%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Solapur%2C+India;Founder+%40+neuratile+%C2%B7+Tessera+%C2%B7+Visage+AI;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Maharashtra%2C+India;Founder+%40+neuratile+%C2%B7+Tessera+%C2%B7+Visage+AI;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -12,7 +12,7 @@
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/Solapur,_India-2c5364?style=flat-square&labelColor=0f2027" />
+<img src="https://img.shields.io/badge/Maharashtra,_India-2c5364?style=flat-square&labelColor=0f2027" />
 <img src="https://img.shields.io/badge/Focus-Agentic_AI_%26_Systems-36BCF7?style=flat-square&labelColor=0f2027" />
 <img src="https://img.shields.io/badge/🟢_Open_to-Agentic_AI_roles_%26_freelance-2ea44f?style=flat-square&labelColor=0f2027" />
 
@@ -31,7 +31,7 @@ I treat LLMs as **collaborators** in my actual development workflow: orchestrati
 const rajveer = {
   title:     "Agentic Engineer",
   founder:   ["neuratile", "Tessera", "Visage AI"],
-  location:  "Solapur, India",
+  location:  "Maharashtra, India",
   building:  ["local-first AI dev tools", "structural code intelligence"],
   workflow:  "AI agents as collaborators, not autocomplete",
   learning:  ["agentic systems", "MCP internals", "systems-level Rust"],
