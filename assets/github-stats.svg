@@ -26,7 +26,7 @@
     <text x="254" y="96" fill="#8b949e" font-size="10.5" letter-spacing="1">STARS EARNED</text>
     <text x="254" y="108" fill="#4d5866" font-size="9.5">all time</text></g><g>
     <circle cx="240" cy="122" r="3.5" fill="#ff6b9d"><animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="1.6s" repeatCount="indefinite"/></circle>
-    <text x="254" y="128" fill="#ff6b9d" font-size="20" font-weight="700">7</text>
+    <text x="254" y="128" fill="#ff6b9d" font-size="20" font-weight="700">8</text>
     <text x="254" y="140" fill="#8b949e" font-size="10.5" letter-spacing="1">FOLLOWERS</text>
     </g><g>
     <circle cx="240" cy="166" r="3.5" fill="#36bcf7"><animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="2.0s" repeatCount="indefinite"/></circle>
