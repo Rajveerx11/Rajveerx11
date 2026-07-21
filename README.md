@@ -127,8 +127,6 @@ Founder and owner of **[neuratile](https://github.com/neuratile)**, an org build
 
 <img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="GitHub stats: contributions, commits, merged PRs, stars, followers, top languages" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Rajveerx11&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7" alt="contribution streak" />
-
 </div>
 
 <img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-loop.svg" alt="the loop I build in" />
