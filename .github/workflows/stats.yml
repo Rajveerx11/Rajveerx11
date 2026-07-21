@@ -2,8 +2,18 @@ name: Refresh stats card
 
 on:
   schedule:
-    - cron: "30 2 * * *"   # daily
+    - cron: "*/15 * * * *"   # every 15 min (public repo = free unlimited minutes)
+  push:
+    branches: [main]         # refresh right after a push to this repo
+    paths-ignore:            # ...but not when the bot only rewrote the cards
+      - "assets/github-stats.svg"
+      - "assets/built-*.svg"
   workflow_dispatch:
+
+# don't pile up runs; keep only the latest
+concurrency:
+  group: stats-refresh
+  cancel-in-progress: true
 
 jobs:
   stats:

@@ -3,29 +3,9 @@
 Runs in CI (GITHUB_TOKEN) or locally (GH_TOKEN / gh auth token).
 """
 import json, os, subprocess, urllib.request
+from datetime import datetime, timezone
 
 USER = "Rajveerx11"
-
-QUERY = """
-query($login: String!) {
-  user(login: $login) {
-    followers { totalCount }
-    pullRequests(states: MERGED) { totalCount }
-    contributionsCollection {
-      contributionCalendar { totalContributions }
-      totalCommitContributions
-      totalPullRequestReviewContributions
-    }
-    repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
-      totalCount
-      nodes {
-        stargazerCount
-        languages(first: 10) { edges { size node { name color } } }
-      }
-    }
-  }
-}
-"""
 
 def token():
     for k in ("GITHUB_TOKEN", "GH_TOKEN"):
@@ -33,19 +13,60 @@ def token():
             return os.environ[k]
     return subprocess.check_output(["gh", "auth", "token"], text=True).strip()
 
-req = urllib.request.Request(
-    "https://api.github.com/graphql",
-    data=json.dumps({"query": QUERY, "variables": {"login": USER}}).encode(),
-    headers={"Authorization": f"bearer {token()}", "Content-Type": "application/json"},
-)
-u = json.load(urllib.request.urlopen(req))["data"]["user"]
+TOK = token()
 
-contribs = u["contributionsCollection"]["contributionCalendar"]["totalContributions"]
-commits = u["contributionsCollection"]["totalCommitContributions"]
+def gql(query, variables):
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={"Authorization": f"bearer {TOK}", "Content-Type": "application/json"},
+    )
+    return json.load(urllib.request.urlopen(req))["data"]
+
+# base profile numbers
+u = gql("""
+query($login: String!) {
+  user(login: $login) {
+    createdAt
+    followers { totalCount }
+    pullRequests(states: MERGED) { totalCount }
+    repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
+      totalCount
+      nodes {
+        stargazerCount
+        languages(first: 10) { edges { size node { name color } } }
+      }
+    }
+  }
+}""", {"login": USER})["user"]
+
 merged = u["pullRequests"]["totalCount"]
 followers = u["followers"]["totalCount"]
 repos = u["repositories"]["totalCount"]
 stars = sum(n["stargazerCount"] for n in u["repositories"]["nodes"])
+
+# All-time contributions: contributionsCollection is capped at a 1-year span,
+# so sum successive year windows from account creation to now. This matches the
+# streak card's all-time "Total Contributions" instead of a rolling-365 window.
+created = datetime.strptime(u["createdAt"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+now = datetime.now(timezone.utc)
+contribs = commits = 0
+start = created
+while start < now:
+    end = min(start.replace(year=start.year + 1), now)
+    c = gql("""
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar { totalContributions }
+          totalCommitContributions
+        }
+      }
+    }""", {"login": USER, "from": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+           "to": end.strftime("%Y-%m-%dT%H:%M:%SZ")})["user"]["contributionsCollection"]
+    contribs += c["contributionCalendar"]["totalContributions"]
+    commits += c["totalCommitContributions"]
+    start = end
 
 langs = {}
 for n in u["repositories"]["nodes"]:
@@ -58,12 +79,12 @@ total_size = sum(v["size"] for _, v in top) or 1
 
 W, H = 860, 260
 STATS = [
-    ("contributions", f"{contribs:,}", "past year", "#36bcf7"),
-    ("commits", f"{commits:,}", "past year", "#3fb950"),
+    ("contributions", f"{contribs:,}", "all time", "#36bcf7"),
+    ("commits", f"{commits:,}", "all time", "#3fb950"),
     ("merged PRs", f"{merged}", "all time", "#a371f7"),
     ("stars earned", f"{stars}", "all time", "#e3b341"),
     ("followers", f"{followers}", "", "#ff6b9d"),
-    ("repos", f"{repos}", "original only", "#36bcf7"),
+    ("repos", f"{repos}", "public, original", "#36bcf7"),
 ]
 
 rows = []
@@ -104,7 +125,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-fam
   <text x="{bx}" y="64" fill="#6e7681" font-size="11" letter-spacing="1">TOP LANGUAGES BY CODE</text>
   {"".join(rows)}
   {"".join(bars)}
-  <text x="{W-34}" y="{H-16}" text-anchor="end" fill="#4d5866" font-size="10">auto-generated daily from the GitHub API</text>
+  <text x="{W-34}" y="{H-16}" text-anchor="end" fill="#4d5866" font-size="10">auto-generated from the GitHub API, refreshed every 15 min</text>
 </svg>'''
 
 import xml.dom.minidom
