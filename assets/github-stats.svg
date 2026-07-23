@@ -10,7 +10,7 @@
   <text x="470" y="64" fill="#6e7681" font-size="11" letter-spacing="1">TOP LANGUAGES BY CODE</text>
   <g>
     <circle cx="40" cy="78" r="3.5" fill="#36bcf7"><animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="0.0s" repeatCount="indefinite"/></circle>
-    <text x="54" y="84" fill="#36bcf7" font-size="20" font-weight="700">1,329</text>
+    <text x="54" y="84" fill="#36bcf7" font-size="20" font-weight="700">1,330</text>
     <text x="54" y="96" fill="#8b949e" font-size="10.5" letter-spacing="1">CONTRIBUTIONS</text>
     <text x="54" y="108" fill="#4d5866" font-size="9.5">all time</text></g><g>
     <circle cx="40" cy="122" r="3.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="0.4s" repeatCount="indefinite"/></circle>
