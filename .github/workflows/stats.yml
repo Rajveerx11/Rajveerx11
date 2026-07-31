@@ -1,18 +1,19 @@
-name: Refresh stats card
+name: Refresh profile assets
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 min (public repo = free unlimited minutes)
+    - cron: "17 4 * * *"      # daily; profile metrics do not need minute-level churn
   push:
     branches: [main]         # refresh right after a push to this repo
     paths-ignore:            # ...but not when the bot only rewrote the cards
       - "assets/github-stats.svg"
       - "assets/built-*.svg"
+      - "assets/project-index.svg"
   workflow_dispatch:
 
 # don't pile up runs; keep only the latest
 concurrency:
-  group: stats-refresh
+  group: profile-refresh
   cancel-in-progress: true
 
 jobs:
@@ -28,10 +29,11 @@ jobs:
         run: |
           python scripts/gen_stats.py
           python scripts/gen_built.py
+          python scripts/gen_projects.py
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/github-stats.svg assets/built-*.svg
+          git add assets/github-stats.svg assets/built-*.svg assets/project-index.svg
           git diff --cached --quiet || git commit -m "chore: refresh generated cards"
           git push

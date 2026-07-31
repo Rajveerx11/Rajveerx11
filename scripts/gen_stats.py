@@ -81,7 +81,7 @@ W, H = 860, 260
 STATS = [
     ("contributions", f"{contribs:,}", "all time", "#36bcf7"),
     ("commits", f"{commits:,}", "all time", "#3fb950"),
-    ("merged PRs", f"{merged}", "all time", "#a371f7"),
+    ("merged PRs", f"{merged}", "public, all time", "#a371f7"),
     ("stars earned", f"{stars}", "all time", "#e3b341"),
     ("followers", f"{followers}", "", "#ff6b9d"),
     ("repos", f"{repos}", "public, original", "#36bcf7"),
@@ -125,7 +125,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-fam
   <text x="{bx}" y="64" fill="#6e7681" font-size="11" letter-spacing="1">TOP LANGUAGES BY CODE</text>
   {"".join(rows)}
   {"".join(bars)}
-  <text x="{W-34}" y="{H-16}" text-anchor="end" fill="#4d5866" font-size="10">auto-generated from the GitHub API, refreshed every 15 min</text>
+  <text x="{W-34}" y="{H-16}" text-anchor="end" fill="#4d5866" font-size="10">auto-generated from the GitHub API, refreshed daily</text>
 </svg>'''
 
 import xml.dom.minidom

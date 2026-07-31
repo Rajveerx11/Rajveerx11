@@ -1,179 +1,88 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=210&section=header&text=Rajveer%20Vadnal&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Agentic%20Engineer%20%C2%B7%20I%20build%20AI%20systems%20that%20ship,%20not%20demos%20that%20rot%20in%20a%20repo&descSize=16&descAlignY=58&animation=fadeIn" alt="banner" />
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/profile-header.svg" alt="Rajveer Vadnal — agentic systems engineer building verifiable agents, local-first AI tools, and developer infrastructure" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=680&lines=Agentic+Engineer+based+in+Maharashtra%2C+India;Founder+%40+neuratile+%C2%B7+Tessera+%C2%B7+Visage+AI;I+orchestrate+AI+agents+in+my+real+dev+workflow;Agentic+systems+%C2%B7+MCP+%C2%B7+Systems-level+Rust;Skeptical+of+hype.+Allergic+to+vague+claims." alt="Typing SVG" />
-</a>
+<p>
+  <a href="https://rajveervadnal.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=vercel&logoColor=36BCF7" alt="Portfolio" /></a>
+  <a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/rajveer-vadnal-374664353"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
+</p>
 
-<br/>
-
-<img src="https://img.shields.io/badge/%E2%9A%A1%20Agentic%20Engineer-36BCF7?style=for-the-badge&labelColor=0f2027&logo=probot&logoColor=white" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Maharashtra,_India-2c5364?style=flat-square&labelColor=0f2027" />
-<img src="https://img.shields.io/badge/Focus-Agentic_AI_%26_Systems-36BCF7?style=flat-square&labelColor=0f2027" />
-<img src="https://img.shields.io/badge/🟢_Open_to-Agentic_AI_roles_%26_freelance-2ea44f?style=flat-square&labelColor=0f2027" />
+**Maharashtra, India · Open to agentic-AI, developer-tooling, and applied-AI roles · Available for freelance builds**
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-whoami.svg" alt="whoami" />
+## What I do
 
-> [!NOTE]
-> **⚡ Agentic Engineer.** I design and orchestrate **AI agents that do real engineering work**, not chatbots that answer once and forget.
+I build AI systems that must do more than generate plausible output: they need to **use tools, preserve context, expose evidence, and survive verification**.
 
-I build AI-driven tools and systems that solve real problems, not proof-of-concepts that sit in a repo and collect dust. My approach: engage with the problem directly, break things, iterate, and ship something that works.
+My work sits at the intersection of agent orchestration, developer infrastructure, local-first AI, and product engineering. I am founder of **[neuratile](https://github.com/neuratile)** and build across Python, TypeScript, and Rust.
 
-I treat LLMs as **collaborators** in my actual development workflow: orchestrating task pipelines, automating repetitive engineering decisions, and wiring agents into the loop where they earn their place.
+> Current focus: verifiable coding agents, MCP infrastructure, local model evaluation, and tools that help engineers understand unfamiliar systems.
 
-```ts
-const rajveer = {
-  title:     "Agentic Engineer",
-  founder:   ["neuratile", "Tessera", "Visage AI"],
-  location:  "Maharashtra, India",
-  building:  ["local-first AI dev tools", "structural code intelligence"],
-  workflow:  "AI agents as collaborators, not autocomplete",
-  learning:  ["agentic systems", "MCP internals", "systems-level Rust"],
-  motto:     "understand *why* it works, not just how to call the API",
-};
-```
+## Selected work
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-founder.svg" alt="founder" />
+<a href="https://github.com/Rajveerx11/proof-of-work"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-proof-of-work.svg" alt="Proof-of-Work — verification gate for AI coding agents with deterministic checks, real test reruns, mutation testing, and signed audit logs" /></a>
+
+<a href="https://github.com/Rajveerx11/gfi-scout"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-gfi-scout.svg" alt="GFI Scout — MCP server and CLI that ranks good-first issues by likelihood of contributor success" /></a>
+
+<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera — local-first AI testing IDE built with Rust, Tauri, React, Tree-sitter, and Ollama" /></a>
+
+<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-obsidian.svg" alt="Obsidian Graph Intelligence — local knowledge-graph analysis, semantic linking, vault repair, and MCP queries" /></a>
+
+| Project | Signal a reviewer can verify |
+|---|---|
+| **[Proof-of-Work](https://github.com/Rajveerx11/proof-of-work)** | Published Python package; CI, mutation testing, coverage checks, Ed25519-signed audit trail |
+| **[GFI Scout](https://github.com/Rajveerx11/gfi-scout)** | MCP + CLI/TUI; 100+ tests, strict typing, async GitHub API pipeline, community forks |
+| **[Tessera](https://github.com/neuratile/Tessera)** | Local-first Rust/Tauri desktop architecture; structured QA artifacts; optional sandboxed test runner |
+| **[Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence)** | Offline embeddings, graph analytics, multimodal ingestion, explainable edge confidence |
+
+## Product work
+
+- **[neuratile](https://github.com/neuratile)** — AI-first developer tools. I founded the organization and lead **[Tessera](https://github.com/neuratile/Tessera)**.
+- **[Visage AI](https://getvisageai.online)** — private mobile AI product for previewing cosmetic-procedure outcomes; public product experience, private source.
+- **Master Models** — private specialist-model factory that fine-tunes Qwen3 variants and gates them against a stock 30B baseline.
+
+## Public and selected private projects
 
 <div align="center">
 
-<a href="https://github.com/neuratile"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/neuratile-banner.svg" alt="neuratile: AI-first, open-source developer tools" /></a>
+<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Live index of Rajveer Vadnal's public repositories and intentionally disclosed private builds" /></a>
 
-<a href="https://getvisageai.online/"><img width="90%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/visage-banner.svg" alt="Visage AI: preview cosmetic procedures on your own face" /></a>
+<sub>Public data refreshes from GitHub daily. Private names come from an explicit allowlist; their source remains private.</sub>
 
 </div>
 
-Founder and owner of **[neuratile](https://github.com/neuratile)**, an org building AI-first, open-source developer tools where each project is a tile in the bigger picture. Founder of **[Tessera](https://github.com/neuratile/Tessera)**, a local-first AI testing IDE, and **[Visage AI](https://getvisageai.online/)**, a mobile app that previews cosmetic procedures on your own face.
+## Engineering range
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-built.svg" alt="what I've built" />
+| Area | Working set |
+|---|---|
+| **Agent systems** | MCP, tool orchestration, structured outputs, evaluation gates, RAG, local inference |
+| **Languages** | Python, TypeScript/JavaScript, Rust, Kotlin |
+| **Product** | React, Tauri, Flask, Node.js, SQLite, MongoDB, Firebase |
+| **ML / code intelligence** | PyTorch, Transformers.js, Ollama, Tree-sitter, embeddings, graph analysis |
+| **Delivery** | GitHub Actions, automated tests, packaging, release workflows, Vercel, Netlify |
+
+## How I work
+
+- **Evidence before claims.** Tests, typed contracts, reproducible checks, and inspectable outputs beat “it seems to work.”
+- **Local-first when privacy matters.** Keep source, embeddings, and user data on-device by default; make cloud boundaries explicit.
+- **Agents as systems, not prompts.** Design the tools, state, failure handling, verification loop, and human approval points around the model.
+
+## GitHub footprint
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-obsidian.svg" alt="Obsidian Graph Intelligence" /></a>
-
-<a href="https://github.com/Rajveerx11/repograph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-repograph.svg" alt="RepoGraph Intelligence" /></a>
-
-<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera" /></a>
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="Live GitHub statistics: contributions, commits, merged pull requests, stars, followers, repositories, and top languages" />
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-shipped.svg" alt="also shipped" />
+## Contact
+
+Building an agentic-AI product, MCP integration, developer tool, or local-first AI workflow? **[Email me](mailto:rajveer11vadnal@gmail.com)** or connect on **[LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353)**.
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Project index: 20 projects, 11 public and 9 private" /></a>
-
-<sub>Public repos are one click away. The private column is what's cooking.</sub>
-
-</div>
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-toolkit.svg" alt="technical toolkit" />
-
-<table>
-<tr>
-<td valign="top" width="33%">
-
-**🟢 Strong**
-<br/><sub>I build with these daily</sub>
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-
-</td>
-<td valign="top" width="33%">
-
-**🟡 Capable**
-<br/><sub>Shipped real work with these</sub>
-
-![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Tailwind](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</td>
-<td valign="top" width="33%">
-
-**🔵 Exploring**
-<br/><sub>Going deeper here now</sub>
-
-![Agentic AI](https://img.shields.io/badge/-Agentic_AI-36BCF7?style=flat-square&logo=openai&logoColor=white)
-![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square&logo=anthropic&logoColor=white)
-![ML Theory](https://img.shields.io/badge/-ML_Theory-9C27B0?style=flat-square&logo=googlescholar&logoColor=white)
-![Systems Rust](https://img.shields.io/badge/-Systems_Rust-000000?style=flat-square&logo=rust&logoColor=white)
-
-</td>
-</tr>
-</table>
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-numbers.svg" alt="github in numbers" />
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="GitHub stats: contributions, commits, merged PRs, stars, followers, top languages" />
-
-</div>
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-loop.svg" alt="the loop I build in" />
-
-<div align="center">
-
-<img width="62%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/agentic-loop.svg" alt="Agentic reasoning loop: Reason, Act, Observe, Reflect" />
-
-<sub>Every agent I ship runs this cycle of <b>reason</b>, <b>act</b>, <b>observe</b> and <b>reflect</b> until the work is actually done.</sub>
-
-</div>
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-think.svg" alt="how I think" />
-
-I don't chase frameworks or trends. If something works, I want to understand *why* it works, not just how to call the API. I learn by building, failing, and reading papers when the stack traces stop making sense. I'm skeptical of hype and **allergic to vague claims, including my own**.
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/header-connect.svg" alt="connect" />
-
-<div align="center">
-
-**💼 Open to agentic-AI engineering roles & freelance work.** If you need agents, MCP servers, or AI dev-tooling built, my inbox is open.
-
-<a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/📬_Hire_me-rajveer11vadnal@gmail.com-2ea44f?style=for-the-badge&labelColor=0f2027" alt="Hire me" /></a>
-
-<br/>
-
-<a href="mailto:rajveer11vadnal@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="https://www.linkedin.com/in/rajveer-vadnal-374664353" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://x.com/Rajveerx11" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-</a>
-<a href="https://discord.gg/ubJVpkhR2a" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
-</a>
-<a href="https://reddit.com/user/RajveerVadnal" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
-</a>
-<a href="https://instagram.com/rajveer_official_11_" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-</a>
-
-<br/><br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer&text=understand%20why%20it%20works&fontSize=18&fontColor=ffffff&fontAlignY=70&animation=fadeIn" />
+<a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/Discuss_a_role_or_build-2ea44f?style=for-the-badge&logo=gmail&logoColor=white" alt="Discuss a role or build" /></a>
 
 </div>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" role="img" aria-labelledby="title desc">
+  <title id="title">Rajveer Vadnal — Agentic Systems Engineer</title>
+  <desc id="desc">Building verifiable agents, local-first AI tools, and developer infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#111b2d"/>
+      <stop offset="1" stop-color="#15263a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="1" stop-color="#a371f7"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect x="1" y="1" width="858" height="238" rx="18" fill="url(#bg)" stroke="#26334a" stroke-width="2"/>
+  <rect x="1" y="1" width="858" height="238" rx="18" fill="url(#grid)"/>
+  <circle cx="28" cy="25" r="5" fill="#ff5f57"/>
+  <circle cx="48" cy="25" r="5" fill="#febc2e"/>
+  <circle cx="68" cy="25" r="5" fill="#28c840"/>
+  <text x="430" y="29" text-anchor="middle" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">rajveer@github:~$ ./build --verify</text>
+  <line x1="1" y1="46" x2="859" y2="46" stroke="#26334a"/>
+  <rect x="42" y="74" width="82" height="82" rx="18" fill="#36bcf7" fill-opacity="0.1" stroke="url(#line)" stroke-width="2"/>
+  <text x="83" y="126" text-anchor="middle" fill="#36bcf7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="32" font-weight="700">RV</text>
+  <text x="154" y="91" fill="#36bcf7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="2">AGENTIC SYSTEMS ENGINEER</text>
+  <text x="154" y="128" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="750">Rajveer Vadnal</text>
+  <text x="154" y="157" fill="#b6c2cf" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Verifiable agents · local-first AI · developer infrastructure</text>
+  <line x1="42" y1="184" x2="818" y2="184" stroke="url(#line)" stroke-width="2" opacity="0.75"/>
+  <text x="42" y="211" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12.5">Python  ·  TypeScript  ·  Rust  ·  MCP  ·  Tauri</text>
+  <text x="818" y="211" text-anchor="end" fill="#3fb950" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12.5">open to roles + freelance</text>
+</svg>

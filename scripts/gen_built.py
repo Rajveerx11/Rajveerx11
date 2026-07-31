@@ -1,4 +1,4 @@
-"""Generate the three flagship project cards as themed terminal-panel SVGs.
+"""Generate flagship project cards as themed terminal-panel SVGs.
 
 Star counts are pulled live from the GitHub API so they never go stale.
 Runs in CI (GITHUB_TOKEN) or locally (gh auth token).
@@ -20,10 +20,26 @@ def stars(full):
 
 LANG = {"TypeScript":"#3178c6","JavaScript":"#f1e05a","React":"#61dafb","Rust":"#dea584",
         "Transformers.js":"#ff6f00","MCP":"#8b949e","React Flow":"#ff0072","Tree-sitter":"#a9b1d6",
-        "Tauri":"#24c8db","Ollama":"#c9d1d9"}
+        "Tauri":"#24c8db","Ollama":"#c9d1d9","Python":"#3572A5","CI/CD":"#3fb950",
+        "Ed25519":"#a371f7","Mutation Testing":"#f0883e","PyPI":"#3775A9","GitHub API":"#e6edf3",
+        "asyncio":"#36bcf7","100+ tests":"#3fb950"}
 
 # (slug, monogram, accent, repo_url, star_repo, title, desc_lines, tags, note)
 CARDS = [
+    ("proof-of-work", "P", "#f0883e", "https://github.com/Rajveerx11/proof-of-work",
+     "Rajveerx11/proof-of-work", "Proof-of-Work",
+     [[("A verification gate for AI coding agents. Re-runs real tests, catches deleted or weakened checks,", 0)],
+      [("fake passes and coverage drops, then emits a ", 0), ("deterministic verdict", 1), (". Optional mutation testing finds", 0)],
+      [("gutted tests; each result is hash-chained and Ed25519-signed. CLI + git hook + GitHub Action.", 0)]],
+     ["Python", "CI/CD", "Mutation Testing", "Ed25519", "PyPI"], "Published package: proof-of-work-agent"),
+
+    ("gfi-scout", "G", "#36bcf7", "https://github.com/Rajveerx11/gfi-scout",
+     "Rajveerx11/gfi-scout", "GFI Scout",
+     [[("An MCP server + CLI that ranks good-first issues by ", 0), ("likelihood of contributor success", 1), (" — not label alone.", 0)],
+      [("Scores repo health, maintainer response, merge rate, freshness and setup complexity; checks whether", 0)],
+      [("an issue is still available. Async GitHub API pipeline, TTL caching, strict typing and 100+ tests.", 0)]],
+     ["Python", "MCP", "GitHub API", "asyncio", "100+ tests"], "Also ships a terminal UI"),
+
     ("obsidian", "O", "#a371f7", "https://github.com/Rajveerx11/obsidian-graph-intelligence",
      "Rajveerx11/obsidian-graph-intelligence", "Obsidian Graph Intelligence",
      [[("An Obsidian plugin that treats your knowledge vault as a ", 0), ("graph", 1),
@@ -33,15 +49,6 @@ CARDS = [
       [('adaptive learning system, a batch ', 0), ('"Fix My Vault"', 1),
        (" repair engine, and LLM integration via Ollama/OpenAI.", 0)]],
      ["TypeScript", "React", "Transformers.js", "MCP"], None),
-
-    ("repograph", "R", "#36bcf7", "https://github.com/Rajveerx11/repograph-intelligence",
-     "Rajveerx11/repograph-intelligence", "RepoGraph Intelligence",
-     [[("An AI-native structural intelligence engine that analyzes codebases as ", 0), ("dependency graphs", 1),
-       (". Extracts", 0)],
-      [("imports, exports and symbols across JS/TS/Python, computes coupling metrics, estimates ", 0),
-       ("blast radius", 1)],
-      [("for changes, and audits supply-chain deps against OSV.dev. React Flow live explorer + MCP server.", 0)]],
-     ["JavaScript", "Rust", "React Flow", "Tree-sitter", "MCP"], "Rust core in active development"),
 
     ("tessera", "T", "#3fb950", "https://github.com/neuratile/Tessera",
      "neuratile/Tessera", "Tessera",
