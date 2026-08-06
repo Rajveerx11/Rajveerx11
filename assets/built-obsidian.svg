@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 204" role="img" aria-label="Obsidian Graph Intelligence project summary" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <style>.motion { visibility: hidden; } @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }</style>
+  <rect x="1.5" y="1.5" width="857" height="201" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
+  <line x1="18" y1="1.5" x2="842" y2="1.5" stroke="#a371f7" stroke-width="2" opacity="0.55"/>
+  <rect x="30" y="30" width="44" height="44" rx="11" fill="#a371f7" opacity="0.14"/><rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="#a371f7" stroke-width="1.5"/><text x="52" y="52.0" text-anchor="middle" dominant-baseline="central" fill="#a371f7" font-size="23" font-weight="700">O</text>
+  <text x="90" y="52.0" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">Obsidian Graph Intelligence</text>
+  <rect x="385" y="42" width="48" height="20" rx="6" fill="#e3b341" opacity="0.14"/><rect x="385" y="42" width="48" height="20" rx="6" fill="none" stroke="#e3b341" stroke-width="1" opacity="0.5"/><text x="409" y="56" text-anchor="middle" fill="#e3b341" font-size="10.5" font-weight="600">★ 16</text>
+  <text x="34" y="92" font-size="12.5" fill="#8b949e">An Obsidian plugin that treats your knowledge vault as a <tspan fill="#e6edf3" font-weight="600">graph</tspan>. Detects orphan notes, discovers</text>
+  <text x="34" y="114" font-size="12.5" fill="#8b949e">topic clusters, and suggests missing links using offline <tspan fill="#e6edf3" font-weight="600">Transformers.js</tspan> embeddings. Ships with an</text>
+  <text x="34" y="136" font-size="12.5" fill="#8b949e">adaptive learning system, a batch <tspan fill="#e6edf3" font-weight="600">"Fix My Vault"</tspan> repair engine, and LLM integration via Ollama/OpenAI.</text>
+  <rect x="34" y="164" width="89" height="20" rx="6" fill="#3178c6" opacity="0.14"/><rect x="34" y="164" width="89" height="20" rx="6" fill="none" stroke="#3178c6" stroke-width="1" opacity="0.5"/><text x="78" y="178" text-anchor="middle" fill="#3178c6" font-size="10.5" font-weight="600">TypeScript</text>
+  <rect x="131" y="164" width="54" height="20" rx="6" fill="#61dafb" opacity="0.14"/><rect x="131" y="164" width="54" height="20" rx="6" fill="none" stroke="#61dafb" stroke-width="1" opacity="0.5"/><text x="158" y="178" text-anchor="middle" fill="#61dafb" font-size="10.5" font-weight="600">React</text>
+  <rect x="193" y="164" width="124" height="20" rx="6" fill="#ff6f00" opacity="0.14"/><rect x="193" y="164" width="124" height="20" rx="6" fill="none" stroke="#ff6f00" stroke-width="1" opacity="0.5"/><text x="255" y="178" text-anchor="middle" fill="#ff6f00" font-size="10.5" font-weight="600">Transformers.js</text>
+  <rect x="325" y="164" width="41" height="20" rx="6" fill="#8b949e" opacity="0.14"/><rect x="325" y="164" width="41" height="20" rx="6" fill="none" stroke="#8b949e" stroke-width="1" opacity="0.5"/><text x="346" y="178" text-anchor="middle" fill="#8b949e" font-size="10.5" font-weight="600">MCP</text>
+  <g aria-label="knowledge graph">
+    <path d="M799 60.0L808 41.0L826 57.0Z" fill="none" stroke="#a371f7" stroke-opacity="0.38"/>
+    <circle cx="799" cy="60.0" r="3" fill="#a371f7"/><circle cx="808" cy="41.0" r="3" fill="#a371f7"/><circle cx="826" cy="57.0" r="3" fill="#a371f7"/>
+    <circle class="motion" r="2.5" fill="#d8c4ff">
+      <animateMotion path="M799 60.0L808 41.0L826 57.0L799 60.0" dur="4.2s" repeatCount="indefinite"/>
+    </circle></g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" role="img" aria-labelledby="title desc">
+  <title id="title">Rajveer Vadnal, Agentic Systems Engineer</title>
+  <desc id="desc">Animated verification trace showing input moving through tool calls, tests, and signed proof.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="0.58" stop-color="#0d141d"/>
+      <stop offset="1" stop-color="#101b28"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="proof" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#dce8f5" stroke-opacity="0.026"/>
+    </pattern>
+    <filter id="softGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="trace" d="M594 102V126C594 136 602 144 612 144H648C658 144 666 152 666 162V184C666 194 674 202 684 202H716"/>
+    <style>
+      .motion { visibility: hidden; }
+      @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="278" rx="18" fill="url(#bg)" stroke="#26334a" stroke-width="2"/>
+  <rect x="1" y="1" width="858" height="278" rx="18" fill="url(#grid)"/>
+  <circle cx="28" cy="25" r="5" fill="#ff5f57"/>
+  <circle cx="48" cy="25" r="5" fill="#febc2e"/>
+  <circle cx="68" cy="25" r="5" fill="#28c840"/>
+  <text x="430" y="29" text-anchor="middle" fill="#7d8998" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">rajveer@github:~$ ./build --evidence</text>
+  <line x1="1" y1="46" x2="859" y2="46" stroke="#26334a"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <rect x="40" y="72" width="82" height="82" rx="16" fill="#36bcf7" fill-opacity="0.075" stroke="#29465e" stroke-width="1.5"/>
+    <path d="M56 93H48V112M106 133H114V114" fill="none" stroke="#36bcf7" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="81" y="120" text-anchor="middle" dominant-baseline="middle" fill="#e6edf3" font-size="28" font-weight="700">RV</text>
+    <g class="motion">
+      <rect x="40" y="72" width="82" height="82" rx="16" fill="none" stroke="#36bcf7" stroke-width="2" stroke-dasharray="28 300" stroke-linecap="round">
+        <animate attributeName="stroke-dashoffset" values="0;-328" dur="5.5s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="48" cy="112" r="2.5" fill="#7dd3fc" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <text x="148" y="87" fill="#36bcf7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">AGENTIC SYSTEMS ENGINEER</text>
+  <text x="148" y="126" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="35" font-weight="750">Rajveer Vadnal</text>
+  <text x="148" y="155" fill="#aebdca" font-family="Segoe UI, Arial, sans-serif" font-size="15.5">Verifiable agents. Local-first AI. Developer infrastructure.</text>
+  <text x="40" y="204" fill="#647180" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" letter-spacing="1.2">WORKING SET</text>
+  <text x="40" y="229" fill="#aebdca" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">Python  /  TypeScript  /  Rust  /  MCP  /  Tauri</text>
+  <line x1="40" y1="251" x2="524" y2="251" stroke="#26334a"/>
+  <text x="40" y="268" fill="#3fb950" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5">AVAILABLE FOR AGENTIC-AI ROLES + BUILDS</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <rect x="552" y="68" width="268" height="184" rx="14" fill="#0b1017" stroke="#26334a"/>
+    <text x="572" y="91" fill="#7d8998" font-size="10" letter-spacing="1.5">VERIFICATION TRACE</text>
+    <text x="800" y="91" text-anchor="end" fill="#3fb950" font-size="10">LIVE</text>
+
+    <path d="M594 102V126C594 136 602 144 612 144H648C658 144 666 152 666 162V184C666 194 674 202 684 202H716" fill="none" stroke="#263d50" stroke-width="2"/>
+    <circle cx="594" cy="102" r="5" fill="#0b1017" stroke="#36bcf7" stroke-width="1.5"/>
+    <circle cx="630" cy="144" r="5" fill="#0b1017" stroke="#36bcf7" stroke-width="1.5"/>
+    <circle cx="666" cy="174" r="5" fill="#0b1017" stroke="#36bcf7" stroke-width="1.5"/>
+    <circle cx="716" cy="202" r="5" fill="#0b1017" stroke="#3fb950" stroke-width="1.5"/>
+
+    <text x="608" y="106" fill="#c5d1dc" font-size="10.5">INPUT</text>
+    <text x="642" y="137" fill="#c5d1dc" font-size="10.5">TOOL CALLS</text>
+    <text x="680" y="178" fill="#c5d1dc" font-size="10.5">TESTS</text>
+    <text x="730" y="206" fill="#c5d1dc" font-size="10.5">PROOF</text>
+
+    <path class="motion" d="M594 102V126C594 136 602 144 612 144H648C658 144 666 152 666 162V184C666 194 674 202 684 202H716" pathLength="1" fill="none" stroke="url(#proof)" stroke-width="2.5" stroke-dasharray="0.12 0.88" stroke-linecap="round" filter="url(#softGlow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1" dur="4.8s" repeatCount="indefinite"/>
+    </path>
+    <circle class="motion" r="3.2" fill="#e6f7ff" filter="url(#softGlow)">
+      <animateMotion dur="4.8s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1">
+        <mpath href="#trace"/>
+      </animateMotion>
+    </circle>
+    <g class="motion" fill="none" stroke="#36bcf7">
+      <circle cx="594" cy="102" r="5"><animate attributeName="r" values="5;11;5" dur="4.8s" keyTimes="0;0.1;1" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;0" dur="4.8s" repeatCount="indefinite"/></circle>
+      <circle cx="630" cy="144" r="5"><animate attributeName="r" values="5;5;11;5" dur="4.8s" keyTimes="0;0.25;0.36;1" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0;0" dur="4.8s" keyTimes="0;0.25;0.36;1" repeatCount="indefinite"/></circle>
+      <circle cx="666" cy="174" r="5"><animate attributeName="r" values="5;5;11;5" dur="4.8s" keyTimes="0;0.55;0.66;1" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0;0" dur="4.8s" keyTimes="0;0.55;0.66;1" repeatCount="indefinite"/></circle>
+      <circle cx="716" cy="202" r="5" stroke="#3fb950"><animate attributeName="r" values="5;5;12;5" dur="4.8s" keyTimes="0;0.8;0.92;1" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0;0" dur="4.8s" keyTimes="0;0.8;0.92;1" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="572" y="221" width="228" height="18" rx="5" fill="#3fb950" fill-opacity="0.08" stroke="#3fb950" stroke-opacity="0.35"/>
+    <text x="686" y="234" text-anchor="middle" fill="#3fb950" font-size="9.5" letter-spacing="1">DETERMINISTIC VERDICT: PASS</text>
+  </g>
+</svg>

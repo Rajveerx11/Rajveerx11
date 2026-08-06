@@ -1,4 +1,8 @@
-# Rajveer Vadnal
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/profile-header.svg" alt="Rajveer Vadnal, agentic systems engineer building verifiable agents, local-first AI tools, and developer infrastructure" />
+
+</div>
 
 **Agentic engineer building verification infrastructure, local-first AI systems,
 and developer tools.**
@@ -21,6 +25,8 @@ infrastructure, and local code intelligence.
 
 ### [Proof-of-Work][proof-of-work]
 
+<a href="https://github.com/Rajveerx11/proof-of-work"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-proof-of-work.svg" alt="Proof-of-Work, verification gate for AI coding agents with deterministic checks, real test reruns, mutation testing, and signed audit logs" /></a>
+
 Verification and evaluation infrastructure for AI coding agents. It re-runs
 real tests, detects deleted or weakened checks and fake passes, then records
 each verdict in a hash-chained, Ed25519-signed audit log.
@@ -32,6 +38,8 @@ agent-evaluation corpus. [Read the evaluation methodology][proof-of-work-eval].
 `Python` `SQLite` `GitHub Actions` `Ed25519` `Mutation testing`
 
 ### [Tessera][tessera]
+
+<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera, local-first AI testing IDE built with Rust, Tauri, React, Tree-sitter, and Ollama" /></a>
 
 A local-first AI testing IDE built at neuratile. Tessera parses a codebase with
 Tree-sitter, retrieves relevant context from local SQLite storage, and generates
@@ -82,7 +90,15 @@ templates, status, and a runbook for reproducing or auditing the work.
   cosmetic-procedure visualization, with explicit privacy limits and medical
   disclaimers. Source is private. `TypeScript` `Computer vision` `Mobile AI`
 
-[Browse all public repositories][repositories]
+## Project index
+
+<div align="center">
+
+<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Live index of Rajveer Vadnal's public repositories and intentionally disclosed private builds" /></a>
+
+<sub>Public data refreshes from GitHub daily. Private names come from an explicit allowlist; their source remains private.</sub>
+
+</div>
 
 ## Engineering focus
 
@@ -97,12 +113,26 @@ templates, status, and a runbook for reproducing or auditing the work.
 
 ## How I work
 
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/agentic-loop.svg" alt="Evidence-driven agent loop: context, reason, execute, verify, proof, then feed evidence into the next decision" />
+
+</div>
+
 - **Evidence before claims.** Tests, typed contracts, reproducible checks, and
   inspectable outputs beat confidence.
 - **Local-first when privacy matters.** Source, embeddings, and user data stay
   on-device by default. Cloud boundaries remain explicit.
 - **Agents as systems, not prompts.** Useful agents need tools, state, failure
   handling, verification, and clear human approval points.
+
+## GitHub footprint
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="Live GitHub statistics: contributions, commits, merged pull requests, stars, followers, repositories, and top languages" />
+
+</div>
 
 [email]: mailto:rajveer.r.vadnal@gmail.com
 [gfi-scout]: https://github.com/Rajveerx11/gfi-scout

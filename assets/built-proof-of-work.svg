@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 216" role="img" aria-label="Proof-of-Work project summary" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <style>.motion { visibility: hidden; } @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }</style>
+  <rect x="1.5" y="1.5" width="857" height="213" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
+  <line x1="18" y1="1.5" x2="842" y2="1.5" stroke="#f0883e" stroke-width="2" opacity="0.55"/>
+  <rect x="30" y="30" width="44" height="44" rx="11" fill="#f0883e" opacity="0.14"/><rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="#f0883e" stroke-width="1.5"/><text x="52" y="52.0" text-anchor="middle" dominant-baseline="central" fill="#f0883e" font-size="23" font-weight="700">P</text>
+  <text x="90" y="52.0" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">Proof-of-Work</text>
+  <text x="34" y="92" font-size="12.5" fill="#8b949e">A verification gate for AI coding agents. Re-runs real tests, catches deleted or weakened checks,</text>
+  <text x="34" y="114" font-size="12.5" fill="#8b949e">fake passes and coverage drops, then emits a <tspan fill="#e6edf3" font-weight="600">deterministic verdict</tspan>. Optional mutation testing finds</text>
+  <text x="34" y="136" font-size="12.5" fill="#8b949e">gutted tests; each result is hash-chained and Ed25519-signed. CLI + git hook + GitHub Action.</text>
+  <text x="34" y="162" font-size="11" fill="#f0883e" font-style="italic">◆ Published package: proof-of-work-agent</text>
+  <rect x="34" y="176" width="61" height="20" rx="6" fill="#3572A5" opacity="0.14"/><rect x="34" y="176" width="61" height="20" rx="6" fill="none" stroke="#3572A5" stroke-width="1" opacity="0.5"/><text x="64" y="190" text-anchor="middle" fill="#3572A5" font-size="10.5" font-weight="600">Python</text>
+  <rect x="103" y="176" width="54" height="20" rx="6" fill="#3fb950" opacity="0.14"/><rect x="103" y="176" width="54" height="20" rx="6" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.5"/><text x="130" y="190" text-anchor="middle" fill="#3fb950" font-size="10.5" font-weight="600">CI/CD</text>
+  <rect x="165" y="176" width="130" height="20" rx="6" fill="#f0883e" opacity="0.14"/><rect x="165" y="176" width="130" height="20" rx="6" fill="none" stroke="#f0883e" stroke-width="1" opacity="0.5"/><text x="230" y="190" text-anchor="middle" fill="#f0883e" font-size="10.5" font-weight="600">Mutation Testing</text>
+  <rect x="303" y="176" width="68" height="20" rx="6" fill="#a371f7" opacity="0.14"/><rect x="303" y="176" width="68" height="20" rx="6" fill="none" stroke="#a371f7" stroke-width="1" opacity="0.5"/><text x="337" y="190" text-anchor="middle" fill="#a371f7" font-size="10.5" font-weight="600">Ed25519</text>
+  <rect x="379" y="176" width="48" height="20" rx="6" fill="#3775A9" opacity="0.14"/><rect x="379" y="176" width="48" height="20" rx="6" fill="none" stroke="#3775A9" stroke-width="1" opacity="0.5"/><text x="403" y="190" text-anchor="middle" fill="#3775A9" font-size="10.5" font-weight="600">PyPI</text>
+  <g aria-label="signature verification">
+    <path d="M798 57.0L806 64.0L827 40.0" fill="none" stroke="#f0883e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M796 38.0H828" stroke="#f0883e" stroke-opacity="0.28"/>
+    <line class="motion" x1="796" y1="38.0" x2="805" y2="38.0" stroke="#f6c69e" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" values="0 0;23 0;0 0" keyTimes="0;0.72;1" dur="3.8s" repeatCount="indefinite"/>
+    </line></g>
+</svg>

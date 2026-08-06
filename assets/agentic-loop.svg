@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 248" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <title id="title">Evidence-driven agent loop</title>
+  <desc id="desc">Context moves through reasoning, tool execution, tests, and proof. Evidence returns to the next decision.</desc>
+  <defs>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="0.72" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="forward" d="M105 116H755"/>
+    <path id="return" d="M755 150C755 205 105 205 105 150"/>
+    <style>
+      .motion { visibility: hidden; }
+      @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }
+    </style>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="857" height="245" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
+  <text x="30" y="34" fill="#7d8998" font-size="10.5" letter-spacing="1.6">HOW THE SYSTEM EARNS TRUST</text>
+  <text x="830" y="34" text-anchor="end" fill="#52606f" font-size="10">evidence feeds the next decision</text>
+
+  <path d="M105 116H755" fill="none" stroke="#263d50" stroke-width="2"/>
+  <path d="M755 150C755 205 105 205 105 150" fill="none" stroke="#213141" stroke-width="1.5" stroke-dasharray="5 7"/>
+
+  <g font-size="11" text-anchor="middle">
+    <g><rect x="55" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="105" y="112" fill="#36bcf7" font-weight="700">CONTEXT</text><text x="105" y="128" fill="#687686" font-size="9">goal + constraints</text></g>
+    <g><rect x="218" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="268" y="112" fill="#d5e3ee" font-weight="700">REASON</text><text x="268" y="128" fill="#687686" font-size="9">choose next move</text></g>
+    <g><rect x="380" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="430" y="112" fill="#d5e3ee" font-weight="700">EXECUTE</text><text x="430" y="128" fill="#687686" font-size="9">tools + changes</text></g>
+    <g><rect x="542" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="592" y="112" fill="#d5e3ee" font-weight="700">VERIFY</text><text x="592" y="128" fill="#687686" font-size="9">tests + review</text></g>
+    <g><rect x="705" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#28643a"/><text x="755" y="112" fill="#3fb950" font-weight="700">PROOF</text><text x="755" y="128" fill="#687686" font-size="9">signed result</text></g>
+  </g>
+
+  <g fill="#36bcf7">
+    <circle cx="181" cy="116" r="2.5"/><circle cx="343" cy="116" r="2.5"/><circle cx="505" cy="116" r="2.5"/><circle cx="668" cy="116" r="2.5"/>
+  </g>
+  <text x="430" y="224" text-anchor="middle" fill="#52606f" font-size="9.5" letter-spacing="1.1">OBSERVE  /  CORRECT  /  CONTINUE</text>
+
+  <g class="motion">
+    <path d="M105 116H755" pathLength="1" fill="none" stroke="url(#flow)" stroke-width="2.5" stroke-dasharray="0.09 0.91" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" values="0;-1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle r="4" fill="#e8f8ff" filter="url(#glow)">
+      <animateMotion dur="5s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1"><mpath href="#forward"/></animateMotion>
+    </circle>
+    <circle r="3" fill="#3fb950" filter="url(#glow)">
+      <animateMotion dur="5s" begin="3.8s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1"><mpath href="#return"/></animateMotion>
+    </circle>
+    <g fill="none" stroke="#36bcf7">
+      <rect x="55" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="1;0;0;0;0;1" keyTimes="0;0.12;0.88;0.94;0.99;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="218" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2;0.3;0.4;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="380" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.42;0.52;0.62;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="542" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.64;0.74;0.84;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="705" y="88" width="100" height="56" rx="10" stroke="#3fb950"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.82;0.9;0.96;1" dur="5s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+</svg>
