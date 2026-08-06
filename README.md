@@ -1,88 +1,124 @@
-<div align="center">
+# Rajveer Vadnal
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/profile-header.svg" alt="Rajveer Vadnal — agentic systems engineer building verifiable agents, local-first AI tools, and developer infrastructure" />
+**Agentic engineer building verification infrastructure, local-first AI systems,
+and developer tools.**
 
-<p>
-  <a href="https://rajveervadnal.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=vercel&logoColor=36BCF7" alt="Portfolio" /></a>
-  <a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/rajveer-vadnal-374664353"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
-</p>
+[Portfolio][portfolio] / [CV][resume] / [LinkedIn][linkedin] / [Email][email]
 
-**Maharashtra, India · Open to agentic-AI, developer-tooling, and applied-AI roles · Available for freelance builds**
+Based in Solapur, India. Studying Artificial Intelligence and Machine Learning
+at SIT Hyderabad. Founder and lead engineer at [neuratile][neuratile], and
+founder of [Visage AI][visage].
 
-</div>
+I build systems where model output is only one part of the product. The
+surrounding work matters more: tool contracts, durable context, deterministic
+checks, privacy boundaries, failure handling, and evidence a reviewer can
+inspect.
 
-## What I do
-
-I build AI systems that must do more than generate plausible output: they need to **use tools, preserve context, expose evidence, and survive verification**.
-
-My work sits at the intersection of agent orchestration, developer infrastructure, local-first AI, and product engineering. I am founder of **[neuratile](https://github.com/neuratile)** and build across Python, TypeScript, and Rust.
-
-> Current focus: verifiable coding agents, MCP infrastructure, local model evaluation, and tools that help engineers understand unfamiliar systems.
+Current focus: coding-agent verification, specialist-model evaluation, MCP
+infrastructure, and local code intelligence.
 
 ## Selected work
 
-<a href="https://github.com/Rajveerx11/proof-of-work"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-proof-of-work.svg" alt="Proof-of-Work — verification gate for AI coding agents with deterministic checks, real test reruns, mutation testing, and signed audit logs" /></a>
+### [Proof-of-Work][proof-of-work]
 
-<a href="https://github.com/Rajveerx11/gfi-scout"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-gfi-scout.svg" alt="GFI Scout — MCP server and CLI that ranks good-first issues by likelihood of contributor success" /></a>
+Verification and evaluation infrastructure for AI coding agents. It re-runs
+real tests, detects deleted or weakened checks and fake passes, then records
+each verdict in a hash-chained, Ed25519-signed audit log.
 
-<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera — local-first AI testing IDE built with Rust, Tauri, React, Tree-sitter, and Ollama" /></a>
+Shipped as a [PyPI package][proof-of-work-pypi] with a CLI, pre-commit hook,
+composite GitHub Action, optional mutation testing, and a versioned 20-task
+agent-evaluation corpus. [Read the evaluation methodology][proof-of-work-eval].
 
-<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-obsidian.svg" alt="Obsidian Graph Intelligence — local knowledge-graph analysis, semantic linking, vault repair, and MCP queries" /></a>
+`Python` `SQLite` `GitHub Actions` `Ed25519` `Mutation testing`
 
-| Project | Signal a reviewer can verify |
-|---|---|
-| **[Proof-of-Work](https://github.com/Rajveerx11/proof-of-work)** | Published Python package; CI, mutation testing, coverage checks, Ed25519-signed audit trail |
-| **[GFI Scout](https://github.com/Rajveerx11/gfi-scout)** | MCP + CLI/TUI; 100+ tests, strict typing, async GitHub API pipeline, community forks |
-| **[Tessera](https://github.com/neuratile/Tessera)** | Local-first Rust/Tauri desktop architecture; structured QA artifacts; optional sandboxed test runner |
-| **[Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence)** | Offline embeddings, graph analytics, multimodal ingestion, explainable edge confidence |
+### [Tessera][tessera]
 
-## Product work
+A local-first AI testing IDE built at neuratile. Tessera parses a codebase with
+Tree-sitter, retrieves relevant context from local SQLite storage, and generates
+schema-validated test plans, test cases, defect reports, and bug reports.
 
-- **[neuratile](https://github.com/neuratile)** — AI-first developer tools. I founded the organization and lead **[Tessera](https://github.com/neuratile/Tessera)**.
-- **[Visage AI](https://getvisageai.online)** — private mobile AI product for previewing cosmetic-procedure outcomes; public product experience, private source.
-- **Master Models** — private specialist-model factory that fine-tunes Qwen3 variants and gates them against a stock 30B baseline.
+Source stays on the machine with the default Ollama setup. Generated tests can
+run in an optional, network-isolated Docker sandbox.
+[View the product][tessera-product].
 
-## Public and selected private projects
+`Rust` `Tauri` `React` `TypeScript` `Tree-sitter` `Ollama` `SQLite`
 
-<div align="center">
+### [Master Models][master-models]
 
-<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Live index of Rajveer Vadnal's public repositories and intentionally disclosed private builds" /></a>
+An open specialist-model experiment testing whether a Qwen3-8B frontend
+specialist can beat its stock base and remain competitive with a stock
+Qwen3-Coder-30B-A3B model on real repository work.
 
-<sub>Public data refreshes from GitHub daily. Private names come from an explicit allowlist; their source remains private.</sub>
+Training uses QLoRA and a frozen 20-task, three-arm gate. Current state: the
+training run is reported complete, while verified GGUF export and the final gate
+remain pending. The repository publishes dataset manifests, notebook hashes,
+templates, status, and a runbook for reproducing or auditing the work.
 
-</div>
+`Qwen3` `QLoRA` `llama.cpp` `Jupyter` `Evaluation`
 
-## Engineering range
+## More systems
 
-| Area | Working set |
-|---|---|
-| **Agent systems** | MCP, tool orchestration, structured outputs, evaluation gates, RAG, local inference |
-| **Languages** | Python, TypeScript/JavaScript, Rust, Kotlin |
-| **Product** | React, Tauri, Flask, Node.js, SQLite, MongoDB, Firebase |
-| **ML / code intelligence** | PyTorch, Transformers.js, Ollama, Tree-sitter, embeddings, graph analysis |
-| **Delivery** | GitHub Actions, automated tests, packaging, release workflows, Vercel, Netlify |
+### Developer infrastructure
+
+- **[Obsidian Graph Intelligence][obsidian].** Analyzes Obsidian vaults as typed
+  knowledge graphs, finds weak links and orphan notes, suggests repairs, and
+  exposes local agent queries. `TypeScript` `Transformers.js` `MCP`
+- **[GFI Scout][gfi-scout].** MCP server, CLI, and TUI that rank good-first
+  issues by contributor success signals instead of label alone.
+  `Python` `FastMCP` `GitHub API` `asyncio`
+- **[RepoGraph Intelligence][repograph].** Builds repository dependency graphs
+  for search, architecture analysis, blast radius, policy gates, drift checks,
+  and agent context. `JavaScript` `Rust` `Tree-sitter` `MCP`
+- **[Unified Memory MCP][unified-memory].** Unifies Claude memory exports,
+  coding-session logs, and Obsidian notes into a local, queryable second brain.
+  `TypeScript` `JSON` `Ollama` `MCP`
+
+### Product and platform work
+
+- **[Agent Skills Portfolio][skills].** Shared, outcome-driven skills for Codex
+  and Claude Code with reusable scripts and verification gates.
+  `Markdown` `JavaScript` `Python`
+- **[Visage AI][visage].** Live mobile product for AI-assisted
+  cosmetic-procedure visualization, with explicit privacy limits and medical
+  disclaimers. Source is private. `TypeScript` `Computer vision` `Mobile AI`
+
+[Browse all public repositories][repositories]
+
+## Engineering focus
+
+- **Agent infrastructure:** MCP servers, tool orchestration, structured outputs,
+  evaluation harnesses, state, and approval boundaries.
+- **Code intelligence:** Tree-sitter, dependency graphs, retrieval, embeddings,
+  semantic search, and change-impact analysis.
+- **Local AI:** Ollama, llama.cpp, on-device embeddings, model fine-tuning,
+  reproducible gates, and explicit cloud boundaries.
+- **Product engineering:** Python, TypeScript, Rust, React, Tauri, SQLite,
+  Docker, automated tests, packaging, and CI.
 
 ## How I work
 
-- **Evidence before claims.** Tests, typed contracts, reproducible checks, and inspectable outputs beat “it seems to work.”
-- **Local-first when privacy matters.** Keep source, embeddings, and user data on-device by default; make cloud boundaries explicit.
-- **Agents as systems, not prompts.** Design the tools, state, failure handling, verification loop, and human approval points around the model.
+- **Evidence before claims.** Tests, typed contracts, reproducible checks, and
+  inspectable outputs beat confidence.
+- **Local-first when privacy matters.** Source, embeddings, and user data stay
+  on-device by default. Cloud boundaries remain explicit.
+- **Agents as systems, not prompts.** Useful agents need tools, state, failure
+  handling, verification, and clear human approval points.
 
-## GitHub footprint
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="Live GitHub statistics: contributions, commits, merged pull requests, stars, followers, repositories, and top languages" />
-
-</div>
-
-## Contact
-
-Building an agentic-AI product, MCP integration, developer tool, or local-first AI workflow? **[Email me](mailto:rajveer11vadnal@gmail.com)** or connect on **[LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353)**.
-
-<div align="center">
-
-<a href="mailto:rajveer11vadnal@gmail.com"><img src="https://img.shields.io/badge/Discuss_a_role_or_build-2ea44f?style=for-the-badge&logo=gmail&logoColor=white" alt="Discuss a role or build" /></a>
-
-</div>
+[email]: mailto:rajveer.r.vadnal@gmail.com
+[gfi-scout]: https://github.com/Rajveerx11/gfi-scout
+[linkedin]: https://www.linkedin.com/in/rajveer-vadnal-374664353
+[master-models]: https://github.com/Rajveerx11/Master-Models
+[neuratile]: https://github.com/neuratile
+[obsidian]: https://github.com/Rajveerx11/obsidian-graph-intelligence
+[portfolio]: https://rajveervadnal.netlify.app/
+[proof-of-work]: https://github.com/Rajveerx11/proof-of-work
+[proof-of-work-eval]: https://github.com/Rajveerx11/proof-of-work/tree/main/reports/v0.2.0
+[proof-of-work-pypi]: https://pypi.org/project/proof-of-work-agent/
+[repograph]: https://github.com/Rajveerx11/repograph-intelligence
+[repositories]: https://github.com/Rajveerx11?tab=repositories
+[resume]: https://rajveervadnal.netlify.app/Rajveer_Vadnal_Resume.pdf
+[skills]: https://github.com/Rajveerx11/skills
+[tessera]: https://github.com/neuratile/Tessera
+[tessera-product]: https://tesseraide.vercel.app/
+[unified-memory]: https://github.com/Rajveerx11/unified-memory-mcp
+[visage]: https://getvisageai.online/
