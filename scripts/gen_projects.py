@@ -11,7 +11,7 @@ import urllib.request
 from pathlib import Path
 
 USER = "Rajveerx11"
-ORGS = ["neuratile"]
+ORGS = ["neuratile", "Government-Polytechnic-Solapur"]
 PRIVATE_MANIFEST = Path("data/private-projects.json")
 
 
@@ -61,11 +61,11 @@ for repo in repositories:
     if full_name in seen:
         continue
     seen.add(full_name)
-    if repo["fork"] or repo["name"].lower() == USER.lower() or repo["size"] == 0 or not repo["language"]:
+    if repo["fork"] or repo["name"].lower() == USER.lower():
         continue
     public.append({
         "name": repo["name"],
-        "language": repo["language"],
+        "language": repo["language"] or "Other",
         "stars": repo["stargazers_count"],
         "private": False,
         "pushed": repo.get("pushed_at") or "",
@@ -76,9 +76,9 @@ public.sort(key=lambda item: (item["stars"], item["pushed"]), reverse=True)
 
 with PRIVATE_MANIFEST.open(encoding="utf-8") as manifest_file:
     private = [
-        {"name": item["name"], "language": item["language"], "stars": 0, "private": True, "pushed": ""}
+        {"name": item["name"], "language": item.get("language") or "Other", "stars": 0, "private": True, "pushed": ""}
         for item in json.load(manifest_file)
-        if item.get("name") and item.get("language")
+        if item.get("name")
     ]
 
 LANG = {

@@ -1,5 +1,4 @@
 [
-  {"name": "Master-Models", "language": "HTML"},
   {"name": "VisageWebsite", "language": "JavaScript"},
   {"name": "outreach-pipeline", "language": "JavaScript"},
   {"name": "portfolio", "language": "TypeScript"},
@@ -9,5 +8,7 @@
   {"name": "tessera-website", "language": "JavaScript"},
   {"name": "secondbrain-dashboard", "language": "TypeScript"},
   {"name": "Email-Server", "language": "JavaScript"},
-  {"name": "Ryzure-App", "language": "JavaScript"}
+  {"name": "Ryzure-App", "language": "JavaScript"},
+  {"name": "badges-forme"},
+  {"name": "Government-Polytechnic-Solapur/website", "language": "JavaScript"}
 ]
