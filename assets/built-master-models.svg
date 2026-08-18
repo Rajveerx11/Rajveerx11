@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 216" role="img" aria-label="Master Models project summary" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <style>.motion { visibility: hidden; } @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }</style>
+  <rect x="1.5" y="1.5" width="857" height="213" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
+  <line x1="18" y1="1.5" x2="842" y2="1.5" stroke="#818cf8" stroke-width="2" opacity="0.55"/>
+  <rect x="30" y="30" width="44" height="44" rx="11" fill="#818cf8" opacity="0.14"/><rect x="30" y="30" width="44" height="44" rx="11" fill="none" stroke="#818cf8" stroke-width="1.5"/><text x="52" y="52.0" text-anchor="middle" dominant-baseline="central" fill="#818cf8" font-size="23" font-weight="700">M</text>
+  <text x="90" y="52.0" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">Master Models</text>
+  <text x="34" y="92" font-size="12.5" fill="#8b949e">An open specialist-model experiment testing whether a Qwen3-8B specialist can beat stock bases on <tspan fill="#e6edf3" font-weight="600">real-world repo work</tspan>.</text>
+  <text x="34" y="114" font-size="12.5" fill="#8b949e">Trained via QLoRA with a frozen 20-task, three-arm benchmark gate. Publishes dataset manifests, notebook hashes,</text>
+  <text x="34" y="136" font-size="12.5" fill="#8b949e">templates, execution status, and a reproducible audit runbook.</text>
+  <text x="34" y="162" font-size="11" fill="#818cf8" font-style="italic">◆ Reproducible 20-task benchmark gate</text>
+  <rect x="34" y="176" width="54" height="20" rx="6" fill="#818cf8" opacity="0.14"/><rect x="34" y="176" width="54" height="20" rx="6" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.5"/><text x="61" y="190" text-anchor="middle" fill="#818cf8" font-size="10.5" font-weight="600">Qwen3</text>
+  <rect x="96" y="176" width="54" height="20" rx="6" fill="#a78bfa" opacity="0.14"/><rect x="96" y="176" width="54" height="20" rx="6" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.5"/><text x="123" y="190" text-anchor="middle" fill="#a78bfa" font-size="10.5" font-weight="600">QLoRA</text>
+  <rect x="158" y="176" width="82" height="20" rx="6" fill="#ff6b9d" opacity="0.14"/><rect x="158" y="176" width="82" height="20" rx="6" fill="none" stroke="#ff6b9d" stroke-width="1" opacity="0.5"/><text x="199" y="190" text-anchor="middle" fill="#ff6b9d" font-size="10.5" font-weight="600">llama.cpp</text>
+  <rect x="248" y="176" width="68" height="20" rx="6" fill="#f37626" opacity="0.14"/><rect x="248" y="176" width="68" height="20" rx="6" fill="none" stroke="#f37626" stroke-width="1" opacity="0.5"/><text x="282" y="190" text-anchor="middle" fill="#f37626" font-size="10.5" font-weight="600">Jupyter</text>
+  <rect x="324" y="176" width="89" height="20" rx="6" fill="#34d399" opacity="0.14"/><rect x="324" y="176" width="89" height="20" rx="6" fill="none" stroke="#34d399" stroke-width="1" opacity="0.5"/><text x="368" y="190" text-anchor="middle" fill="#34d399" font-size="10.5" font-weight="600">Evaluation</text>
+  <g aria-label="specialist model weights">
+    <circle cx="800" cy="43.0" r="3" fill="#818cf8"/><circle cx="800" cy="61.0" r="3" fill="#818cf8"/><circle cx="824" cy="52.0" r="3.5" fill="#818cf8"/>
+    <line x1="800" y1="43.0" x2="824" y2="52.0" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.5"/>
+    <line x1="800" y1="61.0" x2="824" y2="52.0" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle class="motion" r="2.5" fill="#e0e7ff">
+      <animateMotion path="M800 43.0L824 52.0L800 61.0L824 52.0" dur="3.6s" repeatCount="indefinite"/>
+    </circle></g>
+</svg>

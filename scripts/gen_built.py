@@ -9,20 +9,31 @@ def token():
     for k in ("GITHUB_TOKEN", "GH_TOKEN"):
         if os.environ.get(k):
             return os.environ[k]
-    return subprocess.check_output(["gh", "auth", "token"], text=True).strip()
+    try:
+        return subprocess.check_output(["gh", "auth", "token"], text=True).strip()
+    except Exception:
+        return ""
 
 TOK = token()
 
 def stars(full):
-    req = urllib.request.Request(f"https://api.github.com/repos/{full}",
-                                 headers={"Authorization": f"bearer {TOK}"})
-    return json.load(urllib.request.urlopen(req))["stargazerCount" if False else "stargazers_count"]
+    try:
+        headers = {"User-Agent": "built-svg-generator"}
+        if TOK:
+            headers["Authorization"] = f"bearer {TOK}"
+        req = urllib.request.Request(f"https://api.github.com/repos/{full}", headers=headers)
+        return json.load(urllib.request.urlopen(req))["stargazers_count"]
+    except Exception:
+        return 0
 
-LANG = {"TypeScript":"#3178c6","JavaScript":"#f1e05a","React":"#61dafb","Rust":"#dea584",
-        "Transformers.js":"#ff6f00","MCP":"#8b949e","React Flow":"#ff0072","Tree-sitter":"#a9b1d6",
-        "Tauri":"#24c8db","Ollama":"#c9d1d9","Python":"#3572A5","CI/CD":"#3fb950",
-        "Ed25519":"#a371f7","Mutation Testing":"#f0883e","PyPI":"#3775A9","GitHub API":"#e6edf3",
-        "asyncio":"#36bcf7","100+ tests":"#3fb950"}
+LANG = {
+    "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "React": "#61dafb", "Rust": "#dea584",
+    "Transformers.js": "#ff6f00", "MCP": "#38bdf8", "React Flow": "#ff0072", "Tree-sitter": "#a9b1d6",
+    "Tauri": "#24c8db", "Ollama": "#c9d1d9", "Python": "#3572A5", "CI/CD": "#3fb950",
+    "Ed25519": "#a371f7", "Mutation Testing": "#f0883e", "PyPI": "#3775A9", "GitHub API": "#e6edf3",
+    "asyncio": "#36bcf7", "100+ tests": "#3fb950", "Qwen3": "#818cf8", "QLoRA": "#a78bfa",
+    "llama.cpp": "#ff6b9d", "Jupyter": "#f37626", "Evaluation": "#34d399", "FastAPI": "#009688",
+}
 
 # (slug, monogram, accent, repo_url, star_repo, title, desc_lines, tags, note)
 CARDS = [
@@ -32,6 +43,13 @@ CARDS = [
       [("fake passes and coverage drops, then emits a ", 0), ("deterministic verdict", 1), (". Optional mutation testing finds", 0)],
       [("gutted tests; each result is hash-chained and Ed25519-signed. CLI + git hook + GitHub Action.", 0)]],
      ["Python", "CI/CD", "Mutation Testing", "Ed25519", "PyPI"], "Published package: proof-of-work-agent"),
+
+    ("tessera", "T", "#3fb950", "https://github.com/neuratile/Tessera",
+     "neuratile/Tessera", "Tessera",
+     [[("A ", 0), ("local-first", 1), (" AI testing IDE that turns any codebase into a full QA dossier without sending source", 0)],
+      [("to the cloud. Parses with Tree-sitter, embeds via Ollama, generates test plans, cases and defect", 0)],
+      [("reports through versioned prompts with JSON-Schema tool calling, each validated by a ", 0), ("Zod contract", 1), (".", 0)]],
+     ["TypeScript", "Rust", "Tauri", "React", "Ollama"], None),
 
     ("gfi-scout", "G", "#36bcf7", "https://github.com/Rajveerx11/gfi-scout",
      "Rajveerx11/gfi-scout", "GFI Scout",
@@ -50,12 +68,13 @@ CARDS = [
        (" repair engine, and LLM integration via Ollama/OpenAI.", 0)]],
      ["TypeScript", "React", "Transformers.js", "MCP"], None),
 
-    ("tessera", "T", "#3fb950", "https://github.com/neuratile/Tessera",
-     "neuratile/Tessera", "Tessera",
-     [[("A ", 0), ("local-first", 1), (" AI testing IDE that turns any codebase into a full QA dossier without sending source", 0)],
-      [("to the cloud. Parses with Tree-sitter, embeds via Ollama, generates test plans, cases and defect", 0)],
-      [("reports through versioned prompts with JSON-Schema tool calling, each validated by a ", 0), ("Zod contract", 1), (".", 0)]],
-     ["TypeScript", "Rust", "Tauri", "React", "Ollama"], None)
+    ("master-models", "M", "#818cf8", "https://github.com/Rajveerx11/Master-Models",
+     "Rajveerx11/Master-Models", "Master Models",
+     [[("An open specialist-model experiment testing whether a Qwen3-8B specialist can beat stock bases on ", 0),
+       ("real-world repo work", 1), (".", 0)],
+      [("Trained via QLoRA with a frozen 20-task, three-arm benchmark gate. Publishes dataset manifests, notebook hashes,", 0)],
+      [("templates, execution status, and a reproducible audit runbook.", 0)]],
+     ["Qwen3", "QLoRA", "llama.cpp", "Jupyter", "Evaluation"], "Reproducible 20-task benchmark gate")
 ]
 
 def esc(s):
@@ -102,6 +121,14 @@ def verification_glyph(slug, accent, cx, cy):
     <circle class="motion" r="2.5" fill="#d8c4ff">
       <animateMotion path="M{cx-13} {cy+8}L{cx-4} {cy-11}L{cx+14} {cy+5}L{cx-13} {cy+8}" dur="4.2s" repeatCount="indefinite"/>
     </circle></g>'''
+    if slug == "master-models":
+        return f'''<g aria-label="specialist model weights">
+    <circle cx="{cx-12}" cy="{cy-9}" r="3" fill="{accent}"/><circle cx="{cx-12}" cy="{cy+9}" r="3" fill="{accent}"/><circle cx="{cx+12}" cy="{cy}" r="3.5" fill="{accent}"/>
+    <line x1="{cx-12}" y1="{cy-9}" x2="{cx+12}" y2="{cy}" stroke="{accent}" stroke-opacity="0.4" stroke-width="1.5"/>
+    <line x1="{cx-12}" y1="{cy+9}" x2="{cx+12}" y2="{cy}" stroke="{accent}" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle class="motion" r="2.5" fill="#e0e7ff">
+      <animateMotion path="M{cx-12} {cy-9}L{cx+12} {cy}L{cx-12} {cy+9}L{cx+12} {cy}" dur="3.6s" repeatCount="indefinite"/>
+    </circle></g>'''
     return f'''<g aria-label="local test matrix">
     <rect x="{cx-14}" y="{cy-14}" width="11" height="11" rx="2" fill="{accent}" fill-opacity="0.22" stroke="{accent}"/>
     <rect x="{cx+3}" y="{cy-14}" width="11" height="11" rx="2" fill="{accent}" fill-opacity="0.12" stroke="{accent}"/>
@@ -125,23 +152,22 @@ for slug, mono, accent, url, starrepo, title, lines, tags, note in CARDS:
     # panel + quiet project accent
     parts.append(f'<rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>')
     parts.append(f'<line x1="18" y1="1.5" x2="842" y2="1.5" stroke="{accent}" stroke-width="2" opacity="0.55"/>')
-    # monogram tile — everything in the header row is centred on the tile's
-    # vertical centre (cy) so the box never looks dropped next to the title
+    # monogram tile
     tile = 44
     ty = 30
-    cy = ty + tile / 2                       # 52
+    cy = ty + tile / 2
     parts.append(f'<rect x="30" y="{ty}" width="{tile}" height="{tile}" rx="11" fill="{accent}" opacity="0.14"/>'
                  f'<rect x="30" y="{ty}" width="{tile}" height="{tile}" rx="11" fill="none" stroke="{accent}" stroke-width="1.5"/>'
                  f'<text x="52" y="{cy}" text-anchor="middle" dominant-baseline="central" fill="{accent}" font-size="23" font-weight="700">{mono}</text>')
-    # title, baseline-aligned to the tile centre
+    # title
     parts.append(f'<text x="90" y="{cy}" dominant-baseline="central" fill="#e6edf3" font-size="18" font-weight="700">{esc(title)}</text>')
     bx = round(90 + len(title) * 10.4 + 14)
-    chip_y = round(cy - 10)                   # 20px-tall chip centred on cy
+    chip_y = round(cy - 10)
     # org pill (Tessera only)
     if slug == "tessera":
         s, w = chip(bx, chip_y, "neuratile", "#a371f7"); parts.append(s); bx += w + 6
         s, w = chip(bx, chip_y, "founder", "#a371f7"); parts.append(s); bx += w + 6
-    # star chip (skip when zero — a live "0" is negative signal)
+    # star chip
     if sc > 0:
         s, w = chip(bx, chip_y, f"★ {sc}", "#e3b341"); parts.append(s)
     # description
@@ -153,7 +179,7 @@ for slug, mono, accent, url, starrepo, title, lines, tags, note in CARDS:
     tx = 34
     for t in tags:
         s, w = chip(tx, tags_y, t, LANG.get(t, "#8b949e")); parts.append(s); tx += w + 8
-    # Motion metaphor tied to each project's verification story.
+    # Motion mark
     parts.append(verification_glyph(slug, accent, W-48, cy))
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '

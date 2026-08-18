@@ -1,60 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 248" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
-  <title id="title">Evidence-driven agent loop</title>
-  <desc id="desc">Context moves through reasoning, tool execution, tests, and proof. Evidence returns to the next decision.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
+  <title id="title">Closed-Loop Agent Execution Architecture</title>
+  <desc id="desc">How Rajveer architects verifiable AI agents: Context, Reasoning, Tool Execution, Verification, and Signed Proof with deterministic feedback.</desc>
   <defs>
-    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#36bcf7"/>
-      <stop offset="0.72" stop-color="#7dd3fc"/>
-      <stop offset="1" stop-color="#3fb950"/>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="50%" stop-color="#0c131f"/>
+      <stop offset="100%" stop-color="#080c14"/>
     </linearGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <linearGradient id="flowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#818cf8"/>
+      <stop offset="70%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <linearGradient id="returnGrad" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <path id="forward" d="M105 116H755"/>
-    <path id="return" d="M755 150C755 205 105 205 105 150"/>
+
+    <path id="forwardPath" d="M95 125 H765"/>
+    <path id="returnPath" d="M765 160 C765 220 95 220 95 160"/>
+
     <style>
       .motion { visibility: hidden; }
-      @media (prefers-reduced-motion: no-preference) { .motion { visibility: visible; } }
+      @media (prefers-reduced-motion: no-preference) { 
+        .motion { visibility: visible; } 
+      }
     </style>
   </defs>
 
-  <rect x="1.5" y="1.5" width="857" height="245" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
-  <text x="30" y="34" fill="#7d8998" font-size="10.5" letter-spacing="1.6">HOW THE SYSTEM EARNS TRUST</text>
-  <text x="830" y="34" text-anchor="end" fill="#52606f" font-size="10">evidence feeds the next decision</text>
+  <!-- Container Box -->
+  <rect x="1.5" y="1.5" width="857" height="257" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
 
-  <path d="M105 116H755" fill="none" stroke="#263d50" stroke-width="2"/>
-  <path d="M755 150C755 205 105 205 105 150" fill="none" stroke="#213141" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <!-- Top Title Header -->
+  <text x="32" y="32" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1.5">
+    ✦ CLOSED-LOOP AGENT EXECUTION ARCHITECTURE
+  </text>
+  <text x="828" y="32" text-anchor="end" fill="#64748b" font-size="10.5" letter-spacing="0.5">
+    Deterministic gates • Closed-loop feedback
+  </text>
+  <line x1="1.5" y1="44" x2="858.5" y2="44" stroke="#1e293b" stroke-width="1"/>
 
-  <g font-size="11" text-anchor="middle">
-    <g><rect x="55" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="105" y="112" fill="#36bcf7" font-weight="700">CONTEXT</text><text x="105" y="128" fill="#687686" font-size="9">goal + constraints</text></g>
-    <g><rect x="218" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="268" y="112" fill="#d5e3ee" font-weight="700">REASON</text><text x="268" y="128" fill="#687686" font-size="9">choose next move</text></g>
-    <g><rect x="380" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="430" y="112" fill="#d5e3ee" font-weight="700">EXECUTE</text><text x="430" y="128" fill="#687686" font-size="9">tools + changes</text></g>
-    <g><rect x="542" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#2b4b62"/><text x="592" y="112" fill="#d5e3ee" font-weight="700">VERIFY</text><text x="592" y="128" fill="#687686" font-size="9">tests + review</text></g>
-    <g><rect x="705" y="88" width="100" height="56" rx="10" fill="#0a1017" stroke="#28643a"/><text x="755" y="112" fill="#3fb950" font-weight="700">PROOF</text><text x="755" y="128" fill="#687686" font-size="9">signed result</text></g>
+  <!-- Primary Connectors -->
+  <path d="M95 125 H765" fill="none" stroke="#1e2d42" stroke-width="2"/>
+  <path d="M765 158 C765 218 95 218 95 158" fill="none" stroke="#1e2d42" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- Feedback Loop Label -->
+  <rect x="330" y="206" width="200" height="22" rx="11" fill="#080e18" stroke="#1e2d42" stroke-width="1"/>
+  <text x="430" y="221" text-anchor="middle" fill="#94a3b8" font-size="9.5" font-weight="600" letter-spacing="1">
+    ↺ EVIDENCE &amp; STATE FEEDBACK
+  </text>
+
+  <!-- ================= 5 AGENT STAGES ================= -->
+  <!-- Stage 1: CONTEXT -->
+  <g transform="translate(35, 92)">
+    <rect x="0" y="0" width="120" height="66" rx="12" fill="#0d1829" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="0.8">1. CONTEXT</text>
+    <text x="60" y="42" text-anchor="middle" fill="#cbd5e1" font-size="9.5">AST &amp; Retrieval</text>
+    <text x="60" y="55" text-anchor="middle" fill="#64748b" font-size="8.5">Tree-sitter / State</text>
   </g>
 
-  <g fill="#36bcf7">
-    <circle cx="181" cy="116" r="2.5"/><circle cx="343" cy="116" r="2.5"/><circle cx="505" cy="116" r="2.5"/><circle cx="668" cy="116" r="2.5"/>
+  <!-- Stage 2: REASON -->
+  <g transform="translate(202, 92)">
+    <rect x="0" y="0" width="120" height="66" rx="12" fill="#0d1829" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#a5b4fc" font-size="12" font-weight="700" letter-spacing="0.8">2. REASON</text>
+    <text x="60" y="42" text-anchor="middle" fill="#cbd5e1" font-size="9.5">Task Decompose</text>
+    <text x="60" y="55" text-anchor="middle" fill="#64748b" font-size="8.5">Specialist LLMs</text>
   </g>
-  <text x="430" y="224" text-anchor="middle" fill="#52606f" font-size="9.5" letter-spacing="1.1">OBSERVE  /  CORRECT  /  CONTINUE</text>
 
+  <!-- Stage 3: EXECUTE -->
+  <g transform="translate(370, 92)">
+    <rect x="0" y="0" width="120" height="66" rx="12" fill="#0d1829" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="0.8">3. EXECUTE</text>
+    <text x="60" y="42" text-anchor="middle" fill="#cbd5e1" font-size="9.5">MCP Protocol</text>
+    <text x="60" y="55" text-anchor="middle" fill="#64748b" font-size="8.5">Isolated Sandbox</text>
+  </g>
+
+  <!-- Stage 4: VERIFY -->
+  <g transform="translate(538, 92)">
+    <rect x="0" y="0" width="120" height="66" rx="12" fill="#0d1829" stroke="#059669" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700" letter-spacing="0.8">4. VERIFY</text>
+    <text x="60" y="42" text-anchor="middle" fill="#cbd5e1" font-size="9.5">Real Test Reruns</text>
+    <text x="60" y="55" text-anchor="middle" fill="#64748b" font-size="8.5">Mutation Gates</text>
+  </g>
+
+  <!-- Stage 5: PROOF -->
+  <g transform="translate(705, 92)">
+    <rect x="0" y="0" width="120" height="66" rx="12" fill="#0d1829" stroke="#10b981" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#10b981" font-size="12" font-weight="700" letter-spacing="0.8">5. PROOF</text>
+    <text x="60" y="42" text-anchor="middle" fill="#cbd5e1" font-size="9.5">Signed Verdict</text>
+    <text x="60" y="55" text-anchor="middle" fill="#64748b" font-size="8.5">Ed25519 Hash Log</text>
+  </g>
+
+  <!-- Static Stage Connector Dots -->
+  <g fill="#38bdf8">
+    <circle cx="178" cy="125" r="3.5"/>
+    <circle cx="346" cy="125" r="3.5"/>
+    <circle cx="514" cy="125" r="3.5"/>
+    <circle cx="682" cy="125" r="3.5"/>
+  </g>
+
+  <!-- ================= ANIMATED FLOW TRACE ================= -->
   <g class="motion">
-    <path d="M105 116H755" pathLength="1" fill="none" stroke="url(#flow)" stroke-width="2.5" stroke-dasharray="0.09 0.91" stroke-linecap="round">
-      <animate attributeName="stroke-dashoffset" values="0;-1" dur="5s" repeatCount="indefinite"/>
+    <!-- Forward Stream Beam -->
+    <path d="M95 125 H765" pathLength="1" fill="none" stroke="url(#flowGrad)" stroke-width="2.5" stroke-dasharray="0.12 0.88" stroke-linecap="round" filter="url(#nodeGlow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1" dur="4.5s" repeatCount="indefinite"/>
     </path>
-    <circle r="4" fill="#e8f8ff" filter="url(#glow)">
-      <animateMotion dur="5s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1"><mpath href="#forward"/></animateMotion>
+
+    <!-- Forward Pulse Particle -->
+    <circle r="4" fill="#f0f9ff" filter="url(#nodeGlow)">
+      <animateMotion dur="4.5s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1">
+        <mpath href="#forwardPath"/>
+      </animateMotion>
     </circle>
-    <circle r="3" fill="#3fb950" filter="url(#glow)">
-      <animateMotion dur="5s" begin="3.8s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1"><mpath href="#return"/></animateMotion>
+
+    <!-- Return Feedback Particle -->
+    <circle r="3.5" fill="#34d399" filter="url(#nodeGlow)">
+      <animateMotion dur="4.5s" begin="3.2s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines="0.4 0 0.2 1">
+        <mpath href="#returnPath"/>
+      </animateMotion>
     </circle>
-    <g fill="none" stroke="#36bcf7">
-      <rect x="55" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="1;0;0;0;0;1" keyTimes="0;0.12;0.88;0.94;0.99;1" dur="5s" repeatCount="indefinite"/></rect>
-      <rect x="218" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2;0.3;0.4;1" dur="5s" repeatCount="indefinite"/></rect>
-      <rect x="380" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.42;0.52;0.62;1" dur="5s" repeatCount="indefinite"/></rect>
-      <rect x="542" y="88" width="100" height="56" rx="10"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.64;0.74;0.84;1" dur="5s" repeatCount="indefinite"/></rect>
-      <rect x="705" y="88" width="100" height="56" rx="10" stroke="#3fb950"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.82;0.9;0.96;1" dur="5s" repeatCount="indefinite"/></rect>
+
+    <!-- Pulsing Node Active Highlights -->
+    <g fill="none">
+      <rect x="35" y="92" width="120" height="66" rx="12" stroke="#38bdf8" stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0;0;0;0;1" keyTimes="0;0.15;0.85;0.92;0.98;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="202" y="92" width="120" height="66" rx="12" stroke="#818cf8" stroke-width="1.5">
+        <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.18;0.32;0.45;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="370" y="92" width="120" height="66" rx="12" stroke="#38bdf8" stroke-width="1.5">
+        <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.40;0.54;0.66;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="538" y="92" width="120" height="66" rx="12" stroke="#34d399" stroke-width="1.5">
+        <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.60;0.74;0.86;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="705" y="92" width="120" height="66" rx="12" stroke="#10b981" stroke-width="1.5">
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.78;0.88;0.96;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
     </g>
   </g>
 </svg>

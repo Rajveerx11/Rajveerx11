@@ -1,139 +1,174 @@
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/profile-header.svg" alt="Rajveer Vadnal, agentic systems engineer building verifiable agents, local-first AI tools, and developer infrastructure" />
+<img width="100%" src="assets/profile-header.svg" alt="Rajveer Vadnal — Agentic AI Systems Engineer building verifiable agents, MCP infrastructure, and local-first AI tools" />
+
+<br/>
+
+[![Resume / CV](https://img.shields.io/badge/💼_View_CV-Rajveer_Vadnal-0d1117?style=for-the-badge&logo=googledocs&logoColor=38bdf8&labelColor=0d1117&color=1e293b)][resume]
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-rajveervadnal.netlify.app-0d1117?style=for-the-badge&logo=googlechrome&logoColor=34d399&labelColor=0d1117&color=1e293b)][portfolio]
+[![PyPI Package](https://img.shields.io/badge/📦_PyPI-proof--of--work--agent-0d1117?style=for-the-badge&logo=pypi&logoColor=f0883e&labelColor=0d1117&color=1e293b)][proof-of-work-pypi]
+[![LinkedIn](https://img.shields.io/badge/👔_LinkedIn-rajveer--vadnal-0d1117?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=0d1117&color=1e293b)][linkedin]
+[![Email](https://img.shields.io/badge/📫_Email-rajveer.r.vadnal@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0d1117&color=1e293b)][email]
+
+<br/>
+
+### 🤖 **Agentic AI Systems Engineer** • Autonomous Loops • MCP Infrastructure • Verifiable Execution
 
 </div>
 
-**Agentic engineer building verification infrastructure, local-first AI systems,
-and developer tools.**
+---
 
-[Portfolio][portfolio] / [CV][resume] / [LinkedIn][linkedin] / [Email][email]
+### ⚡ Executive Summary
 
-Based in Solapur, India. Studying Artificial Intelligence and Machine Learning
-at SIT Hyderabad. Founder and lead engineer at [neuratile][neuratile], and
-founder of [Visage AI][visage].
+I build **autonomous agent architectures** and **local-first AI systems** where raw model generation is only one component of the pipeline. The real engineering moat lies in what surrounds the LLM: **strict tool contracts (Model Context Protocol), deterministic test verification gates, local AST code intelligence, and cryptographically signed audit trails.**
 
-I build systems where model output is only one part of the product. The
-surrounding work matters more: tool contracts, durable context, deterministic
-checks, privacy boundaries, failure handling, and evidence a reviewer can
-inspect.
+- 📍 **Based in:** Solapur / Hyderabad, India • Studying Artificial Intelligence & Machine Learning at SIT Hyderabad.
+- 🚀 **Roles & Leadership:** Founder & Lead Systems Engineer at [neuratile][neuratile] • Founder of [Visage AI][visage].
+- 🎯 **Current Focus:** Coding-agent verification harnesses, Model Context Protocol (MCP) servers, specialist-model fine-tuning (QLoRA), and local AST graph retrieval.
 
-Current focus: coding-agent verification, specialist-model evaluation, MCP
-infrastructure, and local code intelligence.
+---
 
-## Selected work
-
-### [Proof-of-Work][proof-of-work]
-
-<a href="https://github.com/Rajveerx11/proof-of-work"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-proof-of-work.svg" alt="Proof-of-Work, verification gate for AI coding agents with deterministic checks, real test reruns, mutation testing, and signed audit logs" /></a>
-
-Verification and evaluation infrastructure for AI coding agents. It re-runs
-real tests, detects deleted or weakened checks and fake passes, then records
-each verdict in a hash-chained, Ed25519-signed audit log.
-
-Shipped as a [PyPI package][proof-of-work-pypi] with a CLI, pre-commit hook,
-composite GitHub Action, optional mutation testing, and a versioned 20-task
-agent-evaluation corpus. [Read the evaluation methodology][proof-of-work-eval].
-
-`Python` `SQLite` `GitHub Actions` `Ed25519` `Mutation testing`
-
-### [Tessera][tessera]
-
-<a href="https://github.com/neuratile/Tessera"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/built-tessera.svg" alt="Tessera, local-first AI testing IDE built with Rust, Tauri, React, Tree-sitter, and Ollama" /></a>
-
-A local-first AI testing IDE built at neuratile. Tessera parses a codebase with
-Tree-sitter, retrieves relevant context from local SQLite storage, and generates
-schema-validated test plans, test cases, defect reports, and bug reports.
-
-Source stays on the machine with the default Ollama setup. Generated tests can
-run in an optional, network-isolated Docker sandbox.
-[View the product][tessera-product].
-
-`Rust` `Tauri` `React` `TypeScript` `Tree-sitter` `Ollama` `SQLite`
-
-### [Master Models][master-models]
-
-An open specialist-model experiment testing whether a Qwen3-8B frontend
-specialist can beat its stock base and remain competitive with a stock
-Qwen3-Coder-30B-A3B model on real repository work.
-
-Training uses QLoRA and a frozen 20-task, three-arm gate. Current state: the
-training run is reported complete, while verified GGUF export and the final gate
-remain pending. The repository publishes dataset manifests, notebook hashes,
-templates, status, and a runbook for reproducing or auditing the work.
-
-`Qwen3` `QLoRA` `llama.cpp` `Jupyter` `Evaluation`
-
-## More systems
-
-### Developer infrastructure
-
-- **[Obsidian Graph Intelligence][obsidian].** Analyzes Obsidian vaults as typed
-  knowledge graphs, finds weak links and orphan notes, suggests repairs, and
-  exposes local agent queries. `TypeScript` `Transformers.js` `MCP`
-- **[GFI Scout][gfi-scout].** MCP server, CLI, and TUI that rank good-first
-  issues by contributor success signals instead of label alone.
-  `Python` `FastMCP` `GitHub API` `asyncio`
-- **[RepoGraph Intelligence][repograph].** Builds repository dependency graphs
-  for search, architecture analysis, blast radius, policy gates, drift checks,
-  and agent context. `JavaScript` `Rust` `Tree-sitter` `MCP`
-- **[Unified Memory MCP][unified-memory].** Unifies Claude memory exports,
-  coding-session logs, and Obsidian notes into a local, queryable second brain.
-  `TypeScript` `JSON` `Ollama` `MCP`
-
-### Product and platform work
-
-- **[Agent Skills Portfolio][skills].** Shared, outcome-driven skills for Codex
-  and Claude Code with reusable scripts and verification gates.
-  `Markdown` `JavaScript` `Python`
-- **[Visage AI][visage].** Live mobile product for AI-assisted
-  cosmetic-procedure visualization, with explicit privacy limits and medical
-  disclaimers. Source is private. `TypeScript` `Computer vision` `Mobile AI`
-
-## Project index
+### 🏛️ Core Agentic Engineering Capabilities
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/project-index.svg" alt="Live index of Rajveer Vadnal's public repositories and intentionally disclosed private builds" /></a>
-
-<sub>Public data refreshes from GitHub daily. Private names come from an explicit allowlist; their source remains private.</sub>
+| Capability | What I Architect & Deliver | Core Stack & Technologies |
+| :--- | :--- | :--- |
+| **🤖 Autonomous Agent Loops** | State machines, recursive task decomposition, tool orchestration, loop recovery, and human-in-the-loop approval boundaries. | `FastMCP` `Python` `asyncio` `Tool Calling` |
+| **🔌 Model Context Protocol (MCP)** | High-performance custom MCP servers exposing AST parsing, repo dependency graphs, and multi-source memory to LLMs. | `MCP Protocol` `TypeScript` `Python` `JSON-RPC` |
+| **🛡️ Deterministic Verification & Evals** | Real-time test re-runs, mutation testing to catch gutted checks, hallucination filters, and Ed25519-signed verification logs. | `Proof-of-Work` `pytest` `Ed25519` `CI/CD` |
+| **🧠 Local LLMs & Specialist Tuning** | Fine-tuning small open models on curated task distributions, GGUF export, and frozen multi-arm benchmark evaluations. | `Qwen3` `QLoRA` `llama.cpp` `Ollama` |
+| **🔒 Local-First AI & Sandboxes** | Privacy-preserving AI tooling running on-device with network-isolated Docker execution environments and SQLite context. | `Rust` `Tauri` `Tree-sitter` `Docker` |
+| **⚡ Systems & Product Engineering** | End-to-end production software: native desktop apps, published PyPI packages, typed API services, and CI/CD gates. | `Rust` `Python` `TypeScript` `React` `Tauri` |
 
 </div>
 
-## Engineering focus
+---
 
-- **Agent infrastructure:** MCP servers, tool orchestration, structured outputs,
-  evaluation harnesses, state, and approval boundaries.
-- **Code intelligence:** Tree-sitter, dependency graphs, retrieval, embeddings,
-  semantic search, and change-impact analysis.
-- **Local AI:** Ollama, llama.cpp, on-device embeddings, model fine-tuning,
-  reproducible gates, and explicit cloud boundaries.
-- **Product engineering:** Python, TypeScript, Rust, React, Tauri, SQLite,
-  Docker, automated tests, packaging, and CI.
+### 🏆 Flagship Agentic & AI Systems
 
-## How I work
+#### 1. [Proof-of-Work][proof-of-work] — *Verification Gate for AI Coding Agents*
+<a href="https://github.com/Rajveerx11/proof-of-work"><img width="100%" src="assets/built-proof-of-work.svg" alt="Proof-of-Work project summary card" /></a>
+
+- **Problem:** AI coding agents frequently hallucinate passes, delete or weaken test assertions, and fake test coverage.
+- **Solution:** A deterministic verification gate that intercepts agent commits, re-executes real test suites in isolation, runs optional mutation testing, and writes hash-chained, Ed25519-signed audit logs.
+- **Distribution:** Published on [PyPI as `proof-of-work-agent`][proof-of-work-pypi] with CLI, pre-commit hooks, and a composite GitHub Action.
+- `Python` `SQLite` `GitHub Actions` `Ed25519` `Mutation Testing` `PyPI`
+
+---
+
+#### 2. [Tessera][tessera] — *Local-First AI Testing IDE*
+<a href="https://github.com/neuratile/Tessera"><img width="100%" src="assets/built-tessera.svg" alt="Tessera project summary card" /></a>
+
+- **Problem:** Cloud-reliant AI developer tools leak proprietary source code and struggle with full-project structural context.
+- **Solution:** A desktop AI testing IDE built at neuratile. Tessera parses codebases using Tree-sitter, performs local vector retrieval, and generates schema-validated test plans, defect reports, and bug dossiers with zero cloud leakage.
+- **Live Product:** [tesseraide.vercel.app][tessera-product] with optional Docker network-isolated test sandboxing.
+- `Rust` `Tauri` `React` `TypeScript` `Tree-sitter` `Ollama` `SQLite`
+
+---
+
+#### 3. [GFI Scout][gfi-scout] — *AI Contributor Intelligence & MCP Server*
+<a href="https://github.com/Rajveerx11/gfi-scout"><img width="100%" src="assets/built-gfi-scout.svg" alt="GFI Scout project summary card" /></a>
+
+- **Problem:** Static "good first issue" labels are often stale, abandoned, or require complex unstated setup requirements.
+- **Solution:** An asynchronous MCP server + CLI + TUI ranking GitHub issues by actual contributor success probability, repository health velocity, maintainer response time, and setup friction.
+- `Python` `FastMCP` `GitHub API` `asyncio` `Rich TUI` `100+ Tests`
+
+---
+
+#### 4. [Obsidian Graph Intelligence][obsidian] — *Offline Neural Knowledge Graph & MCP*
+<a href="https://github.com/Rajveerx11/obsidian-graph-intelligence"><img width="100%" src="assets/built-obsidian.svg" alt="Obsidian Graph Intelligence project summary card" /></a>
+
+- **Problem:** Personal knowledge vaults accumulate orphan nodes, broken associations, and lack agentic querying.
+- **Solution:** An Obsidian plugin and MCP server treating markdown vaults as typed knowledge graphs. Uses local Transformers.js embeddings for orphan discovery, automated semantic linking, and unified agent memory.
+- `TypeScript` `React` `Transformers.js` `MCP` `Ollama`
+
+---
+
+#### 5. [Master Models][master-models] — *Specialist QLoRA Fine-Tuning for Coding Agents*
+<a href="https://github.com/Rajveerx11/Master-Models"><img width="100%" src="assets/built-master-models.svg" alt="Master Models project summary card" /></a>
+
+- **Problem:** General frontier models are expensive and slow for targeted coding-agent subtasks (e.g. frontend/component drafting).
+- **Solution:** Open specialist-model experiment fine-tuning Qwen3-8B with QLoRA to rival larger models on real repository workflows, evaluated against a frozen 20-task, three-arm benchmark gate.
+- `Qwen3` `QLoRA` `llama.cpp` `Jupyter` `Evaluation Harness`
+
+---
+
+### 🧩 More Specialized Systems
+
+- 🌐 **[RepoGraph Intelligence][repograph]** — Builds repository dependency graphs for semantic blast-radius analysis, drift detection, and agent context. `JavaScript` `Rust` `Tree-sitter` `MCP`
+- 🧠 **[Unified Memory MCP][unified-memory]** — Connects Claude session logs, coding transcripts, and Obsidian vaults into a queryable second brain. `TypeScript` `Ollama` `MCP`
+- 🛠️ **[Agent Skills Portfolio][skills]** — Production skill modules for Codex and Claude Code with deterministic evaluation hooks. `Markdown` `Python` `JavaScript`
+- 📱 **[Visage AI][visage]** — Live mobile platform for AI cosmetic visualization with strict privacy guarantees. `TypeScript` `Computer Vision` `Mobile AI`
+
+---
+
+### 🔄 How I Architect Autonomous Agents
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/agentic-loop.svg" alt="Evidence-driven agent loop: context, reason, execute, verify, proof, then feed evidence into the next decision" />
+<img width="100%" src="assets/agentic-loop.svg" alt="Closed-loop agent execution architecture diagram" />
 
 </div>
 
-- **Evidence before claims.** Tests, typed contracts, reproducible checks, and
-  inspectable outputs beat confidence.
-- **Local-first when privacy matters.** Source, embeddings, and user data stay
-  on-device by default. Cloud boundaries remain explicit.
-- **Agents as systems, not prompts.** Useful agents need tools, state, failure
-  handling, verification, and clear human approval points.
+1. **Deterministic Verification Over Probabilistic Trust:** Language models generate hypotheses; tests, compilers, mutation runs, and linters establish ground truth.
+2. **Local-First & Privacy Boundaries:** Keep sensitive context, AST indexes, and embeddings on-device. Expose cloud boundaries only through explicit user consent.
+3. **Structured Schemas & Strict Tool Contracts:** Every agent tool must possess a typed JSON schema, fail-safe recovery paths, and transparent state transitions.
 
-## GitHub footprint
+---
+
+### 🛠️ Technical Arsenal
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Rajveerx11/Rajveerx11/main/assets/github-stats.svg" alt="Live GitHub statistics: contributions, commits, merged pull requests, stars, followers, repositories, and top languages" />
+| Category | Technologies, Frameworks & Tooling |
+| :--- | :--- |
+| **Agent Protocols & Orchestration** | `Model Context Protocol (MCP)` `FastMCP` `Tool Calling` `Agent Loops` `Zod Contracts` `JSON-Schema` |
+| **Models & Local Runtimes** | `Claude 3.7 / 3.5 Sonnet` `GPT-4o` `Qwen-2.5 / 3` `Ollama` `llama.cpp` `Transformers.js` `Hugging Face` |
+| **Code Intelligence & Parsing** | `Tree-sitter AST` `Vector Embeddings` `Dependency Graph Analysis` `Semantic Search` `SQLite` |
+| **Languages & Core Frameworks** | `Python (FastAPI, asyncio, pytest)` `Rust` `TypeScript` `JavaScript` `React` `Tauri` `Next.js` |
+| **Verification, Security & DevOps** | `Ed25519 Cryptography` `Mutation Testing` `Docker Sandbox` `GitHub Actions` `PyPI Packaging` |
 
 </div>
 
+---
+
+### 📂 Repository & Project Footprint
+
+<div align="center">
+
+<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="assets/project-index.svg" alt="Live project index" /></a>
+
+<sub>Auto-indexed from GitHub API. Intentionally disclosed private projects loaded via secure allowlist.</sub>
+
+</div>
+
+---
+
+### 📊 GitHub Activity & Metrics
+
+<div align="center">
+
+<img width="100%" src="assets/github-stats.svg" alt="Live GitHub statistics" />
+
+</div>
+
+---
+
+### 🤝 Let's Connect & Build Together
+
+I am actively exploring **full-time Agentic AI / AI Systems Engineering roles, research collaborations, and technical partnerships.** If you're building next-generation agent infrastructure, let's talk.
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-rajveer.r.vadnal%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0d1117&color=1e293b)][email]
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rajveer_Vadnal-0d1117?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=0d1117&color=1e293b)][linkedin]
+[![Portfolio](https://img.shields.io/badge/Website-rajveervadnal.netlify.app-0d1117?style=for-the-badge&logo=googlechrome&logoColor=34d399&labelColor=0d1117&color=1e293b)][portfolio]
+[![Resume PDF](https://img.shields.io/badge/Resume-Download_PDF-0d1117?style=for-the-badge&logo=adobeacrobatreader&logoColor=e11d48&labelColor=0d1117&color=1e293b)][resume]
+
+</div>
+
+<!-- Reference Links -->
 [email]: mailto:rajveer.r.vadnal@gmail.com
 [gfi-scout]: https://github.com/Rajveerx11/gfi-scout
 [linkedin]: https://www.linkedin.com/in/rajveer-vadnal-374664353
