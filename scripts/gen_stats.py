@@ -29,7 +29,6 @@ query($login: String!) {
   user(login: $login) {
     createdAt
     followers { totalCount }
-    pullRequests(states: MERGED) { totalCount }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
       totalCount
       nodes {
@@ -40,7 +39,12 @@ query($login: String!) {
   }
 }""", {"login": USER})["user"]
 
-merged = u["pullRequests"]["totalCount"]
+# Explicit public filter keeps local owner tokens and CI scoped tokens consistent.
+merged = gql("""
+query($query: String!) {
+  search(query: $query, type: ISSUE) { issueCount }
+}
+""", {"query": f"author:{USER} is:pr is:merged is:public"})["search"]["issueCount"]
 followers = u["followers"]["totalCount"]
 repos = u["repositories"]["totalCount"]
 stars = sum(n["stargazerCount"] for n in u["repositories"]["nodes"])
