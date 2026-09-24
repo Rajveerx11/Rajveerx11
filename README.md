@@ -10,18 +10,23 @@
   <a href="https://github.com/Rajveerx11?tab=repositories"><img src="https://img.shields.io/badge/Repositories-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
 </p>
 
-**Diploma completed · Entering AI & ML at SIT Hyderabad (direct second-year admission) · Solapur / Hyderabad, India**<br />
-**Founder at [neuratile](https://github.com/neuratile) · Open to AI & Agentic Engineering opportunities**
+**Education:** Diploma in Computer Science Engineering · B.Tech in Artificial Intelligence & Machine Learning
 
 </div>
 
 ## What I do
 
-I build AI systems that must do more than generate plausible output: they need to **use tools, preserve context, expose evidence, and survive verification**.
+I build coding tools and local-first AI products. My recent work covers test verification, MCP integrations, and tools for exploring codebases. I work mainly in Python, TypeScript, and Rust.
 
-My work sits at the intersection of agent orchestration, developer infrastructure, local-first AI, and product engineering. I build across Python, TypeScript, and Rust.
+## Where I work
 
-> **Current focus**: Verifiable coding agents, MCP infrastructure, local model evaluation, and tools that help engineers understand unfamiliar systems.
+<div align="center">
+
+<img width="100%" src="assets/experience.svg" alt="Founder at neuratile, building developer tools including Tessera; founder of Visage AI, an aesthetic outcome preview product" />
+
+[neuratile](https://github.com/neuratile) · [Visage AI](https://getvisageai.online/)
+
+</div>
 
 ## Selected work
 
@@ -81,14 +86,16 @@ Local-first knowledge-graph analysis, offline neural embeddings, and vault repai
 
 ---
 
-### Reviewer verification matrix
+### More projects
 
-| System | Primary architecture | Verified evidence & reviewer signals |
-|---|---|---|
-| **[Proof-of-Work](https://github.com/Rajveerx11/proof-of-work)** | Python · CI/CD · SQLite · Ed25519 | **[Published on PyPI](https://pypi.org/project/proof-of-work-agent/)** (`proof-of-work-agent`). Evaluated on **[60 runs across 3 agent configs on 20 tasks](https://github.com/Rajveerx11/proof-of-work/tree/main/reports/2026-08-11-multi-agent)** (Codex 20/20, Copilot 20/20, OpenCode 17/20). Catches deleted/weakened tests via `mutmut` mutation testing. Emits hash-chained SQLite audit logs with Ed25519 DSSE signatures. |
-| **[GFI Scout](https://github.com/Rajveerx11/gfi-scout)** | Python · FastMCP · asyncio · Rich/Textual | **4 FastMCP tools** (`find_issues`, `check_repo_health`, `check_issue_status`, `get_contribution_guide`) + shared CLI/TUI. **[106 automated tests](https://github.com/Rajveerx11/gfi-scout/tree/main/tests)**, strict mypy typing, async GitHub API pipeline with TTL caching. [Watch demo](https://github.com/Rajveerx11/gfi-scout#readme) · [Architecture](https://github.com/Rajveerx11/gfi-scout/blob/main/docs/ARCHITECTURE.md). |
-| **[Tessera](https://github.com/neuratile/Tessera)** | Rust · Tauri v2 · React · Tree-sitter · Ollama | **Local-first AI testing IDE**. Implemented the [mutation-testing engine and scoring flow](https://github.com/neuratile/Tessera/commit/48266fa55f46fff88a966aecf88c0b437e1c5704), [test-improvement loop](https://github.com/neuratile/Tessera/commit/6cdbc5b3b0e0432f328451f949e5ab12c9d83fac), and [persisted self-heal history](https://github.com/neuratile/Tessera/commit/9ec127a71b818296b5ac201a2bfd7e926e69a206). Optional sandboxed Docker runner. [Product website](https://tesseraide.vercel.app/). |
-| **[Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence)** | TypeScript · React · Transformers.js · MCP | **100% offline Transformers.js embeddings**. Graph topological analysis for orphan notes and missing link discovery, automated *"Fix My Vault"* batch repair engine, and local Ollama/OpenAI MCP server. |
+These are separate from the projects above. Links go to the public source and documentation; the table stays readable and clickable without relying on an SVG.
+
+| Project | What it does |
+|---|---|
+| [Neura](https://github.com/Rajveerx11/neura) | Windows-first engineering-agent harness with explicit modes, policy guardrails, recovery, and verification. |
+| [PR Reliability Platform](https://github.com/Rajveerx11/pr-reliability-platform) | Approval-first GitHub App for evidence-backed AI pull request review. |
+| [Master Models](https://github.com/Rajveerx11/Master-Models) | Local specialist-model evaluation against a stock baseline using frozen repository tasks. |
+| [AgentWisper](https://github.com/Rajveerx11/AgentWisper) | Local-first voice dictation for developers and coding agents. |
 
 ## Technical arsenal
 
@@ -107,19 +114,13 @@ Local-first knowledge-graph analysis, offline neural embeddings, and vault repai
 - **Local-first when privacy matters.** Keep source code, embeddings, and user data on-device by default; make cloud boundaries explicit and auditable.
 - **Agents as systems, not prompts.** Design the tools, state machines, error recovery, verification gates, and human approval points around the model.
 
-## Product & research work
-
-- **[neuratile](https://github.com/neuratile)** — AI-first developer tools organization. Leading **[Tessera](https://github.com/neuratile/Tessera)**, the local-first AI testing IDE.
-- **[Master Models](https://github.com/Rajveerx11/Master-Models)** — Specialist-model evaluation benchmark across 5 developer roles (Frontend, Backend, Security Review, Code Review, Testing & QA) with 100 frozen repository tasks.
-- **[Visage AI](https://getvisageai.online)** — Consumer AI mobile product for previewing aesthetic and cosmetic procedure outcomes. Public product experience, private source.
-
-## Public and selected private builds
+## Public repositories
 
 <div align="center">
 
-<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="assets/project-index.svg" alt="Live index of Rajveer Vadnal's public repositories and intentionally disclosed private builds" /></a>
+<a href="https://github.com/Rajveerx11?tab=repositories"><img width="100%" src="assets/project-index.svg" alt="Index of public repositories by Rajveer Vadnal and associated organizations, with language and star counts" /></a>
 
-<sub>Public data refreshes from GitHub daily. Private names come from an explicit allowlist (<code>data/private-projects.json</code>); their source code remains private.</sub>
+<sub>Public repository data refreshes daily. Browse [Rajveerx11](https://github.com/Rajveerx11?tab=repositories) and [neuratile](https://github.com/neuratile?tab=repositories) on GitHub.</sub>
 
 </div>
 

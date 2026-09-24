@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" role="img" aria-label="Leadership and founded ventures: neuratile and Visage AI" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+  <defs>
+    <linearGradient id="exp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.6" stop-color="#111722"/>
+      <stop offset="1" stop-color="#161e2e"/>
+    </linearGradient>
+    <linearGradient id="nt-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ed542e"/>
+      <stop offset="1" stop-color="#f0883e"/>
+    </linearGradient>
+    <linearGradient id="vi-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Panel Base -->
+  <rect x="1.5" y="1.5" width="857" height="217" rx="14" fill="url(#exp-bg)" stroke="#26334a" stroke-width="1.5"/>
+  <line x1="18" y1="1.5" x2="842" y2="1.5" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+
+  <!-- Chrome Header -->
+  <circle cx="26" cy="22" r="5" fill="#ff5f57"/>
+  <circle cx="44" cy="22" r="5" fill="#febc2e"/>
+  <circle cx="62" cy="22" r="5" fill="#28c840"/>
+  <text x="430" y="26" text-anchor="middle" fill="#8b949e" font-size="11.5">rajveer@github: ~/experience</text>
+  <line x1="1.5" y1="40" x2="858.5" y2="40" stroke="#26334a" stroke-width="1"/>
+
+  <text x="34" y="60" fill="#3fb950" font-size="11.5">$ <tspan fill="#e6edf3">cat</tspan> <tspan fill="#8b949e">leadership.json</tspan></text>
+  <text x="826" y="60" text-anchor="end" fill="#8b949e" font-size="10.5" font-weight="600" letter-spacing="0.8">FOUNDED VENTURES</text>
+
+  <!-- Card 1: neuratile (Left) -->
+  <g transform="translate(34, 76)">
+    <rect width="384" height="126" rx="8" fill="#161b22" stroke="#26334a" stroke-width="1"/>
+
+    <!-- Monogram badge -->
+    <rect x="14" y="14" width="36" height="36" rx="8" fill="#ed542e" fill-opacity="0.12" stroke="url(#nt-grad)" stroke-width="1.2"/>
+    <text x="32" y="38" text-anchor="middle" fill="#ed542e" font-size="16" font-weight="800">N</text>
+
+    <!-- Entity & Role -->
+    <text x="58" y="28" fill="#f0f6fc" font-size="15" font-weight="700">neuratile</text>
+    <rect x="136" y="16" width="62" height="15" rx="4" fill="#ed542e" fill-opacity="0.15"/>
+    <text x="167" y="27.5" text-anchor="middle" fill="#ed542e" font-size="8.5" font-weight="700" letter-spacing="0.5">FOUNDER</text>
+    <text x="58" y="44" fill="#8b949e" font-size="11">Developer tools</text>
+
+    <!-- Description lines -->
+    <text x="14" y="70" fill="#c9d1d9" font-size="11">Developer tools and local-first AI</text>
+    <text x="14" y="88" fill="#c9d1d9" font-size="11">Building <tspan fill="#38bdf8" font-weight="600">Tessera</tspan>, an AI testing IDE</text>
+
+    <!-- Tech stack pills / link -->
+    <rect x="14" y="99" width="168" height="16" rx="3" fill="#0d1117" stroke="#21262d" stroke-width="0.8"/>
+    <text x="20" y="111" fill="#8b949e" font-size="9">Rust · Tauri · Ollama</text>
+    <text x="370" y="111" text-anchor="end" fill="#38bdf8" font-size="10">github.com/neuratile</text>
+  </g>
+
+  <!-- Card 2: Visage AI (Right) -->
+  <g transform="translate(442, 76)">
+    <rect width="384" height="126" rx="8" fill="#161b22" stroke="#26334a" stroke-width="1"/>
+
+    <!-- Monogram badge -->
+    <rect x="14" y="14" width="36" height="36" rx="8" fill="#38bdf8" fill-opacity="0.12" stroke="url(#vi-grad)" stroke-width="1.2"/>
+    <text x="32" y="38" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="800">V</text>
+
+    <!-- Entity & Role -->
+    <text x="58" y="28" fill="#f0f6fc" font-size="15" font-weight="700">Visage AI</text>
+    <rect x="136" y="16" width="62" height="15" rx="4" fill="#38bdf8" fill-opacity="0.15"/>
+    <text x="167" y="27.5" text-anchor="middle" fill="#38bdf8" font-size="8.5" font-weight="700" letter-spacing="0.5">FOUNDER</text>
+    <text x="58" y="44" fill="#8b949e" font-size="11">Consumer AI product</text>
+
+    <!-- Description lines -->
+    <text x="14" y="70" fill="#c9d1d9" font-size="11">Preview aesthetic and cosmetic procedure outcomes</text>
+    <text x="14" y="88" fill="#c9d1d9" font-size="11">AI estimates, not medical advice</text>
+
+    <!-- Tech stack pills / link -->
+    <rect x="14" y="99" width="168" height="16" rx="3" fill="#0d1117" stroke="#21262d" stroke-width="0.8"/>
+    <text x="20" y="111" fill="#8b949e" font-size="9">Product site and mobile app</text>
+    <text x="370" y="111" text-anchor="end" fill="#38bdf8" font-size="10">getvisageai.online</text>
+  </g>
+</svg>

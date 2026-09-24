@@ -1,8 +1,6 @@
-"""Generate assets/project-index.svg from live public data and an explicit private allowlist.
+"""Generate assets/project-index.svg from live public GitHub data.
 
-Public repositories come from GitHub's public user/org APIs. Private repository names are
-read only from data/private-projects.json, so CI needs no broad personal token and a newly
-created private repository can never be disclosed accidentally.
+Only public repositories from the user and associated orgs are displayed.
 """
 import json
 import os
@@ -12,7 +10,6 @@ from pathlib import Path
 
 USER = "Rajveerx11"
 ORGS = ["neuratile", "Government-Polytechnic-Solapur"]
-PRIVATE_MANIFEST = Path("data/private-projects.json")
 
 
 def token():
@@ -61,99 +58,122 @@ for repo in repositories:
     if full_name in seen:
         continue
     seen.add(full_name)
-    if repo["fork"] or repo["name"].lower() == USER.lower():
+    if repo.get("private") is not False or repo.get("fork") or repo["name"].lower() == USER.lower():
         continue
     public.append({
         "name": repo["name"],
-        "language": repo["language"] or "Other",
-        "stars": repo["stargazers_count"],
-        "private": False,
+        "language": repo.get("language") or "Other",
+        "stars": repo.get("stargazers_count", 0),
         "pushed": repo.get("pushed_at") or "",
     })
 
-# Strong public proof first; among equal-star projects, show recent work first.
+# Strong public proof first: stars descending, then most recent push
 public.sort(key=lambda item: (item["stars"], item["pushed"]), reverse=True)
 
-with PRIVATE_MANIFEST.open(encoding="utf-8") as manifest_file:
-    private = [
-        {"name": item["name"], "language": item.get("language") or "Other", "stars": 0, "private": True, "pushed": ""}
-        for item in json.load(manifest_file)
-        if item.get("name")
-    ]
-
 LANG = {
-    "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "Python": "#3572A5",
-    "Kotlin": "#A97BFF", "HTML": "#e34c26", "CSS": "#563d7c", "Rust": "#dea584",
-    "Go": "#00ADD8", "Shell": "#89e051", "C++": "#f34b7d", "Java": "#b07219",
+    "TypeScript": "#3178c6",
+    "JavaScript": "#f1e05a",
+    "Python": "#3572A5",
+    "Rust": "#dea584",
+    "Kotlin": "#A97BFF",
+    "HTML": "#e34c26",
+    "CSS": "#563d7c",
+    "Jupyter Notebook": "#DA5B0B",
+    "PLpgSQL": "#336790",
+    "Go": "#00ADD8",
+    "Shell": "#89e051",
+    "C++": "#f34b7d",
+    "Java": "#b07219",
     "Vue": "#41b883",
 }
 
-W, ROW_H, TOP = 860, 26, 78
-n_rows = max(len(public), len(private))
-H = TOP + n_rows * ROW_H + 58
+W = 860
+ROW_H = 27
+TOP = 78
+
+# Split public repos evenly into 2 columns
+n_rows = max((len(public) + 1) // 2, 1)
+col0 = public[:n_rows]
+col1 = public[n_rows:]
+
+H = TOP + n_rows * ROW_H + 54
 
 
 def esc(value):
     return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def row_svg(item, x, y, delay):
+def row_svg(item, x, y):
     color = LANG.get(item["language"], "#8b949e")
-    parts = [f'<g><animate class="motion" attributeName="opacity" values="0;1" dur="0.5s" begin="{delay}s" fill="freeze"/>']
-    parts.append(f'<circle cx="{x+6}" cy="{y-4}" r="4" fill="{color}"/>')
-    parts.append(f'<text x="{x+20}" y="{y}" fill="#e6edf3" font-size="12.5">{esc(item["name"])}</text>')
-    tag_x = x + 20 + len(item["name"]) * 7.6 + 10
+    # Leave room for the star count and the right-aligned language label.
+    limit = 28 if item["stars"] else 34
+    display_name = item["name"][:limit] + ("…" if len(item["name"]) > limit else "")
+    name = esc(display_name)
+
+    parts = ["<g>"]
+    parts.append(f'<circle cx="{x+6}" cy="{y-4}" r="3.5" fill="{color}"/>')
+    parts.append(f'<text x="{x+18}" y="{y}" fill="#e6edf3" font-size="12">{name}</text>')
+
+    star_x = x + 18 + len(display_name) * 7.3 + 8
     if item["stars"]:
-        parts.append(f'<text x="{tag_x:.0f}" y="{y}" fill="#e3b341" font-size="11">&#9733; {item["stars"]}</text>')
-    if item["private"]:
-        parts.append(f'<text x="{x+390}" y="{y}" text-anchor="end" fill="#6e7681" font-size="10">&#128274;</text>')
+        parts.append(f'<text x="{star_x:.0f}" y="{y}" fill="#e3b341" font-size="10.5">&#9733; {item["stars"]}</text>')
+
+    # Language tag right aligned in this column
+    col_end = x + 380
+    parts.append(f'<text x="{col_end}" y="{y}" text-anchor="end" fill="#6e7681" font-size="10">{esc(item["language"])}</text>')
     parts.append("</g>")
     return "".join(parts)
 
 
-rows, delay = [], 0.5
-for index in range(n_rows):
-    for column, items in ((0, public), (1, private)):
-        if index < len(items):
-            rows.append(row_svg(items[index], 34 + column * 415, TOP + index * ROW_H, round(delay, 2)))
-            delay += 0.07
+rows = []
+for idx in range(n_rows):
+    y = TOP + idx * ROW_H
+    if idx < len(col0):
+        rows.append(row_svg(col0[idx], 34, y))
+    if idx < len(col1):
+        rows.append(row_svg(col1[idx], 446, y))
 
-present, seen_languages = [], set()
-for item in public + private:
-    language = item["language"]
-    if language in LANG and language not in seen_languages:
-        seen_languages.add(language)
-        present.append(language)
+present = []
+seen_languages = set()
+for item in public:
+    lang = item["language"]
+    if lang in LANG and lang not in seen_languages:
+        seen_languages.add(lang)
+        present.append(lang)
 
-legend, legend_x = [], 34
-for language in present[:6]:
-    legend.append(f'<circle cx="{legend_x}" cy="{H-30}" r="4" fill="{LANG[language]}"/><text x="{legend_x+10}" y="{H-26}" fill="#8b949e" font-size="10.5">{language}</text>')
-    legend_x += 20 + len(language) * 7.2 + 14
+legend = []
+legend_x = 34
+for language in present[:5]:
+    legend.append(
+        f'<circle cx="{legend_x}" cy="{H-22}" r="3.5" fill="{LANG[language]}"/>'
+        f'<text x="{legend_x+8}" y="{H-19}" fill="#8b949e" font-size="10">{language}</text>'
+    )
+    legend_x += 16 + len(language) * 6.5 + 12
 
-total = len(public) + len(private)
-scan_distance = max((n_rows - 1) * ROW_H, 0)
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Live index of public and selected private projects" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, monospace">
-  <style>.motion {{ visibility: hidden; }} @media (prefers-reduced-motion: no-preference) {{ .motion {{ visibility: visible; }} }}</style>
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Index of public open source repositories" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
   <rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
-  <line x1="18" y1="1.5" x2="842" y2="1.5" stroke="#36bcf7" stroke-width="2" opacity="0.55"/>
-  <circle cx="26" cy="24" r="5.5" fill="#ff5f57"/><circle cx="46" cy="24" r="5.5" fill="#febc2e"/><circle cx="66" cy="24" r="5.5" fill="#28c840"/>
-  <text x="{W//2}" y="28" text-anchor="middle" fill="#8b949e" font-size="12">rajveer@github: ~/projects</text>
-  <line x1="1.5" y1="44" x2="{W-1.5}" y2="44" stroke="#26334a" stroke-width="1"/>
-  <text x="34" y="64" fill="#3fb950" font-size="12.5">$ <tspan fill="#e6edf3">portfolio</tspan> <tspan fill="#8b949e">--public</tspan></text>
-  <text x="449" y="64" fill="#6e7681" font-size="11" letter-spacing="1">&#128274; SELECTED PRIVATE BUILDS</text>
-  <g class="motion" opacity="0.055">
-    <rect x="24" y="{TOP-17}" width="812" height="24" rx="5" fill="#36bcf7">
-      <animateTransform attributeName="transform" type="translate" values="0 0;0 {scan_distance};0 {scan_distance};0 0" keyTimes="0;0.8;0.9;1" dur="7.5s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <line x1="18" y1="1.5" x2="{W-18}" y2="1.5" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+  <circle cx="26" cy="22" r="5" fill="#ff5f57"/>
+  <circle cx="44" cy="22" r="5" fill="#febc2e"/>
+  <circle cx="62" cy="22" r="5" fill="#28c840"/>
+  <text x="{W//2}" y="26" text-anchor="middle" fill="#8b949e" font-size="11.5">rajveer@github: ~/projects</text>
+  <line x1="1.5" y1="40" x2="{W-1.5}" y2="40" stroke="#26334a" stroke-width="1"/>
+
+  <text x="34" y="60" fill="#3fb950" font-size="11.5">$ <tspan fill="#e6edf3">portfolio</tspan> <tspan fill="#8b949e">--public</tspan></text>
+  <text x="{W-34}" y="60" text-anchor="end" fill="#8b949e" font-size="10.5" font-weight="600" letter-spacing="0.8">PUBLIC REPOSITORIES</text>
+
+  <!-- Subtle column divider -->
+  <line x1="430" y1="52" x2="430" y2="{TOP + n_rows * ROW_H - 4}" stroke="#21262d" stroke-width="1" stroke-dasharray="3 3"/>
+
   {"".join(rows)}
+
+  <line x1="34" y1="{H-36}" x2="{W-34}" y2="{H-36}" stroke="#161b22" stroke-width="1"/>
   {"".join(legend)}
-  <text x="{W-34}" y="{H-26}" text-anchor="end" fill="#8b949e" font-size="11.5">{total} projects &#183; {len(public)} public &#183; {len(private)} selected private</text>
-  <text x="{W-34}" y="{H-10}" text-anchor="end" fill="#3fb950" font-size="9" letter-spacing="1.2">INDEXED DAILY</text>
+  <text x="{W-34}" y="{H-19}" text-anchor="end" fill="#8b949e" font-size="10.5">{len(public)} public repositories · indexed daily</text>
 </svg>'''
 
 import xml.dom.minidom
 xml.dom.minidom.parseString(svg)
 Path("assets").mkdir(exist_ok=True)
 Path("assets/project-index.svg").write_text(svg + "\n", encoding="utf-8", newline="\n")
-print(f"ok: {total} projects, {len(public)} public, {len(private)} selected private; langs={present[:6]}")
+print(f"ok: {len(public)} public projects; langs={present[:5]}")
