@@ -84,12 +84,12 @@ total_size = sum(v["size"] for _, v in top) or 1
 
 W, H = 860, 260
 STATS = [
-    ("Contributions", f"{contribs:,}", "all time", "#38bdf8"),
-    ("Commits", f"{commits:,}", "all time", "#3fb950"),
-    ("Merged PRs", f"{merged}", "public, all time", "#a371f7"),
-    ("Stars Earned", f"{stars}", "current", "#e3b341"),
-    ("Followers", f"{followers}", "on GitHub", "#ff6b9d"),
-    ("Public Repos", f"{repos}", "original", "#38bdf8"),
+    ("Contributions", f"{contribs:,}", "all time", "#ef9773"),
+    ("Commits", f"{commits:,}", "all time", "#ef9773"),
+    ("Merged PRs", f"{merged}", "public, all time", "#ef9773"),
+    ("Stars Earned", f"{stars}", "at refresh", "#ef9773"),
+    ("Followers", f"{followers}", "at refresh", "#ef9773"),
+    ("Public Repos", f"{repos}", "non-forks", "#ef9773"),
 ]
 
 # Left grid: 2 columns x 3 rows of clean metric cards
@@ -101,11 +101,10 @@ for i, (label, val, note, color) in enumerate(STATS):
     y = 78 + row * 49
 
     stat_cards.append(f'''<g transform="translate({x}, {y})">
-    <rect width="186" height="43" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-    <circle cx="12" cy="15" r="3.5" fill="{color}"/>
-    <text x="22" y="19" fill="{color}" font-size="16" font-weight="700">{val}</text>
-    <text x="22" y="33" fill="#8b949e" font-size="9.5" font-weight="600" letter-spacing="0.6">{label.upper()}</text>
-    <text x="176" y="33" text-anchor="end" fill="#4d5866" font-size="8.5">{note}</text>
+    <rect width="186" height="43" rx="3" fill="#191c1a" stroke="#363c35" stroke-width="1"/>
+    <text x="12" y="19" fill="{color}" font-size="16">{val}</text>
+    <text x="12" y="33" fill="#adb3a9" font-size="9.5">{label}</text>
+    <text x="176" y="33" text-anchor="end" fill="#adb3a9" font-size="8.5">{note}</text>
   </g>''')
 
 # Right grid: Top languages with clear labels, full-width background tracks, and accurate fill bars
@@ -123,33 +122,26 @@ for i, (name, v) in enumerate(top):
     color = v["color"]
 
     bars.append(f'''<g>
-    <text x="{lx}" y="{y+8}" fill="#e6edf3" font-size="10.5">{name}</text>
-    <rect x="{bar_x}" y="{y}" width="{bar_w}" height="8" rx="4" fill="#21262d"/>
-    <rect x="{bar_x}" y="{y}" width="{fill_w}" height="8" rx="4" fill="{color}"/>
-    <text x="{end_x}" y="{y+8}" text-anchor="end" fill="#8b949e" font-size="10">{pct}</text>
+    <text x="{lx}" y="{y+8}" fill="#eeeae1" font-size="10.5">{name}</text>
+    <rect x="{bar_x}" y="{y}" width="{bar_w}" height="8" rx="3" fill="#363c35"/>
+    <rect x="{bar_x}" y="{y}" width="{fill_w}" height="8" rx="3" fill="{color}"/>
+    <text x="{end_x}" y="{y+8}" text-anchor="end" fill="#adb3a9" font-size="10">{pct}</text>
   </g>''')
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Live GitHub statistics and top languages" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
-  <rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
-  <line x1="18" y1="1.5" x2="{W-18}" y2="1.5" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
-  <circle cx="26" cy="22" r="5" fill="#ff5f57"/>
-  <circle cx="44" cy="22" r="5" fill="#febc2e"/>
-  <circle cx="62" cy="22" r="5" fill="#28c840"/>
-  <text x="{W//2}" y="26" text-anchor="middle" fill="#8b949e" font-size="11.5">rajveer@github: ~/stats</text>
-  <line x1="1.5" y1="40" x2="{W-1.5}" y2="40" stroke="#26334a" stroke-width="1"/>
-
-  <text x="34" y="60" fill="#3fb950" font-size="11.5">$ <tspan fill="#e6edf3">git</tspan> <tspan fill="#8b949e">stats --live</tspan></text>
-  <text x="{lx}" y="60" fill="#8b949e" font-size="10.5" font-weight="600" letter-spacing="0.8">TOP LANGUAGES BY CODE</text>
-
-  <!-- Subtle column divider -->
-  <line x1="438" y1="52" x2="438" y2="230" stroke="#21262d" stroke-width="1" stroke-dasharray="3 3"/>
-
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title desc" font-family="ui-monospace, Consolas, monospace">
+  <title id="title">GitHub activity snapshot</title>
+  <desc id="desc">GitHub API activity totals and language byte shares within the displayed top languages. Refreshed daily, not live telemetry.</desc>
+  <rect x="1" y="1" width="{W-2}" height="{H-2}" rx="5" fill="#131514" stroke="#363c35"/>
+  <text x="34" y="32" fill="#eeeae1" font-size="20" font-family="Segoe UI, Arial, sans-serif">GitHub activity snapshot</text>
+  <line x1="1" y1="44" x2="{W-1}" y2="44" stroke="#363c35"/>
+  <text x="34" y="62" fill="#adb3a9" font-size="11">Recorded GitHub API totals</text>
+  <text x="{lx}" y="62" fill="#adb3a9" font-size="10.5">Byte share within displayed top languages</text>
+  <line x1="438" y1="52" x2="438" y2="230" stroke="#363c35" stroke-dasharray="3 3"/>
   {"".join(stat_cards)}
   {"".join(bars)}
-
-  <line x1="34" y1="236" x2="{W-34}" y2="236" stroke="#161b22" stroke-width="1"/>
-  <text x="34" y="249" fill="#3fb950" font-size="9" letter-spacing="0.5">● <tspan fill="#8b949e">LIVE STATS</tspan></text>
-  <text x="{W-34}" y="249" text-anchor="end" fill="#4d5866" font-size="9">auto-generated via GitHub API · refreshed daily</text>
+  <line x1="34" y1="236" x2="{W-34}" y2="236" stroke="#363c35"/>
+  <text x="34" y="249" fill="#adb3a9" font-size="9">Snapshot {now.strftime('%Y-%m-%d')} UTC</text>
+  <text x="{W-34}" y="249" text-anchor="end" fill="#adb3a9" font-size="9">GitHub API · refreshed daily</text>
 </svg>'''
 
 import xml.dom.minidom

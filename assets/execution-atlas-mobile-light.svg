@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 790" role="img" aria-labelledby="title desc">
+<title id="title">Execution atlas of Rajveer Vadnal&#x27;s projects</title>
+<desc id="desc">Human input: AgentWisper. Context: GFI Scout and RepoGraph. Orchestration: Neura. Testing: Tessera. Verification: Proof-of-Work. Memory: Obsidian Graph Intelligence. Paths describe conceptual roles, not implemented integrations.</desc>
+<rect x="1" y="1" width="428" height="788" rx="5" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="25" y="36" fill="#20261f" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Execution atlas</text>
+<text x="25" y="61" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Intent / context / evidence</text>
+<path d="M1 77H429" stroke="#bac4b3"/>
+<path d="M110 140H320V360H110V600" fill="none" stroke="#bac4b3" stroke-width="1.5"/>
+<path d="M110 600H320M320 600H415V140H320" fill="none" stroke="#bac4b3" stroke-width="1.5" stroke-dasharray="5 7"/>
+<circle cx="110" cy="140" r="41" fill="#e9ece4" stroke="#bac4b3"/>
+<circle cx="110" cy="140" r="34" fill="none" stroke="#bac4b3" opacity="0.6"/>
+<g transform="translate(86 116)" fill="none" stroke="#515e4e" stroke-width="1.5"><path d="M10 20v8m6-14v20m8-27v34m8-27v20m6-14v8"/></g>
+<text x="148" y="97" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">01</text>
+<text x="110" y="208" fill="#20261f" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Human input</text>
+<text x="110" y="233" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">AgentWisper</text>
+<circle cx="320" cy="140" r="41" fill="#e9ece4" stroke="#bac4b3"/>
+<circle cx="320" cy="140" r="34" fill="none" stroke="#bac4b3" opacity="0.6"/>
+<g transform="translate(296 116)" fill="none" stroke="#515e4e" stroke-width="1.5"><circle cx="21" cy="21" r="13"/><circle cx="21" cy="21" r="6"/><path d="m30 30 11 11M21 5v7M5 21h7M21 30v7M30 21h7"/></g>
+<text x="358" y="97" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">02</text>
+<text x="320" y="208" fill="#20261f" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Context</text>
+<text x="320" y="233" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">GFI Scout / RepoGraph</text>
+<circle cx="320" cy="360" r="41" fill="#e9ece4" stroke="#bac4b3"/>
+<circle cx="320" cy="360" r="34" fill="none" stroke="#bac4b3" opacity="0.6"/>
+<g transform="translate(296 336)" fill="none" stroke="#515e4e" stroke-width="1.5"><rect x="4" y="19" width="10" height="10"/><rect x="34" y="5" width="10" height="10"/><rect x="34" y="33" width="10" height="10"/><path d="M14 24h10V10h10M24 24v14h10"/></g>
+<text x="358" y="317" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">03</text>
+<text x="320" y="428" fill="#20261f" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Orchestration</text>
+<text x="320" y="453" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Neura</text>
+<circle cx="110" cy="360" r="41" fill="#e9ece4" stroke="#bac4b3"/>
+<circle cx="110" cy="360" r="34" fill="none" stroke="#bac4b3" opacity="0.6"/>
+<g transform="translate(86 336)" fill="none" stroke="#515e4e" stroke-width="1.5"><path d="m24 5 15 7v13c0 8-7 14-15 18C16 39 9 33 9 25V12Z"/><path d="M17 18h14M17 24h14M17 30h8"/></g>
+<text x="148" y="317" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">04</text>
+<text x="110" y="428" fill="#20261f" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Testing</text>
+<text x="110" y="453" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Tessera</text>
+<circle cx="110" cy="600" r="41" fill="#f5e3d9" stroke="#a83e1b"/>
+<circle cx="110" cy="600" r="34" fill="none" stroke="#a83e1b" opacity="0.6"/>
+<g transform="translate(86 576)" fill="none" stroke="#a83e1b" stroke-width="1.5"><path d="m24 4 17 10v20L24 44 7 34V14Z"/><path d="m14 24 7 7 14-15m-10 15 10-11"/></g>
+<text x="148" y="557" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">05</text>
+<text x="110" y="668" fill="#a83e1b" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Verification</text>
+<text x="110" y="693" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Proof-of-Work</text>
+<circle cx="110" cy="600" r="48" fill="none" stroke="#a83e1b"/>
+<circle cx="320" cy="600" r="41" fill="#e9ece4" stroke="#bac4b3"/>
+<circle cx="320" cy="600" r="34" fill="none" stroke="#bac4b3" opacity="0.6"/>
+<g transform="translate(296 576)" fill="none" stroke="#515e4e" stroke-width="1.5"><path d="m24 5 19 10-19 10L5 15Zm-19 19 19 10 19-10M5 33l19 10 19-10"/></g>
+<text x="358" y="557" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">06</text>
+<text x="320" y="668" fill="#20261f" font-size="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Memory</text>
+<text x="320" y="693" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Obsidian Graph</text>
+<text x="320" y="712" fill="#515e4e" font-size="13" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Intelligence</text>
+<rect x="44" y="465" width="133" height="35" rx="3" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="110" y="488" fill="#a83e1b" font-size="12" text-anchor="middle" font-family="ui-monospace, Consolas, monospace">Human approval</text>
+<path d="M25 725H405" stroke="#bac4b3"/>
+<text x="25" y="749" fill="#515e4e" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Roles, not repository integrations.</text>
+<text x="25" y="771" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Explore the linked projects below.</text>
+</svg>

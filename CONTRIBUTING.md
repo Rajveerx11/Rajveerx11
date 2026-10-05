@@ -4,27 +4,37 @@ This repository powers Rajveer Vadnal's GitHub profile. Corrections to links, wo
 
 ## Editing
 
-- Update `README.md` for profile content and `assets/profile-header.svg` for the banner.
-- Keep project claims tied to public releases, source, reports or documented status. Distinguish research plans from completed results.
-- `assets/github-stats.svg` and `assets/project-index.svg` are generated. Update `scripts/gen_stats.py` or `scripts/gen_projects.py` rather than editing their output.
-- Private project names come only from `data/private-projects.json`. Add entries only with the owner's explicit approval.
+- Update `README.md` for native profile content. Keep source links and readable Markdown alongside visual panels; SVG-internal links do not work when an image is embedded in GitHub.
+- Update `scripts/gen_atlas.py` for the hero, execution atlas, and flight recorder. Run it to regenerate their light/dark and narrow-screen variants. Do not edit those generated SVGs by hand.
+- Keep project claims tied to public releases, source, reports or documented status. Atlas paths describe project roles, not implemented integrations. The flight recorder summarizes a pinned public commit, not a simulated live session.
+- `assets/github-stats.svg`, `assets/project-index.svg`, and `docs/public-repositories.md` are generated. Update `scripts/gen_stats.py` or `scripts/gen_projects.py` rather than editing their output.
+- Include public repositories only. Keep forks marked and organization namespaces visible in the linked index; inclusion does not imply sole authorship.
+- `docs/execution-atlas.html` preserves the approved interactive design as a downloadable single file. Its dated repository snapshot is separate from the daily generated catalog.
 
 ## Preview and checks
 
-Preview the README at desktop and narrow widths. Check new links and SVG readability, then run:
+Preview the GitHub-rendered README at desktop and narrow widths in both color themes. Check new links, image alternative text, and SVG readability, then run:
 
 ```bash
-python -m py_compile scripts/gen_stats.py scripts/gen_projects.py
+python -m py_compile scripts/*.py
+python -m unittest discover -s scripts -v
+python scripts/gen_atlas.py --check
 git diff --check
 ```
 
-To refresh the archive assets locally, authenticate with `gh auth login` or provide `GITHUB_TOKEN`, then run:
+To regenerate the design panels:
+
+```bash
+python scripts/gen_atlas.py
+```
+
+To refresh the public catalog and activity snapshot locally, authenticate with `gh auth login` or provide `GITHUB_TOKEN`, then run:
 
 ```bash
 python scripts/gen_stats.py
 python scripts/gen_projects.py
 ```
 
-The `Refresh profile assets` workflow runs these generators daily and after changes on `main`.
+The `Refresh profile assets` workflow validates changes on pull requests and `main`. On `main` and the daily schedule it also refreshes the public API assets. Its generated-only commits do not recursively trigger refreshes.
 
 Open a focused pull request describing the correction and how you checked it.

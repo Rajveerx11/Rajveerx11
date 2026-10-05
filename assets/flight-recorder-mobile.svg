@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 700" role="img" aria-labelledby="title desc">
+<title id="title">Tessera mutation-testing change and review corrections</title>
+<desc id="desc">The public commit records the mutation engine, a shared cancellation token fixing a Stop gap, a regression test, and suppression of tracker comments for the internal baseline.</desc>
+<rect x="1" y="1" width="428" height="698" rx="5" fill="#131514" stroke="#363c35"/>
+<text x="25" y="37" fill="#eeeae1" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Flight recorder / Tessera</text>
+<text x="25" y="63" fill="#adb3a9" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Public commit 48266fa · 18 Jun 2026</text>
+<path d="M1 80H429" stroke="#363c35"/>
+<path d="M40 124V451" stroke="#363c35"/>
+<rect x="30" y="112" width="20" height="20" fill="#131514" stroke="#363c35"/>
+<text x="66" y="128" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Build the engine</text>
+<text x="66" y="156" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Mutate covered source.</text>
+<text x="66" y="176" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Rerun the test suite.</text>
+<rect x="30" y="214" width="20" height="20" fill="#131514" stroke="#ef9773"/>
+<text x="66" y="230" fill="#ef9773" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Catch the gap</text>
+<text x="66" y="258" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">A Stop request could be lost</text>
+<text x="66" y="278" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">at the baseline handoff.</text>
+<rect x="30" y="316" width="20" height="20" fill="#131514" stroke="#363c35"/>
+<text x="66" y="332" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Keep the regression</text>
+<text x="66" y="360" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Stopping during the baseline</text>
+<text x="66" y="380" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">prevents mutant runs.</text>
+<rect x="30" y="418" width="20" height="20" fill="#131514" stroke="#363c35"/>
+<text x="66" y="434" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Guard the side effect</text>
+<text x="66" y="462" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">The internal baseline must</text>
+<text x="66" y="482" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">not post a tracker comment.</text>
+<rect x="25" y="535" width="380" height="96" rx="3" fill="#191c1a" stroke="#363c35"/>
+<text x="45" y="563" fill="#ef9773" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">One registered cancellation token</text>
+<text x="45" y="593" fill="#eeeae1" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Baseline run → mutant sweep</text>
+<text x="25" y="664" fill="#adb3a9" font-size="12" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">A commit reading, not simulated agent logs.</text>
+</svg>

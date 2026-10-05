@@ -1,12 +1,12 @@
-"""Generate assets/project-index.svg from live public GitHub data.
-
-Only public repositories from the user and associated orgs are displayed.
-"""
+"""Generate a public-only SVG catalog and a readable, linked Markdown index."""
+from datetime import datetime, timezone
+from html import escape
 import json
 import os
-import subprocess
-import urllib.request
 from pathlib import Path
+import subprocess
+from urllib.parse import quote
+import urllib.request
 
 USER = "Rajveerx11"
 ORGS = ["neuratile", "Government-Polytechnic-Solapur"]
@@ -30,7 +30,8 @@ def api(path):
     if TOK:
         headers["Authorization"] = f"bearer {TOK}"
     request = urllib.request.Request("https://api.github.com" + path, headers=headers)
-    return json.load(urllib.request.urlopen(request))
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.load(response)
 
 
 def collect(path, extra=""):
@@ -47,133 +48,93 @@ def collect(path, extra=""):
     return output
 
 
-repositories = collect(f"/users/{USER}/repos", "&type=owner&sort=updated")
-for org in ORGS:
-    repositories += collect(f"/orgs/{org}/repos", "&type=public&sort=updated")
-
-public = []
-seen = set()
-for repo in repositories:
-    full_name = repo["full_name"].lower()
-    if full_name in seen:
-        continue
-    seen.add(full_name)
-    if repo.get("private") is not False or repo.get("fork") or repo["name"].lower() == USER.lower():
-        continue
-    public.append({
-        "name": repo["name"],
-        "language": repo.get("language") or "Other",
-        "stars": repo.get("stargazers_count", 0),
-        "pushed": repo.get("pushed_at") or "",
-    })
-
-# Strong public proof first: stars descending, then most recent push
-public.sort(key=lambda item: (item["stars"], item["pushed"]), reverse=True)
-
-LANG = {
-    "TypeScript": "#3178c6",
-    "JavaScript": "#f1e05a",
-    "Python": "#3572A5",
-    "Rust": "#dea584",
-    "Kotlin": "#A97BFF",
-    "HTML": "#e34c26",
-    "CSS": "#563d7c",
-    "Jupyter Notebook": "#DA5B0B",
-    "PLpgSQL": "#336790",
-    "Go": "#00ADD8",
-    "Shell": "#89e051",
-    "C++": "#f34b7d",
-    "Java": "#b07219",
-    "Vue": "#41b883",
-}
-
-W = 860
-ROW_H = 27
-TOP = 78
-
-# Split public repos evenly into 2 columns
-n_rows = max((len(public) + 1) // 2, 1)
-col0 = public[:n_rows]
-col1 = public[n_rows:]
-
-H = TOP + n_rows * ROW_H + 54
+def public_projects(repositories):
+    public, seen = [], set()
+    for repo in repositories:
+        full_name = repo["full_name"].lower()
+        if full_name in seen:
+            continue
+        seen.add(full_name)
+        # Fail closed: authenticated owner responses must not expose private or unknown data.
+        if repo.get("private") is not False or full_name == f"{USER}/{USER}".lower():
+            continue
+        public.append({
+            "name": repo["name"], "full_name": repo["full_name"],
+            "language": repo.get("language") or "Not reported",
+            "description": repo.get("description") or "No public description supplied.",
+            "stars": repo.get("stargazers_count", 0), "pushed": repo.get("pushed_at") or "",
+            "fork": bool(repo.get("fork")),
+        })
+    public.sort(key=lambda item: (item["stars"], item["pushed"]), reverse=True)
+    return public
 
 
-def esc(value):
-    return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+def render_svg(public, observed):
+    width, row_height, top = 860, 34, 105
+    n_rows = max((len(public) + 1) // 2, 1)
+    height = top + n_rows * row_height + 65
+    rows = []
+    for i, item in enumerate(public):
+        column, row = divmod(i, n_rows)
+        x, y = 32 + column * 412, top + row * row_height
+        name = item["name"][:28] + ("…" if len(item["name"]) > 28 else "")
+        meta = item["language"] + (" / fork" if item["fork"] else "")
+        rows += [f'<text x="{x}" y="{y}" fill="#eeeae1" font-size="13">{escape(name)}</text>',
+                 f'<text x="{x + 380}" y="{y}" text-anchor="end" fill="#adb3a9" font-size="10">{escape(meta)}</text>']
+    if not public:
+        rows.append('<text x="32" y="105" fill="#adb3a9" font-size="14">No public repositories returned.</text>')
+    rendered_rows = "\n".join(rows)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc" font-family="ui-monospace, Consolas, monospace">
+<title id="title">Public repository catalog</title>
+<desc id="desc">Public repositories from Rajveerx11 and associated organizations. Forks are marked. Full names, descriptions, and clickable source links are in docs/public-repositories.md.</desc>
+<rect x="1" y="1" width="858" height="{height - 2}" rx="5" fill="#131514" stroke="#363c35"/>
+<text x="32" y="37" fill="#eeeae1" font-size="20" font-family="Segoe UI, Arial, sans-serif">Public repository catalog</text>
+<text x="32" y="64" fill="#adb3a9" font-size="12">Rajveerx11 / associated organizations</text>
+<path d="M1 78H859" stroke="#363c35"/>
+{rendered_rows}
+<path d="M32 {height - 48}H828" stroke="#363c35"/>
+<text x="32" y="{height - 25}" fill="#adb3a9" font-size="11">{len(public)} public repositories · forks marked · snapshot {observed}</text>
+<text x="828" y="{height - 25}" text-anchor="end" fill="#ef9773" font-size="11">Full linked index ↗</text>
+</svg>
+'''
 
 
-def row_svg(item, x, y):
-    color = LANG.get(item["language"], "#8b949e")
-    # Leave room for the star count and the right-aligned language label.
-    limit = 28 if item["stars"] else 34
-    display_name = item["name"][:limit] + ("…" if len(item["name"]) > limit else "")
-    name = esc(display_name)
-
-    parts = ["<g>"]
-    parts.append(f'<circle cx="{x+6}" cy="{y-4}" r="3.5" fill="{color}"/>')
-    parts.append(f'<text x="{x+18}" y="{y}" fill="#e6edf3" font-size="12">{name}</text>')
-
-    star_x = x + 18 + len(display_name) * 7.3 + 8
-    if item["stars"]:
-        parts.append(f'<text x="{star_x:.0f}" y="{y}" fill="#e3b341" font-size="10.5">&#9733; {item["stars"]}</text>')
-
-    # Language tag right aligned in this column
-    col_end = x + 380
-    parts.append(f'<text x="{col_end}" y="{y}" text-anchor="end" fill="#6e7681" font-size="10">{esc(item["language"])}</text>')
-    parts.append("</g>")
-    return "".join(parts)
+def markdown_cell(value):
+    # Preserve source wording while preventing API text from adding rows, links, or raw HTML.
+    value = escape(str(value), quote=False).replace("\\", "\\\\")
+    for char in ("|", "[", "]", "*", "_", "`", "~"):
+        value = value.replace(char, "\\" + char)
+    return value.replace("\r", " ").replace("\n", " ")
 
 
-rows = []
-for idx in range(n_rows):
-    y = TOP + idx * ROW_H
-    if idx < len(col0):
-        rows.append(row_svg(col0[idx], 34, y))
-    if idx < len(col1):
-        rows.append(row_svg(col1[idx], 446, y))
+def render_markdown(public, observed):
+    lines = ["# Public repositories", "", f"GitHub API snapshot: {observed} (UTC).", "",
+             "Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solapur. "
+             "Forks are identified; inclusion does not imply sole authorship. Private repositories and "
+             "the profile repository are excluded. Descriptions are supplied by the repositories.", "",
+             "[Back to the profile](../README.md)", "", "| Repository | Language | Kind | Description |",
+             "| --- | --- | --- | --- |"]
+    for item in public:
+        url = "https://github.com/" + quote(item["full_name"], safe="/")
+        kind = "Fork" if item["fork"] else "Non-fork"
+        lines.append(f'| [{markdown_cell(item["full_name"])}]({url}) | {markdown_cell(item["language"])} | {kind} | {markdown_cell(item["description"])} |')
+    if not public:
+        lines += ["", "No public repositories returned."]
+    return "\n".join(lines) + "\n"
 
-present = []
-seen_languages = set()
-for item in public:
-    lang = item["language"]
-    if lang in LANG and lang not in seen_languages:
-        seen_languages.add(lang)
-        present.append(lang)
 
-legend = []
-legend_x = 34
-for language in present[:5]:
-    legend.append(
-        f'<circle cx="{legend_x}" cy="{H-22}" r="3.5" fill="{LANG[language]}"/>'
-        f'<text x="{legend_x+8}" y="{H-19}" fill="#8b949e" font-size="10">{language}</text>'
-    )
-    legend_x += 16 + len(language) * 6.5 + 12
+def main():
+    repositories = collect(f"/users/{USER}/repos", "&type=owner&sort=updated")
+    for org in ORGS:
+        repositories += collect(f"/orgs/{org}/repos", "&type=public&sort=updated")
+    public = public_projects(repositories)
+    observed = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    Path("assets").mkdir(exist_ok=True)
+    Path("docs").mkdir(exist_ok=True)
+    Path("assets/project-index.svg").write_text(render_svg(public, observed), encoding="utf-8", newline="\n")
+    Path("docs/public-repositories.md").write_text(render_markdown(public, observed), encoding="utf-8", newline="\n")
+    print(f"ok: {len(public)} public repositories; forks marked")
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Index of public open source repositories" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
-  <rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="14" fill="#0d1117" stroke="#26334a" stroke-width="1.5"/>
-  <line x1="18" y1="1.5" x2="{W-18}" y2="1.5" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
-  <circle cx="26" cy="22" r="5" fill="#ff5f57"/>
-  <circle cx="44" cy="22" r="5" fill="#febc2e"/>
-  <circle cx="62" cy="22" r="5" fill="#28c840"/>
-  <text x="{W//2}" y="26" text-anchor="middle" fill="#8b949e" font-size="11.5">rajveer@github: ~/projects</text>
-  <line x1="1.5" y1="40" x2="{W-1.5}" y2="40" stroke="#26334a" stroke-width="1"/>
 
-  <text x="34" y="60" fill="#3fb950" font-size="11.5">$ <tspan fill="#e6edf3">portfolio</tspan> <tspan fill="#8b949e">--public</tspan></text>
-  <text x="{W-34}" y="60" text-anchor="end" fill="#8b949e" font-size="10.5" font-weight="600" letter-spacing="0.8">PUBLIC REPOSITORIES</text>
-
-  <!-- Subtle column divider -->
-  <line x1="430" y1="52" x2="430" y2="{TOP + n_rows * ROW_H - 4}" stroke="#21262d" stroke-width="1" stroke-dasharray="3 3"/>
-
-  {"".join(rows)}
-
-  <line x1="34" y1="{H-36}" x2="{W-34}" y2="{H-36}" stroke="#161b22" stroke-width="1"/>
-  {"".join(legend)}
-  <text x="{W-34}" y="{H-19}" text-anchor="end" fill="#8b949e" font-size="10.5">{len(public)} public repositories · indexed daily</text>
-</svg>'''
-
-import xml.dom.minidom
-xml.dom.minidom.parseString(svg)
-Path("assets").mkdir(exist_ok=True)
-Path("assets/project-index.svg").write_text(svg + "\n", encoding="utf-8", newline="\n")
-print(f"ok: {len(public)} public projects; langs={present[:5]}")
+if __name__ == "__main__":
+    main()
