@@ -42,12 +42,12 @@
     <text x="462" y="88" fill="#eeeae1" font-size="10.5">JavaScript</text>
     <rect x="598" y="80" width="172" height="8" rx="3" fill="#363c35"/>
     <rect x="598" y="80" width="79" height="8" rx="3" fill="#f1e05a"/>
-    <text x="826" y="88" text-anchor="end" fill="#adb3a9" font-size="10">46.2%</text>
+    <text x="826" y="88" text-anchor="end" fill="#adb3a9" font-size="10">46.1%</text>
   </g><g>
     <text x="462" y="113" fill="#eeeae1" font-size="10.5">Python</text>
     <rect x="598" y="105" width="172" height="8" rx="3" fill="#363c35"/>
     <rect x="598" y="105" width="29" height="8" rx="3" fill="#3572A5"/>
-    <text x="826" y="113" text-anchor="end" fill="#adb3a9" font-size="10">17.0%</text>
+    <text x="826" y="113" text-anchor="end" fill="#adb3a9" font-size="10">17.1%</text>
   </g><g>
     <text x="462" y="138" fill="#eeeae1" font-size="10.5">TypeScript</text>
     <rect x="598" y="130" width="172" height="8" rx="3" fill="#363c35"/>
