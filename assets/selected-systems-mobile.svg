@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1095" role="img" aria-labelledby="title desc">
+<title id="title">Selected engineering projects</title>
+<desc id="desc">Proof-of-Work, GFI Scout, Tessera and Obsidian Graph Intelligence. Descriptions and technology stacks; linked evidence is in the README.</desc>
+<rect x="1" y="1" width="428" height="1093" rx="5" fill="#131514" stroke="#363c35"/>
+<text x="25" y="37" fill="#eeeae1" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Selected systems</text>
+<text x="25" y="64" fill="#adb3a9" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">FOUR PROJECTS / INSPECTABLE SOURCE</text>
+<path d="M1 82H429" stroke="#363c35"/>
+<rect x="25" y="103" width="380" height="226" rx="3" fill="#191c1a" stroke="#363c35"/>
+<text x="43" y="134" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">01</text>
+<g transform="translate(363 116) scale(.55)" fill="none" stroke="#ef9773" stroke-width="2"><path d="m24 4 17 10v20L24 44 7 34V14Z"/><path d="m14 24 7 7 14-15m-10 15 10-11"/></g>
+<text x="43" y="166" fill="#eeeae1" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Proof-of-Work</text>
+<text x="43" y="197" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Rerun checks. Detect deleted or weakened</text>
+<text x="43" y="220" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">tests. Record hash-chained,</text>
+<text x="43" y="243" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Ed25519-signed verdicts.</text>
+<path d="M43 272H387" stroke="#363c35"/>
+<text x="43" y="295" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Python / FastMCP / SQLite</text>
+<text x="43" y="314" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Ed25519 / GitHub Actions</text>
+<rect x="25" y="345" width="380" height="226" rx="3" fill="#191c1a" stroke="#363c35"/>
+<text x="43" y="376" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">02</text>
+<g transform="translate(363 358) scale(.55)" fill="none" stroke="#ef9773" stroke-width="2"><circle cx="21" cy="21" r="13"/><circle cx="21" cy="21" r="6"/><path d="m30 30 11 11M21 5v7M5 21h7M21 30v7M30 21h7"/></g>
+<text x="43" y="408" fill="#eeeae1" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">GFI Scout</text>
+<text x="43" y="439" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Find contribution opportunities using</text>
+<text x="43" y="462" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">repository health, maintainer</text>
+<text x="43" y="485" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">responsiveness, freshness, and setup</text>
+<text x="43" y="508" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">friction.</text>
+<path d="M43 514H387" stroke="#363c35"/>
+<text x="43" y="537" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Python / FastMCP / asyncio</text>
+<text x="43" y="556" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Rich / Textual / GitHub API</text>
+<rect x="25" y="587" width="380" height="226" rx="3" fill="#191c1a" stroke="#363c35"/>
+<text x="43" y="618" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">03</text>
+<g transform="translate(363 600) scale(.55)" fill="none" stroke="#ef9773" stroke-width="2"><path d="m24 5 15 7v13c0 8-7 14-15 18C16 39 9 33 9 25V12Z"/><path d="M17 18h14M17 24h14M17 30h8"/></g>
+<text x="43" y="650" fill="#eeeae1" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tessera</text>
+<text x="43" y="681" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Local-first testing IDE at neuratile.</text>
+<text x="43" y="704" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Code context, structured QA artifacts,</text>
+<text x="43" y="727" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">and optional isolated Docker test</text>
+<text x="43" y="750" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">execution.</text>
+<path d="M43 756H387" stroke="#363c35"/>
+<text x="43" y="779" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Rust / Tauri / React / Tree-sitter</text>
+<text x="43" y="798" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Ollama / Docker</text>
+<rect x="25" y="829" width="380" height="226" rx="3" fill="#191c1a" stroke="#363c35"/>
+<text x="43" y="860" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">04</text>
+<g transform="translate(363 842) scale(.55)" fill="none" stroke="#ef9773" stroke-width="2"><path d="m24 5 19 10-19 10L5 15Zm-19 19 19 10 19-10M5 33l19 10 19-10"/></g>
+<text x="43" y="892" fill="#eeeae1" font-size="20" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Obsidian Graph Intelligence</text>
+<text x="43" y="923" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Analyze and repair local knowledge</text>
+<text x="43" y="946" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">graphs. Offline embeddings; queries opt</text>
+<text x="43" y="969" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">in. External providers have separate</text>
+<text x="43" y="992" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">data boundaries.</text>
+<path d="M43 998H387" stroke="#363c35"/>
+<text x="43" y="1021" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">TypeScript / Obsidian API</text>
+<text x="43" y="1040" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Transformers.js</text>
+<text x="25" y="1076" fill="#adb3a9" font-size="13" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Source links and contribution evidence below.</text>
+</svg>

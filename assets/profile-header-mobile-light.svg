@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 370" role="img" aria-labelledby="title desc">
+<title id="title">Rajveer Vadnal: systems that can prove themselves</title>
+<desc id="desc">Agentic systems engineer building coding tools and local-first AI products.</desc>
+<rect x="1" y="1" width="428" height="368" rx="5" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="25" y="37" fill="#20261f" font-size="21" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Rajveer Vadnal</text>
+<text x="25" y="65" fill="#515e4e" font-size="14" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Agentic systems engineer</text>
+<text x="23" y="130" fill="#20261f" font-size="46" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Systems that</text>
+<text x="23" y="194" fill="#20261f" font-size="46" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">can prove</text>
+<text x="23" y="258" fill="#a83e1b" font-size="46" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">themselves.</text>
+<path d="M25 287H405" stroke="#bac4b3"/>
+<text x="25" y="320" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Coding tools / Local-first AI</text>
+<text x="25" y="346" fill="#a83e1b" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Verification</text>
+</svg>

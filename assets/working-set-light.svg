@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" role="img" aria-labelledby="title desc">
+<title id="title">Working principles and technical working set</title>
+<desc id="desc">Evidence before claims. Local-first when privacy matters. Agents as systems with human approval. Tools span agent systems, languages, local AI, desktop systems, delivery and verification.</desc>
+<rect x="1" y="1" width="858" height="658" rx="5" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="25" y="37" fill="#20261f" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Working principles + toolkit</text>
+<text x="25" y="64" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">HOW I BUILD / WHAT I REACH FOR</text>
+<path d="M1 82H859" stroke="#bac4b3"/>
+<text x="25" y="118" fill="#a83e1b" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">01</text>
+<text x="60" y="118" fill="#20261f" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Evidence before claims</text>
+<text x="60" y="147" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tests and inspectable outputs beat a claim that the task is complete.</text>
+<text x="25" y="211" fill="#a83e1b" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">02</text>
+<text x="60" y="211" fill="#20261f" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Local-first when privacy matters</text>
+<text x="60" y="240" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Keep sensitive context on-device by default. Make external boundaries explicit.</text>
+<text x="25" y="304" fill="#a83e1b" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">03</text>
+<text x="60" y="304" fill="#20261f" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Agents as systems</text>
+<text x="60" y="333" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Build state and recovery around the model. Keep human approval points explicit.</text>
+<path d="M25 369H835" stroke="#bac4b3"/>
+<text x="25" y="397" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">AGENT SYSTEMS</text>
+<text x="25" y="426" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">MCP / FastMCP / RAG</text>
+<text x="25" y="450" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Zod / JSON Schema / eval gates</text>
+<text x="442" y="397" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">LANGUAGES</text>
+<text x="442" y="426" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Python / TypeScript / JavaScript</text>
+<text x="442" y="450" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Rust / Kotlin</text>
+<text x="25" y="516" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">LOCAL AI + CODE</text>
+<text x="25" y="545" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Ollama / Transformers.js</text>
+<text x="25" y="569" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tree-sitter / PyTorch / graphs</text>
+<text x="442" y="516" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">SYSTEMS + DELIVERY</text>
+<text x="442" y="545" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tauri / SQLite / Docker / Node.js</text>
+<text x="442" y="569" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">React / Next.js / Flask / CI</text>
+<text x="442" y="593" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Mutation tests / Ed25519 / PyPI</text>
+</svg>

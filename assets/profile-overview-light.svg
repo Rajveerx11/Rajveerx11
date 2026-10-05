@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" role="img" aria-labelledby="title desc">
+<title id="title">About Rajveer Vadnal</title>
+<desc id="desc">Founder at neuratile and Visage AI. Python, TypeScript and Rust. Diploma in Computer Science Engineering; B.Tech in AI and Machine Learning.</desc>
+<rect x="1" y="1" width="858" height="278" rx="5" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="25" y="37" fill="#20261f" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">The builder behind the map</text>
+<text x="25" y="64" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">CONTEXT / EXECUTION / VERIFICATION</text>
+<path d="M1 82H859" stroke="#bac4b3"/>
+<text x="25" y="119" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">I build coding tools and local-first AI products. My work focuses on context, controlled</text>
+<text x="25" y="143" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">execution, and verification.</text>
+<path d="M25 165H835" stroke="#bac4b3"/>
+<text x="25" y="191" fill="#a83e1b" font-size="17" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Founder / neuratile + Visage AI</text>
+<text x="25" y="219" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Developer tools including Tessera; aesthetic outcome previews at Visage AI.</text>
+<text x="25" y="254" fill="#20261f" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Python / TypeScript / Rust</text>
+<text x="345" y="254" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Diploma: CSE · B.Tech: AI &amp; ML</text>
+</svg>

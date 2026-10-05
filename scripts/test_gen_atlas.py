@@ -3,7 +3,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
-from gen_atlas import ROOT, build_assets
+from gen_atlas import PANELS, ROOT, build_assets
 
 
 class PictureParser(HTMLParser):
@@ -23,7 +23,10 @@ class PictureParser(HTMLParser):
 class AtlasTest(unittest.TestCase):
     def test_generated_variants_match_checked_in_files(self):
         assets = build_assets()
-        self.assertEqual(len(assets), 10)
+        self.assertEqual(len(assets), 32)
+        for panel in PANELS:
+            for variant in ("", "-light", "-mobile", "-mobile-light"):
+                self.assertIn(f"{panel}{variant}.svg", assets)
         for name, svg in assets.items():
             with self.subTest(name=name):
                 self.assertEqual((ROOT / "assets" / name).read_text(encoding="utf-8"), svg)
@@ -68,8 +71,8 @@ class AtlasTest(unittest.TestCase):
     def test_readme_images_have_existing_sources_and_alt_text(self):
         parser = PictureParser()
         parser.feed((ROOT / "README.md").read_text(encoding="utf-8"))
-        self.assertEqual(len(parser.sources), 7)
-        self.assertGreaterEqual(len(parser.images), 5)
+        self.assertEqual(len(parser.sources), 24)
+        self.assertEqual(len(parser.images), 10)
         for image in parser.images:
             self.assertTrue(image.get("alt"))
             self.assertTrue((ROOT / image["src"]).is_file())
@@ -79,6 +82,46 @@ class AtlasTest(unittest.TestCase):
             else:
                 self.assertIn("max-width", source["media"])
             self.assertTrue((ROOT / source["srcset"]).is_file())
+
+    def test_evaluation_keeps_results_and_limitations_visible(self):
+        for name, svg in build_assets().items():
+            if not name.startswith("evaluation"):
+                continue
+            visible = " ".join(element.text or "" for element in
+                               ET.fromstring(svg).iter("{http://www.w3.org/2000/svg}text"))
+            for evidence in ("60", "20 tasks / 3 configurations", "20 / 20 passed", "17 / 20 passed",
+                             "3 failed", "AUGUST 2026", "NOT AN AGENT RANKING",
+                             "eight days earlier", "Token usage and exact cost are unknown",
+                             "One attempt", "All outcomes retained", "not tampering",
+                             "protected outcome verifier", "anti-tampering gate"):
+                with self.subTest(asset=name, evidence=evidence):
+                    self.assertIn(evidence, visible)
+
+    def test_visual_profile_keeps_native_navigation_and_text_companion(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        companion = (ROOT / "docs/profile-evidence.md").read_text(encoding="utf-8")
+        self.assertNotIn("| ---", readme)
+        self.assertIn("[Accessible text & evidence](docs/profile-evidence.md)", readme)
+        for source in ("https://github.com/Rajveerx11/AgentWisper",
+                       "https://github.com/Rajveerx11/gfi-scout",
+                       "https://github.com/Rajveerx11/repograph-intelligence",
+                       "https://github.com/Rajveerx11/neura",
+                       "https://github.com/neuratile/Tessera",
+                       "https://github.com/Rajveerx11/proof-of-work",
+                       "https://github.com/Rajveerx11/obsidian-graph-intelligence",
+                       "https://github.com/Rajveerx11/unified-memory-mcp",
+                       "https://github.com/Rajveerx11/pr-reliability-platform",
+                       "https://github.com/Rajveerx11/Master-Models"):
+            self.assertIn(f"]({source})", readme)
+            self.assertIn(f"]({source})", companion)
+        for evidence in ("48266fa55f46fff88a966aecf88c0b437e1c5704",
+                         "6cdbc5b3b0e0432f328451f949e5ab12c9d83fac",
+                         "9ec127a71b818296b5ac201a2bfd7e926e69a206",
+                         "stop_during_baseline_aborts_before_any_mutant_runs",
+                         "arithmetic_operators_form_a_distinct_cycle",
+                         "post_jira_comment = false", "not a general ranking",
+                         "inclusion does not imply sole authorship"):
+            self.assertIn(evidence, companion.lower() if evidence.startswith("inclusion") else companion)
 
     def test_workflow_tracks_index_and_avoids_generated_commit_loop(self):
         workflow = (ROOT / ".github/workflows/stats.yml").read_text(encoding="utf-8")

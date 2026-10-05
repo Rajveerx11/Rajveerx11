@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 470" role="img" aria-labelledby="title desc">
+<title id="title">About Rajveer Vadnal</title>
+<desc id="desc">Founder at neuratile and Visage AI. Python, TypeScript and Rust. Diploma in Computer Science Engineering; B.Tech in AI and Machine Learning.</desc>
+<rect x="1" y="1" width="428" height="468" rx="5" fill="#f1f2eb" stroke="#bac4b3"/>
+<text x="25" y="37" fill="#20261f" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">The builder behind the map</text>
+<text x="25" y="64" fill="#515e4e" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">CONTEXT / EXECUTION / VERIFICATION</text>
+<path d="M1 82H429" stroke="#bac4b3"/>
+<text x="25" y="119" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">I build coding tools and local-first AI</text>
+<text x="25" y="143" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">products. My work focuses on context,</text>
+<text x="25" y="167" fill="#515e4e" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">controlled execution, and verification.</text>
+<path d="M25 202H405" stroke="#bac4b3"/>
+<text x="25" y="228" fill="#a83e1b" font-size="17" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Founder / neuratile + Visage AI</text>
+<text x="25" y="256" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Developer tools including Tessera;</text>
+<text x="25" y="278" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">aesthetic outcome previews at Visage AI.</text>
+<text x="25" y="338" fill="#20261f" font-size="17" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Python / TypeScript / Rust</text>
+<text x="25" y="379" fill="#a83e1b" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">EDUCATION</text>
+<text x="25" y="406" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Diploma / Computer Science Engineering</text>
+<text x="25" y="432" fill="#515e4e" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">B.Tech / AI &amp; Machine Learning</text>
+</svg>

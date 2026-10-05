@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1090" role="img" aria-labelledby="title desc">
+<title id="title">Working principles and technical working set</title>
+<desc id="desc">Evidence before claims. Local-first when privacy matters. Agents as systems with human approval. Tools span agent systems, languages, local AI, desktop systems, delivery and verification.</desc>
+<rect x="1" y="1" width="428" height="1088" rx="5" fill="#131514" stroke="#363c35"/>
+<text x="25" y="37" fill="#eeeae1" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Working principles + toolkit</text>
+<text x="25" y="64" fill="#adb3a9" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">HOW I BUILD / WHAT I REACH FOR</text>
+<path d="M1 82H429" stroke="#363c35"/>
+<text x="25" y="118" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">01</text>
+<text x="60" y="118" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Evidence before claims</text>
+<text x="60" y="147" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tests and inspectable outputs beat a</text>
+<text x="60" y="170" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">claim that the task is complete.</text>
+<text x="25" y="248" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">02</text>
+<text x="60" y="248" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Local-first when privacy matters</text>
+<text x="60" y="277" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Keep sensitive context on-device by</text>
+<text x="60" y="300" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">default. Make external boundaries</text>
+<text x="60" y="323" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">explicit.</text>
+<text x="25" y="378" fill="#ef9773" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">03</text>
+<text x="60" y="378" fill="#eeeae1" font-size="19" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Agents as systems</text>
+<text x="60" y="407" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Build state and recovery around the</text>
+<text x="60" y="430" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">model. Keep human approval points</text>
+<text x="60" y="453" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">explicit.</text>
+<path d="M25 482H405" stroke="#363c35"/>
+<text x="25" y="510" fill="#ef9773" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">AGENT SYSTEMS</text>
+<text x="25" y="539" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">MCP / FastMCP / RAG</text>
+<text x="25" y="563" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Zod / JSON Schema / eval gates</text>
+<text x="25" y="648" fill="#ef9773" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">LANGUAGES</text>
+<text x="25" y="677" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Python / TypeScript / JavaScript</text>
+<text x="25" y="701" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Rust / Kotlin</text>
+<text x="25" y="786" fill="#ef9773" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">LOCAL AI + CODE</text>
+<text x="25" y="815" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Ollama / Transformers.js</text>
+<text x="25" y="839" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tree-sitter / PyTorch / graphs</text>
+<text x="25" y="924" fill="#ef9773" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">SYSTEMS + DELIVERY</text>
+<text x="25" y="953" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Tauri / SQLite / Docker / Node.js</text>
+<text x="25" y="977" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">React / Next.js / Flask / CI</text>
+<text x="25" y="1001" fill="#adb3a9" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Mutation tests / Ed25519 / PyPI</text>
+</svg>

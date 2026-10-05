@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 590" role="img" aria-labelledby="title desc">
+<title id="title">Published Proof-of-Work evaluation, with limitations</title>
+<desc id="desc">60 runs on 20 tasks, one attempt per configuration. Codex and Copilot: 20 passed, 0 failed each. OpenCode: 17 passed, 3 failed. August 2026 recorded cohort, not a general agent ranking. Codex rows imported from eight days earlier. Token usage and exact cost unknown.</desc>
+<rect x="1" y="1" width="858" height="588" rx="5" fill="#131514" stroke="#363c35"/>
+<text x="25" y="37" fill="#eeeae1" font-size="23" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">An evaluation you can inspect</text>
+<text x="25" y="64" fill="#adb3a9" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">PROOF-OF-WORK / AUGUST 2026 COHORT</text>
+<path d="M1 82H859" stroke="#363c35"/>
+<text x="25" y="142" fill="#ef9773" font-size="48" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">60</text>
+<text x="101" y="123" fill="#eeeae1" font-size="18" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">recorded runs</text>
+<text x="101" y="149" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">20 tasks / 3 configurations</text>
+<text x="25" y="188" fill="#adb3a9" font-size="15" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">One attempt per task and configuration. All outcomes retained.</text>
+<text x="25" y="241" fill="#eeeae1" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Codex CLI 0.146.0</text>
+<text x="25" y="263" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">gpt-5.6-sol</text>
+<rect x="335" y="232" width="340" height="12" rx="2" fill="#363c35"/>
+<rect x="335" y="232" width="340.0" height="12" rx="2" fill="#ef9773"/>
+<text x="698" y="244" fill="#eeeae1" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">20 / 20 passed</text>
+<text x="698" y="266" fill="#adb3a9" font-size="13" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">0 failed</text>
+<text x="25" y="307" fill="#eeeae1" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Copilot CLI 1.0.79</text>
+<text x="25" y="329" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">auto router</text>
+<rect x="335" y="298" width="340" height="12" rx="2" fill="#363c35"/>
+<rect x="335" y="298" width="340.0" height="12" rx="2" fill="#ef9773"/>
+<text x="698" y="310" fill="#eeeae1" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">20 / 20 passed</text>
+<text x="698" y="332" fill="#adb3a9" font-size="13" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">0 failed</text>
+<text x="25" y="373" fill="#eeeae1" font-size="16" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">OpenCode CLI 1.4.0</text>
+<text x="25" y="395" fill="#adb3a9" font-size="13" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Nemotron 3 Nano</text>
+<rect x="335" y="364" width="340" height="12" rx="2" fill="#363c35"/>
+<rect x="335" y="364" width="289.0" height="12" rx="2" fill="#ef9773"/>
+<text x="698" y="376" fill="#eeeae1" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">17 / 20 passed</text>
+<text x="698" y="398" fill="#adb3a9" font-size="13" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">3 failed</text>
+<path d="M25 411H835" stroke="#363c35"/>
+<text x="25" y="434" fill="#ef9773" font-size="12" text-anchor="start" font-family="ui-monospace, Consolas, monospace">RECORDED RESULTS, NOT AN AGENT RANKING</text>
+<text x="25" y="464" fill="#adb3a9" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Pass = successful exit + protected outcome verifier + deterministic anti-tampering gate.</text>
+<text x="25" y="494" fill="#adb3a9" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Three failures: outcome verification, not tampering. Codex rows imported unchanged from eight days</text>
+<text x="25" y="515" fill="#adb3a9" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">earlier.</text>
+<text x="25" y="545" fill="#adb3a9" font-size="14" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Token usage and exact cost are unknown. Read the linked methodology and limitations.</text>
+</svg>

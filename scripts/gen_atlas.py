@@ -6,6 +6,7 @@ Run with --check to verify checked-in assets without modifying them.
 from html import escape
 from pathlib import Path
 import sys
+from textwrap import wrap
 
 ROOT = Path(__file__).resolve().parents[1]
 THEMES = {
@@ -48,17 +49,30 @@ def frame(width, height, title, description, body, colors):
             + "\n".join(body) + "\n</svg>\n")
 
 
-def header(colors):
+def header(colors, mobile=False):
     c = colors
+    if mobile:
+        body = [
+            text(25, 37, "Rajveer Vadnal", c["text"], 21),
+            text(25, 65, "Agentic systems engineer", c["muted"], 14, mono=True),
+            text(23, 130, "Systems that", c["text"], 46),
+            text(23, 194, "can prove", c["text"], 46),
+            text(23, 258, "themselves.", c["accent"], 46),
+            f'<path d="M25 287H405" stroke="{c["line"]}"/>',
+            text(25, 320, "Coding tools / Local-first AI", c["muted"], 16),
+            text(25, 346, "Verification", c["accent"], 16),
+        ]
+        return frame(430, 370, "Rajveer Vadnal: systems that can prove themselves",
+                     "Agentic systems engineer building coding tools and local-first AI products.", body, c)
     body = [
         text(32, 41, "Rajveer Vadnal / Agentic systems engineer", c["muted"], 17, mono=True),
         text(29, 121, "Systems that can", c["text"], 64),
-        text(29, 195, "prove themselves.", c["accent"], 64),
-        f'<path d="M32 222H828" stroke="{c["line"]}"/>',
-        text(32, 255, "Coding tools · Local-first AI · Verification", c["muted"], 17),
-        text(828, 255, "RV", c["accent"], 18, anchor="end", mono=True),
+        text(29, 210, "prove themselves.", c["accent"], 64),
+        f'<path d="M32 240H828" stroke="{c["line"]}"/>',
+        text(32, 277, "Coding tools · Local-first AI · Verification", c["muted"], 17),
+        text(828, 277, "RV", c["accent"], 18, anchor="end", mono=True),
     ]
-    return frame(860, 280, "Rajveer Vadnal: systems that can prove themselves",
+    return frame(860, 302, "Rajveer Vadnal: systems that can prove themselves",
                  "Agentic systems engineer building coding tools and local-first AI products.", body, c)
 
 
@@ -148,15 +162,185 @@ def recorder(colors, mobile=False):
                  "a regression test, and suppression of tracker comments for the internal baseline.", body, c)
 
 
+def paragraph(x, y, value, colors, columns=48, size=16, leading=24):
+    return [text(x, y + i * leading, line, colors["muted"], size)
+            for i, line in enumerate(wrap(value, columns))]
+
+
+def panel_heading(width, title, label, colors):
+    return [text(25, 37, title, colors["text"], 23),
+            text(25, 64, label, colors["muted"], 12, mono=True),
+            f'<path d="M1 82H{width - 1}" stroke="{colors["line"]}"/>']
+
+
+def overview(colors, mobile=False):
+    c = colors
+    width, height = (430, 470) if mobile else (860, 280)
+    body = panel_heading(width, "The builder behind the map", "CONTEXT / EXECUTION / VERIFICATION", c)
+    body += paragraph(25, 119,
+                      "I build coding tools and local-first AI products. My work focuses on context, controlled execution, and verification.",
+                      c, columns=42 if mobile else 93)
+    y = 220 if mobile else 183
+    body += [f'<path d="M25 {y - 18}H{width - 25}" stroke="{c["line"]}"/>',
+             text(25, y + 8, "Founder / neuratile + Visage AI", c["accent"], 17)]
+    body += paragraph(25, y + 36, "Developer tools including Tessera; aesthetic outcome previews at Visage AI.",
+                      c, columns=42 if mobile else 93, size=15, leading=22)
+    if mobile:
+        body += [text(25, 338, "Python / TypeScript / Rust", c["text"], 17),
+                 text(25, 379, "EDUCATION", c["accent"], 12, mono=True),
+                 text(25, 406, "Diploma / Computer Science Engineering", c["muted"], 15),
+                 text(25, 432, "B.Tech / AI & Machine Learning", c["muted"], 15)]
+    else:
+        body += [text(25, 254, "Python / TypeScript / Rust", c["text"], 15),
+                 text(345, 254, "Diploma: CSE · B.Tech: AI & ML", c["muted"], 15)]
+    return frame(width, height, "About Rajveer Vadnal", "Founder at neuratile and Visage AI. "
+                 "Python, TypeScript and Rust. Diploma in Computer Science Engineering; B.Tech in AI and Machine Learning.", body, c)
+
+
+FLAGSHIPS = [
+    ("01", "Proof-of-Work", "verification",
+     "Rerun checks. Detect deleted or weakened tests. Record hash-chained, Ed25519-signed verdicts.",
+     ("Python / FastMCP / SQLite", "Ed25519 / GitHub Actions")),
+    ("02", "GFI Scout", "context",
+     "Find contribution opportunities using repository health, maintainer responsiveness, freshness, and setup friction.",
+     ("Python / FastMCP / asyncio", "Rich / Textual / GitHub API")),
+    ("03", "Tessera", "testing",
+     "Local-first testing IDE at neuratile. Code context, structured QA artifacts, and optional isolated Docker test execution.",
+     ("Rust / Tauri / React / Tree-sitter", "Ollama / Docker")),
+    ("04", "Obsidian Graph Intelligence", "memory",
+     "Analyze and repair local knowledge graphs. Offline embeddings; queries opt in. External providers have separate data boundaries.",
+     ("TypeScript / Obsidian API", "Transformers.js")),
+]
+
+
+def flagships(colors, mobile=False):
+    c = colors
+    width, height = (430, 1095) if mobile else (860, 615)
+    body = panel_heading(width, "Selected systems", "FOUR PROJECTS / INSPECTABLE SOURCE", c)
+    for i, (number, name, glyph, description, stack) in enumerate(FLAGSHIPS):
+        x, y = (25, 103 + i * 242) if mobile else (25 + (i % 2) * 417, 103 + (i // 2) * 244)
+        w = 380 if mobile else 393
+        body += [f'<rect x="{x}" y="{y}" width="{w}" height="226" rx="3" fill="{c["surface"]}" stroke="{c["line"]}"/>',
+                 text(x + 18, y + 31, number, c["accent"], 13, mono=True),
+                 f'<g transform="translate({x + w - 42} {y + 13}) scale(.55)" fill="none" stroke="{c["accent"]}" stroke-width="2">{GLYPHS[glyph]}</g>',
+                 text(x + 18, y + 63, name, c["text"], 20)]
+        body += paragraph(x + 18, y + 94, description, c, columns=40 if mobile else 43, size=16, leading=23)
+        body += [f'<path d="M{x + 18} {y + 169}H{x + w - 18}" stroke="{c["line"]}"/>']
+        body += [text(x + 18, y + 192 + j * 19, line, c["muted"], 13, mono=True)
+                 for j, line in enumerate(stack)]
+    body.append(text(25, height - 19, "Source links and contribution evidence below.", c["muted"], 13))
+    return frame(width, height, "Selected engineering projects", "Proof-of-Work, GFI Scout, Tessera "
+                 "and Obsidian Graph Intelligence. Descriptions and technology stacks; linked evidence is in the README.", body, c)
+
+
+EVALUATION = [
+    ("Codex CLI 0.146.0", "gpt-5.6-sol", 20, 0),
+    ("Copilot CLI 1.0.79", "auto router", 20, 0),
+    ("OpenCode CLI 1.4.0", "Nemotron 3 Nano", 17, 3),
+]
+
+
+def evaluation(colors, mobile=False):
+    c = colors
+    width, height = (430, 875) if mobile else (860, 590)
+    body = panel_heading(width, "An evaluation you can inspect", "PROOF-OF-WORK / AUGUST 2026 COHORT", c)
+    body += [text(25, 142, "60", c["accent"], 48),
+             text(101, 123, "recorded runs", c["text"], 18),
+             text(101, 149, "20 tasks / 3 configurations", c["muted"], 15)]
+    body += paragraph(25, 188, "One attempt per task and configuration. All outcomes retained.",
+                      c, columns=42 if mobile else 93, size=15, leading=22)
+    for i, (name, model, passed, failed) in enumerate(EVALUATION):
+        y = (258 + i * 125) if mobile else (241 + i * 66)
+        body += [text(25, y, name, c["text"], 16),
+                 text(25, y + 22, model, c["muted"], 13, mono=True)]
+        bx, by, bw = (25, y + 38, 270) if mobile else (335, y - 9, 340)
+        body += [f'<rect x="{bx}" y="{by}" width="{bw}" height="12" rx="2" fill="{c["line"]}"/>',
+                 f'<rect x="{bx}" y="{by}" width="{bw * passed / 20}" height="12" rx="2" fill="{c["accent"]}"/>',
+                 text(315 if mobile else 698, by + 12, f"{passed} / 20 passed", c["text"], 14),
+                 text(315 if mobile else 698, by + 34, f"{failed} failed", c["muted"], 13)]
+    y = 636 if mobile else 430
+    body += [f'<path d="M25 {y - 19}H{width - 25}" stroke="{c["line"]}"/>',
+             text(25, y + 4, "RECORDED RESULTS, NOT AN AGENT RANKING", c["accent"], 12, mono=True)]
+    caveats = [
+        "Pass = successful exit + protected outcome verifier + deterministic anti-tampering gate.",
+        "Three failures: outcome verification, not tampering. Codex rows imported unchanged from eight days earlier.",
+        "Token usage and exact cost are unknown. Read the linked methodology and limitations.",
+    ]
+    cy = y + 34
+    for caveat in caveats:
+        lines = paragraph(25, cy, caveat, c, columns=44 if mobile else 100, size=14, leading=21)
+        body += lines
+        cy += len(lines) * 21 + 9
+    return frame(width, height, "Published Proof-of-Work evaluation, with limitations",
+                 "60 runs on 20 tasks, one attempt per configuration. Codex and Copilot: 20 passed, 0 failed each. "
+                 "OpenCode: 17 passed, 3 failed. August 2026 recorded cohort, not a general agent ranking. "
+                 "Codex rows imported from eight days earlier. Token usage and exact cost unknown.", body, c)
+
+
+PRINCIPLES = [
+    ("01", "Evidence before claims", "Tests and inspectable outputs beat a claim that the task is complete."),
+    ("02", "Local-first when privacy matters", "Keep sensitive context on-device by default. Make external boundaries explicit."),
+    ("03", "Agents as systems", "Build state and recovery around the model. Keep human approval points explicit."),
+]
+TOOLS = [
+    ("AGENT SYSTEMS", "MCP / FastMCP / RAG", "Zod / JSON Schema / eval gates"),
+    ("LANGUAGES", "Python / TypeScript / JavaScript", "Rust / Kotlin"),
+    ("LOCAL AI + CODE", "Ollama / Transformers.js", "Tree-sitter / PyTorch / graphs"),
+    ("SYSTEMS + DELIVERY", "Tauri / SQLite / Docker / Node.js", "React / Next.js / Flask / CI", "Mutation tests / Ed25519 / PyPI"),
+]
+
+
+def working_set(colors, mobile=False):
+    c = colors
+    width, height = (430, 1090) if mobile else (860, 660)
+    body = panel_heading(width, "Working principles + toolkit", "HOW I BUILD / WHAT I REACH FOR", c)
+    for i, (number, name, description) in enumerate(PRINCIPLES):
+        y = 118 + i * (130 if mobile else 93)
+        body += [text(25, y, number, c["accent"], 13, mono=True),
+                 text(60, y, name, c["text"], 19)]
+        body += paragraph(60, y + 29, description, c, columns=38 if mobile else 86, size=16, leading=23)
+    y = 510 if mobile else 397
+    body.append(f'<path d="M25 {y - 28}H{width - 25}" stroke="{c["line"]}"/>')
+    for i, (label, *lines) in enumerate(TOOLS):
+        x, ty = (25, y + i * 138) if mobile else (25 + (i % 2) * 417, y + (i // 2) * 119)
+        body.append(text(x, ty, label, c["accent"], 12, mono=True))
+        body += [text(x, ty + 29 + j * 24, line, c["muted"], 16) for j, line in enumerate(lines)]
+    return frame(width, height, "Working principles and technical working set",
+                 "Evidence before claims. Local-first when privacy matters. Agents as systems with human approval. "
+                 "Tools span agent systems, languages, local AI, desktop systems, delivery and verification.", body, c)
+
+
+def contact(colors, mobile=False):
+    c = colors
+    width, height = (430, 215) if mobile else (860, 155)
+    body = [text(25, 43, "Build something inspectable.", c["text"], 26),
+            text(25, 78, "Developer tools / Agentic systems", c["muted"], 17)]
+    body += paragraph(25, 116, "Contact and collaboration: email, LinkedIn, or portfolio. Open a link below to get in touch.",
+                      c, columns=43 if mobile else 97, size=15, leading=23)
+    return frame(width, height, "Contact and collaboration", "Building tools for developers or agentic systems? "
+                 "Email Rajveer, connect on LinkedIn or explore the portfolio using the links below.", body, c)
+
+
+PANELS = {
+    "profile-header": header,
+    "profile-overview": overview,
+    "execution-atlas": atlas,
+    "selected-systems": flagships,
+    "flight-recorder": recorder,
+    "evaluation": evaluation,
+    "working-set": working_set,
+    "contact": contact,
+}
+
+
 def build_assets():
     assets = {}
     for theme, colors in THEMES.items():
         suffix = "" if theme == "dark" else "-light"
-        assets[f"profile-header{suffix}.svg"] = header(colors)
         for mobile in (False, True):
             variant = "-mobile" if mobile else ""
-            assets[f"execution-atlas{variant}{suffix}.svg"] = atlas(colors, mobile)
-            assets[f"flight-recorder{variant}{suffix}.svg"] = recorder(colors, mobile)
+            for name, render in PANELS.items():
+                assets[f"{name}{variant}{suffix}.svg"] = render(colors, mobile)
     return assets
 
 

@@ -4,8 +4,8 @@ This repository powers Rajveer Vadnal's GitHub profile. Corrections to links, wo
 
 ## Editing
 
-- Update `README.md` for native profile content. Keep source links and readable Markdown alongside visual panels; SVG-internal links do not work when an image is embedded in GitHub.
-- Update `scripts/gen_atlas.py` for the hero, execution atlas, and flight recorder. Run it to regenerate their light/dark and narrow-screen variants. Do not edit those generated SVGs by hand.
+- Keep `README.md` visual-first: SVG panels plus short native link rows. Put detailed descriptions, attribution, regression checks, and accessible text in `docs/profile-evidence.md`. Keep image alt text meaningful; SVG-internal links do not work when an image is embedded in GitHub.
+- Update `scripts/gen_atlas.py` for the hero, overview, execution atlas, selected systems, flight recorder, evaluation, working set, and contact panels. Run it to regenerate all light/dark and narrow-screen variants. Do not edit those generated SVGs by hand. Keep visual claims, alt text, and the text companion consistent.
 - Keep project claims tied to public releases, source, reports or documented status. Atlas paths describe project roles, not implemented integrations. The flight recorder summarizes a pinned public commit, not a simulated live session.
 - `assets/github-stats.svg`, `assets/project-index.svg`, and `docs/public-repositories.md` are generated. Update `scripts/gen_stats.py` or `scripts/gen_projects.py` rather than editing their output.
 - Include public repositories only. Keep forks marked and organization namespaces visible in the linked index; inclusion does not imply sole authorship.

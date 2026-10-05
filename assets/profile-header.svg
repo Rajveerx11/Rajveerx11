@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 302" role="img" aria-labelledby="title desc">
 <title id="title">Rajveer Vadnal: systems that can prove themselves</title>
 <desc id="desc">Agentic systems engineer building coding tools and local-first AI products.</desc>
-<rect x="1" y="1" width="858" height="278" rx="5" fill="#131514" stroke="#363c35"/>
+<rect x="1" y="1" width="858" height="300" rx="5" fill="#131514" stroke="#363c35"/>
 <text x="32" y="41" fill="#adb3a9" font-size="17" text-anchor="start" font-family="ui-monospace, Consolas, monospace">Rajveer Vadnal / Agentic systems engineer</text>
 <text x="29" y="121" fill="#eeeae1" font-size="64" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Systems that can</text>
-<text x="29" y="195" fill="#ef9773" font-size="64" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">prove themselves.</text>
-<path d="M32 222H828" stroke="#363c35"/>
-<text x="32" y="255" fill="#adb3a9" font-size="17" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Coding tools · Local-first AI · Verification</text>
-<text x="828" y="255" fill="#ef9773" font-size="18" text-anchor="end" font-family="ui-monospace, Consolas, monospace">RV</text>
+<text x="29" y="210" fill="#ef9773" font-size="64" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">prove themselves.</text>
+<path d="M32 240H828" stroke="#363c35"/>
+<text x="32" y="277" fill="#adb3a9" font-size="17" text-anchor="start" font-family="Segoe UI, Arial, sans-serif">Coding tools · Local-first AI · Verification</text>
+<text x="828" y="277" fill="#ef9773" font-size="18" text-anchor="end" font-family="ui-monospace, Consolas, monospace">RV</text>
 </svg>
