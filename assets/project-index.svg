@@ -11,11 +11,11 @@
 <text x="412" y="139" text-anchor="end" fill="#adb3a9" font-size="10">Rust</text>
 <text x="32" y="173" fill="#eeeae1" font-size="13">VaultX</text>
 <text x="412" y="173" text-anchor="end" fill="#adb3a9" font-size="10">Kotlin</text>
-<text x="32" y="207" fill="#eeeae1" font-size="13">neura</text>
-<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
-<text x="32" y="241" fill="#eeeae1" font-size="13">AgentWisper</text>
-<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="275" fill="#eeeae1" font-size="13">proof-of-work</text>
+<text x="32" y="207" fill="#eeeae1" font-size="13">proof-of-work</text>
+<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
+<text x="32" y="241" fill="#eeeae1" font-size="13">neura</text>
+<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
+<text x="32" y="275" fill="#eeeae1" font-size="13">AgentWisper</text>
 <text x="412" y="275" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
 <text x="32" y="309" fill="#eeeae1" font-size="13">pr-reliability-platform</text>
 <text x="412" y="309" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
@@ -50,6 +50,6 @@
 <text x="444" y="445" fill="#eeeae1" font-size="13">GPS-App</text>
 <text x="824" y="445" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
 <path d="M32 496H828" stroke="#363c35"/>
-<text x="32" y="519" fill="#adb3a9" font-size="11">22 public repositories · forks marked · snapshot 2026-10-05</text>
+<text x="32" y="519" fill="#adb3a9" font-size="11">22 public repositories · forks marked · snapshot 2026-10-06</text>
 <text x="828" y="519" text-anchor="end" fill="#ef9773" font-size="11">Full linked index ↗</text>
 </svg>
