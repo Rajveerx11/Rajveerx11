@@ -11,10 +11,10 @@
 <text x="412" y="139" text-anchor="end" fill="#adb3a9" font-size="10">Rust</text>
 <text x="32" y="173" fill="#eeeae1" font-size="13">VaultX</text>
 <text x="412" y="173" text-anchor="end" fill="#adb3a9" font-size="10">Kotlin</text>
-<text x="32" y="207" fill="#eeeae1" font-size="13">proof-of-work</text>
-<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="241" fill="#eeeae1" font-size="13">neura</text>
-<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
+<text x="32" y="207" fill="#eeeae1" font-size="13">neura</text>
+<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
+<text x="32" y="241" fill="#eeeae1" font-size="13">proof-of-work</text>
+<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
 <text x="32" y="275" fill="#eeeae1" font-size="13">AgentWisper</text>
 <text x="412" y="275" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
 <text x="32" y="309" fill="#eeeae1" font-size="13">pr-reliability-platform</text>

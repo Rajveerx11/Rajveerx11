@@ -11,8 +11,8 @@ Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solap
 | [Rajveerx11/obsidian-graph-intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) | TypeScript | Non-fork | Used to manage your obsidian vault and notes along with graphs |
 | [neuratile/Tessera](https://github.com/neuratile/Tessera) | Rust | Non-fork | Local-first AI testing IDE. Static analysis → test plans, cases, defect and bug reports — runs fully on your machine. Tauri + Rust + React + Ollama. |
 | [Rajveerx11/VaultX](https://github.com/Rajveerx11/VaultX) | Kotlin | Non-fork | No public description supplied. |
+| [Rajveerx11/neura](https://github.com/Rajveerx11/neura) | JavaScript | Non-fork | Windows-first engineering-agent harness for Pi with explicit modes, policy guardrails, recovery, and verification. |
 | [Rajveerx11/proof-of-work](https://github.com/Rajveerx11/proof-of-work) | Python | Non-fork | Verification gate that catches AI coding agents faking completed work: re-runs real tests, detects deleted or weakened tests and fake passes, and signs every verdict into a tamper-evident audit log. |
-| [Rajveerx11/neura](https://github.com/Rajveerx11/neura) | TypeScript | Non-fork | Windows-first engineering-agent harness for Pi with explicit modes, policy guardrails, recovery, and verification. |
 | [Rajveerx11/AgentWisper](https://github.com/Rajveerx11/AgentWisper) | Python | Non-fork | Minimal local-first voice dictation for developers and coding agents. |
 | [Rajveerx11/pr-reliability-platform](https://github.com/Rajveerx11/pr-reliability-platform) | Python | Non-fork | Approval-first GitHub App for evidence-backed AI pull request review. |
 | [Rajveerx11/skills](https://github.com/Rajveerx11/skills) | JavaScript | Non-fork | My Agent skills collection |

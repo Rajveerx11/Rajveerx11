@@ -3,7 +3,7 @@
 Snapshot: 2026-10-06 UTC. Daily refresh, not live telemetry.
 
 Calendar: 2025-10-06 through 2026-10-06 (inclusive).
-Total contributions in this window: **2,635**.
+Total contributions in this window: **2,636**.
 
 | Metric | Recorded value |
 | --- | ---: |
@@ -343,8 +343,8 @@ Longest streak is window-scoped. Merged PRs are public, all time. Repositories a
 | 2026-08-19 | 31 |
 | 2026-08-20 | 15 |
 | 2026-08-21 | 1 |
-| 2026-08-22 | 3 |
-| 2026-08-23 | 2 |
+| 2026-08-22 | 4 |
+| 2026-08-23 | 1 |
 | 2026-08-24 | 23 |
 | 2026-08-25 | 6 |
 | 2026-08-26 | 9 |
@@ -388,6 +388,6 @@ Longest streak is window-scoped. Merged PRs are public, all time. Repositories a
 | 2026-10-03 | 2 |
 | 2026-10-04 | 5 |
 | 2026-10-05 | 15 |
-| 2026-10-06 | 4 |
+| 2026-10-06 | 5 |
 
 </details>
