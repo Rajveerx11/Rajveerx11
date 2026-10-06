@@ -1,78 +1,37 @@
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/terminal-profile-mobile-light.svg" />
-  <source media="(max-width: 600px)" srcset="assets/terminal-profile-mobile.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-profile-light.svg" />
-  <img width="100%" src="assets/terminal-profile.svg" alt="Rajveer Vadnal: agentic systems engineer. Coding tools, local-first AI, and checks you can rerun. Python, TypeScript, Rust. ASCII initials: RV." />
-</picture>
+<div align="center">
 
-[Portfolio](https://rajveer.codes/) / [Resume](https://rajveer.codes/Rajveer_Vadnal_Resume.pdf) / [LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353) / [Email](mailto:rajveer.r.vadnal@gmail.com)
-
-I spend most of my time in terminals. I build coding tools and local-first AI products around **context, controlled execution, and verification**. Founder at [neuratile](https://neuratile.rajveer.codes/) and [Visage AI](https://getvisageai.online/).
-
-[Accessible text & evidence](docs/profile-evidence.md)
-
-### `~$ ls projects/`
-
-**[proof-of-work/](https://github.com/Rajveerx11/proof-of-work)**: Verification for coding-agent work. Rerun checks, detect weakened tests, and record signed verdicts.<br />
-`Python / FastMCP / SQLite / Ed25519`<br />
-[PyPI](https://pypi.org/project/proof-of-work-agent/) / [Evaluation & limitations](https://github.com/Rajveerx11/proof-of-work/blob/main/reports/2026-08-11-multi-agent/README.md)
-
-**[gfi-scout/](https://github.com/Rajveerx11/gfi-scout)**: Find open-source contribution opportunities using repository health, issue freshness, and setup friction. MCP tools and a CLI/TUI.<br />
-`Python / FastMCP / Rich / Textual`<br />
-[Architecture](https://github.com/Rajveerx11/gfi-scout/blob/main/docs/ARCHITECTURE.md)
-
-**[neuratile/Tessera/](https://github.com/neuratile/Tessera)**: Local-first testing IDE. Code context, structured QA artifacts, and optional isolated Docker execution. Built at neuratile.<br />
-`Rust / Tauri / React / Ollama / Docker`<br />
-[Website](https://tesseraide.vercel.app/) / [My contributions](docs/profile-evidence.md#tessera)
-
-**[neura/](https://github.com/Rajveerx11/neura)**: Windows-first engineering-agent harness for Pi. Explicit modes, policy guardrails, recovery, and verification.<br />
-[Source & documentation](https://github.com/Rajveerx11/neura)
-
-[Browse the public repository index →](docs/public-repositories.md)
-
-### `~$ cat activity.snapshot`
+<h3><code>rajveer@github ~ $ ./contributions.sh</code></h3>
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/contrib-heatmap-mobile-light.svg" />
-  <source media="(max-width: 600px)" srcset="assets/contrib-heatmap-mobile.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contrib-heatmap-light.svg" />
-  <img width="100%" src="assets/contrib-heatmap.svg" alt="GitHub contribution calendar. The image includes its date range, contribution total, and UTC snapshot date. Daily refresh, not live telemetry or a productivity score." />
+<source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/contrib-heatmap-static-light.svg" />
+<source media="(prefers-reduced-motion: reduce)" srcset="./assets/contrib-heatmap-static.svg" />
+<source media="(prefers-color-scheme: light)" srcset="./assets/contrib-heatmap-light.svg" />
+<img src="./assets/contrib-heatmap.svg" width="860" alt="Rajveer's GitHub contribution graph. Actual daily counts, refreshed daily; the image includes its UTC snapshot date. Text equivalents are linked below." />
 </picture>
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/github-stats-mobile-light.svg" />
-  <source media="(max-width: 600px)" srcset="assets/github-stats-mobile.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/github-stats-light.svg" />
-  <img width="100%" src="assets/github-stats.svg" alt="Dated GitHub activity snapshot: current streak, longest streak within the displayed calendar window, public merged PRs, owned public non-fork repositories, stars across those repositories, and followers. See the activity notes for counting rules." />
-</picture>
+<br />
+<br />
 
-[Activity snapshot & daily counts (text)](docs/activity.md) / [Counting rules](docs/profile-evidence.md#public-catalog-and-activity)
+<h3><code>rajveer@github ~ $ whoami</code></h3>
 
-### `~$ cat principles.txt`
+<table>
+<tr>
+<td valign="top"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/rajveer-ascii-static.svg" /><img src="./assets/rajveer-ascii.svg" width="420" alt="Rajveer Vadnal: ASCII portrait made from his supplied photograph, revealed row by row like terminal output. Reduced motion displays the completed portrait immediately." /></picture></td>
+<td valign="top"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/stats-static.svg" /><img src="./assets/stats.svg" width="420" alt="Rajveer's actual contribution and streak statistics: current streak, longest within the displayed year, contributions, active days, best day, average per active day, and monthly totals. See the linked text snapshot for every value and date." /></picture></td>
+</tr>
+</table>
 
-```text
-evidence:  rerunnable checks
-privacy:   explicit boundaries
-execution: recovery + approval
-```
+<br />
+<br />
 
-<details>
-<summary><code>~$ find ./</code>: more work & evidence</summary>
+<h3><code>rajveer@github ~ $ ./links.sh</code></h3>
+
+<p><b>Agentic Systems Engineer · Local-first AI · Founder, neuratile</b></p>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-rajveer.codes-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://rajveer.codes/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rajveer_Vadnal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajveer-vadnal-374664353) [![neuratile](https://img.shields.io/badge/neuratile-neuratile.rajveer.codes-22d3ee?style=for-the-badge&logo=gnometerminal&logoColor=black)](https://neuratile.rajveer.codes/) [![Email](https://img.shields.io/badge/Email-Let%27s_talk-E4405F?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajveer.r.vadnal@gmail.com)
 
 <br />
 
-- **Context:** [RepoGraph Intelligence](https://github.com/Rajveerx11/repograph-intelligence)
-- **Memory:** [Obsidian Graph Intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) · [Unified Memory MCP](https://github.com/Rajveerx11/unified-memory-mcp)
-- **Human input:** [AgentWisper](https://github.com/Rajveerx11/AgentWisper)
-- **Review:** [PR Reliability Platform](https://github.com/Rajveerx11/pr-reliability-platform)
-- **Local models:** [Master Models](https://github.com/Rajveerx11/Master-Models)
+[Resume](https://rajveer.codes/Rajveer_Vadnal_Resume.pdf) · [Accessible text & evidence](docs/profile-evidence.md) · [Activity snapshot & daily counts](docs/activity.md)
 
-[Project details, attribution & evaluation](docs/profile-evidence.md) / [Public repository index](docs/public-repositories.md) / [Execution atlas / download and open locally](docs/execution-atlas.html)
-
-The atlas groups projects by role; it does not claim implemented integrations. Published evaluations retain their methodology and limitations.
-
-</details>
-
-### `~$ ./connect`
-
-Building developer tools or local-first AI? [Email me](mailto:rajveer.r.vadnal@gmail.com) or [connect on LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353).
+</div>

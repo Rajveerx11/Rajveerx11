@@ -5,18 +5,36 @@ Snapshot: 2026-10-06 UTC. Daily refresh, not live telemetry.
 Calendar: 2025-10-06 through 2026-10-06 (inclusive).
 Total contributions in this window: **2,636**.
 
-| Metric | Recorded value |
-| --- | ---: |
-| current streak | 5 days |
-| longest in window | 30 days |
-| public merged PRs | 194 |
-| public non-forks | 18 |
-| stars / non-forks | 18 |
-| followers | 13 |
+| Metric | Recorded value | Detail |
+| --- | ---: | --- |
+| current streak | 5 days | today / yesterday; UTC |
+| longest streak | 30 days | within displayed window |
+| contributions | 2,636 | in the last year |
+| active days | 180 / 366 | 49% of displayed days |
+| best day | 106 | 2026-09-12 |
+| avg / active day | 14.6 | contributions |
 
-Longest streak is window-scoped. Merged PRs are public, all time. Repositories and stars cover owned public non-forks. Calendar counts follow GitHub contribution rules and can include anonymized private activity counts, never private repository metadata.
+Longest streak is window-scoped. Best-day ties use the earliest day. Average divides contributions by active days, not all calendar days. Calendar counts follow GitHub contribution rules and may include anonymized private counts; no private repository metadata is published.
 
 [Counting rules](profile-evidence.md#public-catalog-and-activity) / [Back to profile](../README.md)
+
+## Contributions by month
+
+| Month | Contributions |
+| --- | ---: |
+| 2025-10 | 0 |
+| 2025-11 | 2 |
+| 2025-12 | 11 |
+| 2026-01 | 101 |
+| 2026-02 | 15 |
+| 2026-03 | 2 |
+| 2026-04 | 212 |
+| 2026-05 | 468 |
+| 2026-06 | 292 |
+| 2026-07 | 153 |
+| 2026-08 | 430 |
+| 2026-09 | 918 |
+| 2026-10 | 32 |
 
 <details>
 <summary>Daily calendar counts (text equivalent of every heatmap cell)</summary>
@@ -343,8 +361,8 @@ Longest streak is window-scoped. Merged PRs are public, all time. Repositories a
 | 2026-08-19 | 31 |
 | 2026-08-20 | 15 |
 | 2026-08-21 | 1 |
-| 2026-08-22 | 4 |
-| 2026-08-23 | 1 |
+| 2026-08-22 | 3 |
+| 2026-08-23 | 2 |
 | 2026-08-24 | 23 |
 | 2026-08-25 | 6 |
 | 2026-08-26 | 9 |
@@ -391,3 +409,7 @@ Longest streak is window-scoped. Merged PRs are public, all time. Repositories a
 | 2026-10-06 | 5 |
 
 </details>
+
+## Additional public profile counts
+
+Public merged PRs, all time: 194. Owned public non-forks: 18. Stars across those repositories: 18. Followers at refresh: 13.

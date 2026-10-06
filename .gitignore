@@ -1,2 +1,7 @@
 __pycache__/
 *.py[cod]
+# Original photographs and photo-preparation outputs stay local.
+/source-photo.*
+/source-prepped.*
+/data/*-photo.*
+/data/*-portrait.png

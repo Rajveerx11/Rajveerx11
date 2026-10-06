@@ -10,7 +10,8 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 
 import gen_stats
-from gen_terminal import activity_markdown, activity_metrics, calendar_days, heatmap, hero, stats, streaks, variants
+from gen_terminal import calendar_days, heatmap, hero, stats, streaks, variants
+from gen_profile import activity_markdown, card, graph, metrics, monthly, number
 
 
 class StatsTest(unittest.TestCase):
@@ -68,22 +69,35 @@ class StatsTest(unittest.TestCase):
 
     def test_accessible_text_matches_every_metric_and_calendar_day(self):
         markdown = activity_markdown(self.snapshot)
-        svg = stats(self.snapshot)
+        svg = card(self.snapshot)
         self.assertIn("2026-10-06 UTC", markdown)
         self.assertIn("**244**", markdown)
         self.assertIn("2025-10-06 through 2026-10-06", markdown)
-        for label, value in activity_metrics(self.snapshot):
-            self.assertIn(f"| {label} | {value} |", markdown)
-            self.assertIn(value, svg)
+        for label, value, suffix, caption, _ in metrics(self.snapshot):
+            formatted = number(value, value)
+            self.assertIn(f"| {label} | {formatted}{suffix} | {caption} |", markdown)
+            self.assertIn(formatted, svg)
+        for month, total in monthly(self.days):
+            self.assertIn(f"| {month} | {total} |", markdown)
+            self.assertIn(f"{month}: {total} contributions", svg)
         for day in self.days:
             self.assertIn(f"| {day['date']} | {day['count']} |", markdown)
 
     def test_calendar_partial_week_is_aligned_to_sunday(self):
         days = [{"date": "2026-10-06", "count": 1}, {"date": "2026-10-07", "count": 2}]
-        svg = heatmap(days, "2026-10-07")
+        svg = graph({"days": days, "observed": "2026-10-07"})
         root = ET.fromstring(svg)
         cells = [node for node in root.iter() if node.attrib.get("class") == "cell"]
-        self.assertEqual([node.attrib["y"] for node in cells], ["127", "141"])
+        self.assertEqual([node.attrib["y"] for node in cells], ["56", "72"])
+
+    def test_github_levels_preserved_and_invalid_levels_rejected(self):
+        calendar = {"totalContributions": 1, "weeks": [{"contributionDays": [
+            {"date": "2026-10-06", "contributionCount": 1, "contributionLevel": "FIRST_QUARTILE"}]}]}
+        self.assertEqual(calendar_days(calendar)[0]["level"], 1)
+        for level in ("INVALID", "NONE"):
+            calendar["weeks"][0]["contributionDays"][0]["contributionLevel"] = level
+            with self.assertRaises(ValueError):
+                calendar_days(calendar)
 
     def test_streak_grace_only_for_today_and_stale_snapshots(self):
         days = [{"date": f"2026-10-0{i}", "count": count} for i, count in enumerate([1, 1, 0], 1)]
@@ -100,7 +114,7 @@ class StatsTest(unittest.TestCase):
             with self.subTest(calendar=calendar), self.assertRaises(ValueError):
                 calendar_days(calendar)
 
-    def test_graphql_error_and_fetch_failure_preserve_previous_art(self):
+    def test_graphql_error_fetch_and_render_failures_preserve_all_active_outputs(self):
         with patch("urllib.request.urlopen", return_value=io.BytesIO(b'{"errors":[{"message":"test"}]}')):
             with self.assertRaises(RuntimeError):
                 gen_stats.gql("query", {}, "test")
@@ -108,24 +122,32 @@ class StatsTest(unittest.TestCase):
             previous = Path.cwd()
             try:
                 os.chdir(folder)
-                Path("assets").mkdir()
-                output = Path("assets/github-stats.svg")
-                output.write_text("previous dated art", encoding="utf-8")
-                with patch("gen_stats.token", return_value="test"), patch("gen_stats.collect", side_effect=RuntimeError("offline")):
-                    with self.assertRaises(RuntimeError):
-                        gen_stats.main()
-                self.assertEqual(output.read_text(encoding="utf-8"), "previous dated art")
+                outputs = [Path("assets", filename) for filename in (
+                    "contrib-heatmap.svg", "contrib-heatmap-static.svg", "contrib-heatmap-light.svg",
+                    "contrib-heatmap-static-light.svg", "stats.svg", "stats-static.svg")]
+                outputs.append(Path("docs/activity.md"))
+                for output in outputs:
+                    output.parent.mkdir(exist_ok=True)
+                    output.write_text("previous dated output", encoding="utf-8")
+                for phase in ("fetch", "render"):
+                    with self.subTest(phase=phase), patch("gen_stats.token", return_value="test"), \
+                         patch("gen_stats.collect", return_value=self.snapshot, side_effect=RuntimeError("offline") if phase == "fetch" else None), \
+                         patch("gen_stats.card", side_effect=RuntimeError("render failed") if phase == "render" else card):
+                        with self.assertRaises(RuntimeError):
+                            gen_stats.main()
+                    for output in outputs:
+                        self.assertEqual(output.read_text(encoding="utf-8"), "previous dated output")
             finally:
                 os.chdir(previous)
 
-    def test_main_writes_all_dynamic_variants(self):
+    def test_main_writes_reference_graph_card_and_equivalent_text(self):
         with tempfile.TemporaryDirectory() as folder:
             previous = Path.cwd()
             try:
                 os.chdir(folder)
                 with patch("gen_stats.token", return_value="test"), patch("gen_stats.collect", return_value=self.snapshot):
                     gen_stats.main()
-                self.assertEqual(len(list(Path("assets").glob("*.svg"))), 8)
+                self.assertEqual({path.name for path in Path("assets").glob("*.svg")}, {"stats.svg", "stats-static.svg", "contrib-heatmap.svg", "contrib-heatmap-static.svg", "contrib-heatmap-light.svg", "contrib-heatmap-static-light.svg"})
                 self.assertEqual(Path("docs/activity.md").read_text(encoding="utf-8"), activity_markdown(self.snapshot))
             finally:
                 os.chdir(previous)

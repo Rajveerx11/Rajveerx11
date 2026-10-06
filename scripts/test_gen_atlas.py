@@ -72,22 +72,21 @@ class AtlasTest(unittest.TestCase):
     def test_readme_images_have_existing_sources_and_alt_text(self):
         parser = PictureParser()
         parser.feed((ROOT / "README.md").read_text(encoding="utf-8"))
-        self.assertEqual(len(parser.sources), 9)
+        self.assertEqual(len(parser.sources), 5)
         self.assertEqual(len(parser.images), 3)
         self.assertEqual([image["src"] for image in parser.images],
-                         [f"assets/{name}.svg" for name in ("terminal-profile", "contrib-heatmap", "github-stats")])
-        for i in range(0, len(parser.sources), 3):
-            self.assertEqual([source["media"] for source in parser.sources[i:i + 3]],
-                             ["(max-width: 600px) and (prefers-color-scheme: light)",
-                              "(max-width: 600px)", "(prefers-color-scheme: light)"])
+                         [f"./assets/{name}.svg" for name in ("contrib-heatmap", "rajveer-ascii", "stats")])
+        self.assertEqual([image["width"] for image in parser.images], ["860", "420", "420"])
+        for name in ("rajveer-ascii", "stats"):
+            self.assertEqual(ET.parse(ROOT / "assets" / f"{name}.svg").getroot().attrib["viewBox"], "0 0 840 880")
         for image in parser.images:
             self.assertTrue(image.get("alt"))
             self.assertTrue((ROOT / image["src"]).is_file())
+        self.assertEqual([source["media"] for source in parser.sources[:3]],
+                         ["(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)",
+                          "(prefers-reduced-motion: reduce)", "(prefers-color-scheme: light)"])
         for source in parser.sources:
-            if source["srcset"].endswith("-light.svg"):
-                self.assertIn("prefers-color-scheme", source["media"])
-            else:
-                self.assertIn("max-width", source["media"])
+            self.assertTrue("prefers-reduced-motion" in source["media"] or "prefers-color-scheme" in source["media"])
             self.assertTrue((ROOT / source["srcset"]).is_file())
 
     def test_evaluation_keeps_results_and_limitations_visible(self):
@@ -119,8 +118,16 @@ class AtlasTest(unittest.TestCase):
                        "https://github.com/Rajveerx11/unified-memory-mcp",
                        "https://github.com/Rajveerx11/pr-reliability-platform",
                        "https://github.com/Rajveerx11/Master-Models"):
-            self.assertIn(f"]({source})", readme)
             self.assertIn(f"]({source})", companion)
+        self.assertIn('<div align="center">', readme)
+        self.assertIn('<table>', readme)
+        headings = ["./contributions.sh", "whoami", "./links.sh"]
+        self.assertEqual(readme.count("<h3>"), 3)
+        for heading in headings:
+            self.assertIn(f"rajveer@github ~ $ {heading}", readme)
+        self.assertLess(readme.index("./contributions.sh"), readme.index("whoami"))
+        self.assertLess(readme.index("whoami"), readme.index("./links.sh"))
+        self.assertIn("docs/activity.md", readme)
         for evidence in ("48266fa55f46fff88a966aecf88c0b437e1c5704",
                          "6cdbc5b3b0e0432f328451f949e5ab12c9d83fac",
                          "9ec127a71b818296b5ac201a2bfd7e926e69a206",
@@ -138,6 +145,7 @@ class AtlasTest(unittest.TestCase):
             self.assertIn("https://rajveer.codes/", content)
             self.assertIn("https://neuratile.rajveer.codes/", content)
             self.assertNotIn("rajveervadnal.netlify.app", content)
+        for content in (companion, interactive):
             self.assertIn("https://github.com/neuratile/Tessera", content)
         for content in (readme, companion):
             self.assertIn("https://rajveer.codes/Rajveer_Vadnal_Resume.pdf", content)
@@ -149,13 +157,14 @@ class AtlasTest(unittest.TestCase):
         self.assertIn("if: github.event_name != 'pull_request'", workflow)
         ignored = workflow.split("paths-ignore:", 1)[1].split("pull_request:", 1)[0]
         patterns = [line.strip().removeprefix('- "').removesuffix('"') for line in ignored.splitlines() if line.strip()]
-        generated = [f"assets/{name}{suffix}.svg" for name in ("github-stats", "contrib-heatmap")
-                     for suffix in ("", "-light", "-mobile", "-mobile-light")]
-        generated += ["assets/project-index.svg", "docs/public-repositories.md", "docs/activity.md"]
+        generated = ["assets/contrib-heatmap.svg", "assets/contrib-heatmap-static.svg", "assets/contrib-heatmap-light.svg",
+                     "assets/contrib-heatmap-static-light.svg", "assets/stats.svg",
+                     "assets/stats-static.svg", "assets/project-index.svg", "docs/public-repositories.md", "docs/activity.md"]
         for path in generated:
             self.assertTrue(any(fnmatch(path, pattern) for pattern in patterns), path)
-        self.assertIn("git add assets/github-stats*.svg assets/contrib-heatmap*.svg assets/project-index.svg docs/public-repositories.md docs/activity.md", workflow)
+        self.assertIn("git add assets/contrib-heatmap.svg assets/contrib-heatmap-static.svg assets/contrib-heatmap-light.svg assets/contrib-heatmap-static-light.svg assets/stats.svg assets/stats-static.svg assets/project-index.svg docs/public-repositories.md docs/activity.md", workflow)
         self.assertIn("python scripts/gen_terminal.py --check", workflow)
+        self.assertIn("python scripts/gen_profile.py --check", workflow)
         self.assertNotIn("contents: write", workflow.split("  stats:", 1)[0])
 
 

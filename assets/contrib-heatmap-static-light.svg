@@ -1,11 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="888" height="160" viewBox="0 0 888 160" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s GitHub contribution graph</title>
 <desc id="desc">2,636 contributions from 2025-10-06 through 2026-10-06. Snapshot 2026-10-06 UTC. Live colors use GitHub contribution levels; every daily count is available in the linked text snapshot.</desc>
-<style>
-.cell { transform-box: fill-box; transform-origin: center; animation: pop .55s ease-out both; }
-@keyframes pop { 0% { opacity: .15; transform: scale(.2); } 60% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
-@media (prefers-reduced-motion: reduce) { .cell { animation: none; } }
-</style>
+
 <text x="34" y="16" fill="#7d8590" font-size="13" font-weight="600">Oct</text>
 <text x="98" y="16" fill="#7d8590" font-size="13" font-weight="600">Nov</text>
 <text x="178" y="16" fill="#7d8590" font-size="13" font-weight="600">Dec</text>

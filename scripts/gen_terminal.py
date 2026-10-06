@@ -69,7 +69,15 @@ def calendar_days(calendar):
             count = item["contributionCount"]
             if type(count) is not int or count < 0:
                 raise ValueError("Contribution counts must be nonnegative integers")
-            days.append({"date": day.isoformat(), "count": count})
+            record = {"date": day.isoformat(), "count": count}
+            if "contributionLevel" in item:
+                levels = ("NONE", "FIRST_QUARTILE", "SECOND_QUARTILE", "THIRD_QUARTILE", "FOURTH_QUARTILE")
+                if item["contributionLevel"] not in levels:
+                    raise ValueError("Unknown GitHub contribution level")
+                record["level"] = levels.index(item["contributionLevel"])
+                if (record["level"] == 0) != (count == 0):
+                    raise ValueError("Contribution level disagrees with count")
+            days.append(record)
     days.sort(key=lambda item: item["date"])
     if not days:
         raise ValueError("Empty contribution calendar")

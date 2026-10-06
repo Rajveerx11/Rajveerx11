@@ -1,11 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="888" height="160" viewBox="0 0 888 160" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s GitHub contribution graph</title>
 <desc id="desc">2,636 contributions from 2025-10-06 through 2026-10-06. Snapshot 2026-10-06 UTC. Live colors use GitHub contribution levels; every daily count is available in the linked text snapshot.</desc>
-<style>
-.cell { transform-box: fill-box; transform-origin: center; animation: pop .55s ease-out both; }
-@keyframes pop { 0% { opacity: .15; transform: scale(.2); } 60% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
-@media (prefers-reduced-motion: reduce) { .cell { animation: none; } }
-</style>
+
 <text x="34" y="16" fill="#7d8590" font-size="13" font-weight="600">Oct</text>
 <text x="98" y="16" fill="#7d8590" font-size="13" font-weight="600">Nov</text>
 <text x="178" y="16" fill="#7d8590" font-size="13" font-weight="600">Dec</text>
@@ -388,6 +384,6 @@
 <rect class="cell" x="866" y="24" width="13" height="13" rx="2.5" fill="#0e4429" style="animation-delay:3.343s"><title>2026-10-04: 5 contributions</title></rect>
 <rect class="cell" x="866" y="40" width="13" height="13" rx="2.5" fill="#0e4429" style="animation-delay:3.378s"><title>2026-10-05: 15 contributions</title></rect>
 <rect class="cell" x="866" y="56" width="13" height="13" rx="2.5" fill="#0e4429" style="animation-delay:3.414s"><title>2026-10-06: 5 contributions</title></rect>
-<text x="34" y="154" fill="#24292f" font-size="15" font-weight="700" class="total">2,636 contributions in the last year</text>
+<text x="34" y="154" fill="#e6edf3" font-size="15" font-weight="700" class="total">2,636 contributions in the last year</text>
 <text x="878" y="154" fill="#7d8590" font-size="11" text-anchor="end">snapshot 2026-10-06 UTC</text>
 </svg>

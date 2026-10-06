@@ -10,7 +10,8 @@ from pathlib import Path
 import subprocess
 import urllib.request
 
-from gen_terminal import USER, activity_markdown, calendar_days, heatmap, stats, variants
+from gen_terminal import USER, calendar_days
+from gen_profile import activity_markdown, card, graph, static_svg
 
 
 def token():
@@ -48,7 +49,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
     contributionsCollection(from: $from, to: $to) {
       contributionCalendar {
         totalContributions
-        weeks { contributionDays { date contributionCount } }
+        weeks { contributionDays { date contributionCount contributionLevel } }
       }
     }
   }
@@ -85,11 +86,15 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 def main():
     snapshot = collect(token(), datetime.now(timezone.utc))
-    outputs = dict(variants("contrib-heatmap", lambda theme, mobile: heatmap(snapshot["days"], snapshot["observed"], theme, mobile)))
-    outputs.update(variants("github-stats", lambda theme, mobile: stats(snapshot, theme, mobile)))
-    # Render the accessible text from the identical snapshot before replacing anything.
-    documents = {Path("assets", filename): svg for filename, svg in outputs.items()}
-    documents[Path("docs/activity.md")] = activity_markdown(snapshot)
+    # Render every active image and its text equivalent before replacing anything.
+    graph_svg, light_graph_svg, card_svg = graph(snapshot), graph(snapshot, light=True), card(snapshot)
+    documents = {Path("assets/contrib-heatmap.svg"): graph_svg,
+                 Path("assets/contrib-heatmap-static.svg"): static_svg(graph_svg),
+                 Path("assets/contrib-heatmap-light.svg"): light_graph_svg,
+                 Path("assets/contrib-heatmap-static-light.svg"): static_svg(light_graph_svg),
+                 Path("assets/stats.svg"): card_svg,
+                 Path("assets/stats-static.svg"): static_svg(card_svg),
+                 Path("docs/activity.md"): activity_markdown(snapshot)}
     # API/render failures leave the last dated snapshot intact.
     for path, content in documents.items():
         path.parent.mkdir(exist_ok=True)

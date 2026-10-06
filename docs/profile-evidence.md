@@ -1,6 +1,6 @@
 # Profile evidence and accessible text
 
-This is the text companion to [Rajveer Vadnal's terminal profile](../README.md). The README highlights selected projects; this document keeps the broader project descriptions, individual links, contribution attribution, and limitations readable and searchable.
+This is the text companion to [Rajveer Vadnal's terminal profile](../README.md). The README uses a contribution graph, Rajveer's actual photo converted to animated ASCII, and a contribution statistics card. This document keeps project descriptions, individual links, contribution attribution, and limitations readable and searchable.
 
 ## About
 
@@ -109,19 +109,22 @@ These are recorded results from the August 2026 cohort, **not a general ranking 
 The catalog and activity data refresh daily. Each generated artifact shows its UTC snapshot date. These are not live counters. Calendar and activity cards share one GitHub GraphQL snapshot. [The accessible activity snapshot](activity.md) records the same metrics, dates, and every daily calendar count as text.
 
 - The calendar covers the displayed date range (365 days before refresh through the refresh date). Counts follow GitHub's contribution rules, not commits alone. Calendar aggregates can include anonymized private contribution counts when exposed by GitHub; no private repository names or metadata are requested or published.
-- Heatmap colors are relative to the busiest day within that window. Calendar cells are aligned to Sunday-first weeks. The narrow version splits the same dates into two panels; it does not discard older activity.
+- Live heatmap colors follow GitHub's reported contribution levels. Calendar cells are aligned to Sunday-first weeks. All dates in the window are shown, including partial opening/closing weeks.
 - Current streak means consecutive nonzero calendar days through today, or yesterday while today's UTC date is unfinished. Only today's zero gets that grace period. The longest streak is scoped to the displayed window, not an all-time claim.
-- Merged PRs are public, all time. Repository and star totals include all paginated owned public non-forks, not organization repositories or forks. Followers are recorded at refresh.
+- The six visible tiles show current streak, longest streak within the window, total contributions, active days, best day, and average contributions per active day. Best-day ties use the earliest date. A zero-activity window has zero average and zero-height monthly bars. The monthly chart sums the same daily counts, including partial first/last months.
+- Additional counts in the text snapshot remain public-scoped: merged PRs are public, all time; repository/star totals include all paginated owned public non-forks, not organization repositories or forks. Followers are recorded at refresh.
 - API failures fail the refresh without replacing the existing artwork. Its previous snapshot date remains visible. Activity is not a productivity score.
-- The short heatmap reveal honors reduced motion. Calendar cells remain visible without animation. Light/dark and narrow/wide variants are committed locally; the README does not rely on third-party image endpoints.
+- The ASCII portrait types left-to-right, row-by-row once in 5.8 seconds, then holds. It is derived locally from Rajveer's supplied photo; only ASCII rows and generated SVG artwork are committed, not the original JPG, photo metadata, prepared image, or segmentation model.
+- Reduced motion shows the complete portrait, graph, final numeric values, and full-height bars immediately. Without CSS animation support, the final artwork/values remain the baseline. Cards intentionally use the reference's dark terminal-window treatment in both GitHub themes. Explicit `<picture>` sources select static images for reduced motion and a dark total label on the transparent graph for light mode.
+- Local SVGs render the portrait and activity. Link badges use Shields.io, matching the reference layout; every badge is a native link with meaningful alt text, and the footer also links the resume, evidence, and accessible snapshot.
 
-The shell prompts are section labels, not an interactive terminal or a transcript of commands that were executed. The ASCII initials are original artwork, not a photograph or simulated portrait.
+The shell prompts are section labels, not an interactive terminal or a transcript of commands that were executed. The portrait uses Rajveer's actual supplied photograph converted to monochrome ASCII, not an invented face or the inspiration author's image.
 
 ## Interactive design
 
 The [single-file HTML version](execution-atlas.html) includes territory selection, project details, repository search, and theme switching. Download it and open it in a browser. GitHub displays the HTML as source rather than running it. Its repository data is explicitly dated and does not refresh with the daily catalog.
 
-The profile uses SVG images (a short CSS reveal on the contribution calendar) and native links. It does not depend on JavaScript or a third-party image service. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
+The profile uses animated SVG images and native links. It does not depend on JavaScript. Portrait and activity art are local; the four link badges are served by Shields.io. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
 
 ## Contact
 
