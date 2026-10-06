@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 378" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
+<title id="title">Rajveer Vadnal: terminal profile</title>
+<desc id="desc">Agentic systems engineer. Coding tools, local-first AI, and verification. Python, TypeScript, Rust. ASCII initials: RV.</desc>
+
+<rect x="1" y="1" width="438" height="376" rx="4" fill="#f3f6f0" stroke="#bccbbe"/>
+<text x="24" y="31" fill="#536457" font-size="14" >~/Rajveerx11</text>
+<path d="M1 46H439" stroke="#bccbbe"/>
+<text x="24" y="82" fill="#28643b" font-size="17" >rajveer@github:~$ whoami</text>
+<text x="24" y="126" fill="#28643b" font-size="18" xml:space="preserve">RRRR   VV      VV</text>
+<text x="24" y="148" fill="#28643b" font-size="18" xml:space="preserve">RR RR   VV    VV </text>
+<text x="24" y="170" fill="#28643b" font-size="18" xml:space="preserve">RRRR     VV  VV  </text>
+<text x="24" y="192" fill="#28643b" font-size="18" xml:space="preserve">RR RR     VVVV   </text>
+<text x="24" y="214" fill="#28643b" font-size="18" xml:space="preserve">RR  RR     VV    </text>
+<text x="24" y="270" fill="#26382b" font-size="24" font-weight="600">Rajveer Vadnal</text>
+<text x="24" y="298" fill="#536457" font-size="16" >Agentic systems engineer</text>
+<path d="M24 328H416" stroke="#bccbbe"/>
+<text x="24" y="355" fill="#536457" font-size="15" >Python / TypeScript / Rust</text>
+</svg>

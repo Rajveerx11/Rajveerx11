@@ -1,4 +1,5 @@
 """Offline checks for GitHub-safe assets and the README's image fallbacks."""
+from fnmatch import fnmatch
 import unittest
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -71,8 +72,14 @@ class AtlasTest(unittest.TestCase):
     def test_readme_images_have_existing_sources_and_alt_text(self):
         parser = PictureParser()
         parser.feed((ROOT / "README.md").read_text(encoding="utf-8"))
-        self.assertEqual(len(parser.sources), 24)
-        self.assertEqual(len(parser.images), 10)
+        self.assertEqual(len(parser.sources), 9)
+        self.assertEqual(len(parser.images), 3)
+        self.assertEqual([image["src"] for image in parser.images],
+                         [f"assets/{name}.svg" for name in ("terminal-profile", "contrib-heatmap", "github-stats")])
+        for i in range(0, len(parser.sources), 3):
+            self.assertEqual([source["media"] for source in parser.sources[i:i + 3]],
+                             ["(max-width: 600px) and (prefers-color-scheme: light)",
+                              "(max-width: 600px)", "(prefers-color-scheme: light)"])
         for image in parser.images:
             self.assertTrue(image.get("alt"))
             self.assertTrue((ROOT / image["src"]).is_file())
@@ -123,15 +130,33 @@ class AtlasTest(unittest.TestCase):
                          "inclusion does not imply sole authorship"):
             self.assertIn(evidence, companion.lower() if evidence.startswith("inclusion") else companion)
 
+    def test_personal_and_company_websites_preserve_repository_sources(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        companion = (ROOT / "docs/profile-evidence.md").read_text(encoding="utf-8")
+        interactive = (ROOT / "docs/execution-atlas.html").read_text(encoding="utf-8")
+        for content in (readme, companion, interactive):
+            self.assertIn("https://rajveer.codes/", content)
+            self.assertIn("https://neuratile.rajveer.codes/", content)
+            self.assertNotIn("rajveervadnal.netlify.app", content)
+            self.assertIn("https://github.com/neuratile/Tessera", content)
+        for content in (readme, companion):
+            self.assertIn("https://rajveer.codes/Rajveer_Vadnal_Resume.pdf", content)
+
     def test_workflow_tracks_index_and_avoids_generated_commit_loop(self):
         workflow = (ROOT / ".github/workflows/stats.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request:", workflow)
         self.assertIn("python -m unittest discover -s scripts -v", workflow)
         self.assertIn("if: github.event_name != 'pull_request'", workflow)
         ignored = workflow.split("paths-ignore:", 1)[1].split("pull_request:", 1)[0]
-        for path in ("assets/github-stats.svg", "assets/project-index.svg", "docs/public-repositories.md"):
-            self.assertIn(path, ignored)
-        self.assertIn("git add assets/github-stats.svg assets/project-index.svg docs/public-repositories.md", workflow)
+        patterns = [line.strip().removeprefix('- "').removesuffix('"') for line in ignored.splitlines() if line.strip()]
+        generated = [f"assets/{name}{suffix}.svg" for name in ("github-stats", "contrib-heatmap")
+                     for suffix in ("", "-light", "-mobile", "-mobile-light")]
+        generated += ["assets/project-index.svg", "docs/public-repositories.md", "docs/activity.md"]
+        for path in generated:
+            self.assertTrue(any(fnmatch(path, pattern) for pattern in patterns), path)
+        self.assertIn("git add assets/github-stats*.svg assets/contrib-heatmap*.svg assets/project-index.svg docs/public-repositories.md docs/activity.md", workflow)
+        self.assertIn("python scripts/gen_terminal.py --check", workflow)
+        self.assertNotIn("contents: write", workflow.split("  stats:", 1)[0])
 
 
 if __name__ == "__main__":

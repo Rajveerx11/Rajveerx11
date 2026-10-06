@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 430" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
+<title id="title">GitHub activity snapshot</title>
+<desc id="desc">Current streak 5 days; longest streak 30 days within the displayed calendar window. 194 public merged PRs, all time; 18 owned public non-fork repositories; 18 stars across those repositories; 13 followers. Snapshot 2026-10-06 UTC.</desc>
+
+<rect x="1" y="1" width="438" height="428" rx="4" fill="#101511" stroke="#334238"/>
+<text x="24" y="34" fill="#dfe7df" font-size="16" >activity / dated snapshot</text>
+<text x="24" y="76" fill="#a3afa5" font-size="15" >current streak</text>
+<text x="416" y="76" fill="#91c89a" font-size="19" text-anchor="end">5 days</text>
+<text x="24" y="116" fill="#a3afa5" font-size="15" >longest in window</text>
+<text x="416" y="116" fill="#91c89a" font-size="19" text-anchor="end">30 days</text>
+<text x="24" y="156" fill="#a3afa5" font-size="15" >public merged PRs</text>
+<text x="416" y="156" fill="#91c89a" font-size="19" text-anchor="end">194</text>
+<text x="24" y="196" fill="#a3afa5" font-size="15" >public non-forks</text>
+<text x="416" y="196" fill="#91c89a" font-size="19" text-anchor="end">18</text>
+<text x="24" y="236" fill="#a3afa5" font-size="15" >stars / non-forks</text>
+<text x="416" y="236" fill="#91c89a" font-size="19" text-anchor="end">18</text>
+<text x="24" y="276" fill="#a3afa5" font-size="15" >followers</text>
+<text x="416" y="276" fill="#91c89a" font-size="19" text-anchor="end">13</text>
+<path d="M24 334H416" stroke="#334238"/>
+<text x="24" y="360" fill="#a3afa5" font-size="13" >calendar: 2025-10-06 .. 2026-10-06</text>
+<text x="24" y="385" fill="#a3afa5" font-size="13" >PRs: public, all time / repos: owner only</text>
+<text x="24" y="410" fill="#a3afa5" font-size="13" >snapshot 2026-10-06 UTC / GitHub API</text>
+</svg>

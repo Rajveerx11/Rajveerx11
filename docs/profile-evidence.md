@@ -1,16 +1,16 @@
 # Profile evidence and accessible text
 
-This is the text companion to [Rajveer Vadnal's visual profile](../README.md). The SVG panels summarize the work; this document keeps project descriptions, individual links, contribution attribution, and limitations readable and searchable.
+This is the text companion to [Rajveer Vadnal's terminal profile](../README.md). The README highlights selected projects; this document keeps the broader project descriptions, individual links, contribution attribution, and limitations readable and searchable.
 
 ## About
 
 I build coding tools and local-first AI products. My work focuses on context, controlled execution, and verification. My main languages are Python and TypeScript. I also use Rust.
 
-Founder at [neuratile](https://github.com/neuratile), building developer tools including Tessera. Founder of [Visage AI](https://getvisageai.online/), an aesthetic outcome preview product.
+Founder at [neuratile](https://neuratile.rajveer.codes/), building developer tools including Tessera. [GitHub organization](https://github.com/neuratile). Founder of [Visage AI](https://getvisageai.online/), an aesthetic outcome preview product.
 
 Education: Diploma in Computer Science Engineering; B.Tech in Artificial Intelligence & Machine Learning.
 
-[Portfolio](https://rajveervadnal.netlify.app/) · [Resume](https://rajveervadnal.netlify.app/Rajveer_Vadnal_Resume.pdf) · [LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353) · [Email](mailto:rajveer.r.vadnal@gmail.com)
+[Portfolio](https://rajveer.codes/) · [Resume](https://rajveer.codes/Rajveer_Vadnal_Resume.pdf) · [LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353) · [Email](mailto:rajveer.r.vadnal@gmail.com)
 
 ## Execution atlas
 
@@ -106,16 +106,25 @@ These are recorded results from the August 2026 cohort, **not a general ranking 
 
 [Open the full linked repository index](public-repositories.md). It includes public repositories from Rajveerx11 and associated organizations, with forks marked. Inclusion does not imply sole authorship.
 
-The catalog and activity data refresh daily. Each generated artifact shows its snapshot date. These are not live counters. Activity totals and language byte shares come from the GitHub API.
+The catalog and activity data refresh daily. Each generated artifact shows its UTC snapshot date. These are not live counters. Calendar and activity cards share one GitHub GraphQL snapshot. [The accessible activity snapshot](activity.md) records the same metrics, dates, and every daily calendar count as text.
+
+- The calendar covers the displayed date range (365 days before refresh through the refresh date). Counts follow GitHub's contribution rules, not commits alone. Calendar aggregates can include anonymized private contribution counts when exposed by GitHub; no private repository names or metadata are requested or published.
+- Heatmap colors are relative to the busiest day within that window. Calendar cells are aligned to Sunday-first weeks. The narrow version splits the same dates into two panels; it does not discard older activity.
+- Current streak means consecutive nonzero calendar days through today, or yesterday while today's UTC date is unfinished. Only today's zero gets that grace period. The longest streak is scoped to the displayed window, not an all-time claim.
+- Merged PRs are public, all time. Repository and star totals include all paginated owned public non-forks, not organization repositories or forks. Followers are recorded at refresh.
+- API failures fail the refresh without replacing the existing artwork. Its previous snapshot date remains visible. Activity is not a productivity score.
+- The short heatmap reveal honors reduced motion. Calendar cells remain visible without animation. Light/dark and narrow/wide variants are committed locally; the README does not rely on third-party image endpoints.
+
+The shell prompts are section labels, not an interactive terminal or a transcript of commands that were executed. The ASCII initials are original artwork, not a photograph or simulated portrait.
 
 ## Interactive design
 
 The [single-file HTML version](execution-atlas.html) includes territory selection, project details, repository search, and theme switching. Download it and open it in a browser. GitHub displays the HTML as source rather than running it. Its repository data is explicitly dated and does not refresh with the daily catalog.
 
-The profile uses static SVG images and native links. It does not depend on JavaScript or a third-party image service. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
+The profile uses SVG images (a short CSS reveal on the contribution calendar) and native links. It does not depend on JavaScript or a third-party image service. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
 
 ## Contact
 
 Building tools for developers or agentic systems?
 
-[Email me](mailto:rajveer.r.vadnal@gmail.com) · [Connect on LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353) · [Explore my portfolio](https://rajveervadnal.netlify.app/)
+[Email me](mailto:rajveer.r.vadnal@gmail.com) · [Connect on LinkedIn](https://www.linkedin.com/in/rajveer-vadnal-374664353) · [Explore my portfolio](https://rajveer.codes/)
