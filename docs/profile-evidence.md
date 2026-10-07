@@ -116,7 +116,7 @@ The catalog and activity data refresh daily. Each generated artifact shows its U
 - API failures fail the refresh without replacing the existing artwork. Its previous snapshot date remains visible. Activity is not a productivity score.
 - The ASCII portrait types left-to-right, row-by-row once in 5.8 seconds, then holds. It is derived locally from Rajveer's supplied photo; only ASCII rows and generated SVG artwork are committed, not the original JPG, photo metadata, prepared image, or segmentation model.
 - Reduced motion shows the complete portrait, graph, final numeric values, and full-height bars immediately. Without CSS animation support, the final artwork/values remain the baseline. Cards intentionally use the reference's dark terminal-window treatment in both GitHub themes. Explicit `<picture>` sources select static images for reduced motion and a dark total label on the transparent graph for light mode.
-- Local SVGs render the portrait and activity. Link badges use Shields.io, matching the reference layout; every badge is a native link with meaningful alt text, and the footer also links the resume, evidence, and accessible snapshot.
+- Local SVGs render the portrait, activity, and four matching terminal link buttons. Every button is a native link with meaningful alt text and a 44-pixel image height. The compact footer links the resume, project evidence, and accessible activity details. No external badge service is needed.
 
 The shell prompts are section labels, not an interactive terminal or a transcript of commands that were executed. The portrait uses Rajveer's actual supplied photograph converted to monochrome ASCII, not an invented face or the inspiration author's image.
 
@@ -124,7 +124,7 @@ The shell prompts are section labels, not an interactive terminal or a transcrip
 
 The [single-file HTML version](execution-atlas.html) includes territory selection, project details, repository search, and theme switching. Download it and open it in a browser. GitHub displays the HTML as source rather than running it. Its repository data is explicitly dated and does not refresh with the daily catalog.
 
-The profile uses animated SVG images and native links. It does not depend on JavaScript. Portrait and activity art are local; the four link badges are served by Shields.io. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
+The profile uses animated SVG images and native links. It does not depend on JavaScript or third-party image endpoints. Portrait, activity, and navigation artwork are committed locally. SVG-internal links do not work in GitHub-embedded images, so navigation remains native Markdown.
 
 ## Contact
 

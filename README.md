@@ -26,12 +26,10 @@
 
 <h3><code>rajveer@github ~ $ ./links.sh</code></h3>
 
-<p><b>Agentic Systems Engineer · Local-first AI · Founder, neuratile</b></p>
+<p><b>Agentic Systems Engineer</b><br />Local-first AI / Founder, neuratile</p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-rajveer.codes-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://rajveer.codes/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rajveer_Vadnal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajveer-vadnal-374664353) [![neuratile](https://img.shields.io/badge/neuratile-neuratile.rajveer.codes-22d3ee?style=for-the-badge&logo=gnometerminal&logoColor=black)](https://neuratile.rajveer.codes/) [![Email](https://img.shields.io/badge/Email-Let%27s_talk-E4405F?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajveer.r.vadnal@gmail.com)
+[![Portfolio](./assets/link-portfolio.svg)](https://rajveer.codes/) [![neuratile](./assets/link-neuratile.svg)](https://neuratile.rajveer.codes/) [![LinkedIn](./assets/link-linkedin.svg)](https://www.linkedin.com/in/rajveer-vadnal-374664353) [![Email](./assets/link-email.svg)](mailto:rajveer.r.vadnal@gmail.com)
 
-<br />
-
-[Resume](https://rajveer.codes/Rajveer_Vadnal_Resume.pdf) · [Accessible text & evidence](docs/profile-evidence.md) · [Activity snapshot & daily counts](docs/activity.md)
+[Resume](https://rajveer.codes/Rajveer_Vadnal_Resume.pdf) / [Project evidence](docs/profile-evidence.md) / [Activity details](docs/activity.md)
 
 </div>

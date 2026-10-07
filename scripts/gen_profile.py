@@ -18,6 +18,12 @@ WIDTH, HEIGHT = 840, 880
 BG, TILE, BORDER = "#0d1117", "#161b22", "#30363d"
 INK, MUTED, GREEN = "#e6edf3", "#9ba5b0", "#39d353"
 PORTRAIT_DATA = ROOT / "data" / "portrait.json"
+LINK_BUTTONS = (
+    ("portfolio", "Portfolio", "Open Rajveer's portfolio at rajveer.codes", True),
+    ("neuratile", "neuratile", "Visit neuratile at neuratile.rajveer.codes", False),
+    ("linkedin", "LinkedIn", "Connect with Rajveer Vadnal on LinkedIn", False),
+    ("email", "Email", "Email Rajveer Vadnal", False),
+)
 
 
 def svg(width, height, title, description, body, style=""):
@@ -30,6 +36,14 @@ def svg(width, height, title, description, body, style=""):
 '''
     ET.fromstring(content)
     return content
+
+
+def link_button(label, description, primary=False):
+    """Same-size, locally hosted navigation artwork; the README owns the links."""
+    border, fill, ink = (GREEN, "#102218", GREEN) if primary else (BORDER, TILE, INK)
+    body = [f'<rect x=".5" y=".5" width="131" height="43" rx="5" fill="{fill}" stroke="{border}"/>',
+            text(66, 27, label, ink, 14, font_weight="600", text_anchor="middle")]
+    return svg(132, 44, label, description, body)
 
 
 def static_svg(source):
@@ -268,14 +282,17 @@ def main():
         PORTRAIT_DATA.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")
     data = json.loads(PORTRAIT_DATA.read_text(encoding="utf-8"))
     output = portrait(data)
-    for name, content in (("rajveer-ascii.svg", output), ("rajveer-ascii-static.svg", static_svg(output))):
+    outputs = [("rajveer-ascii.svg", output), ("rajveer-ascii-static.svg", static_svg(output))]
+    outputs += [(f"link-{name}.svg", link_button(label, description, primary))
+                for name, label, description, primary in LINK_BUTTONS]
+    for name, content in outputs:
         path = ROOT / "assets" / name
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
-                raise SystemExit("Stale ASCII portrait; run python scripts/gen_profile.py")
+                raise SystemExit(f"Stale profile asset: {name}; run python scripts/gen_profile.py")
         else:
             path.write_text(content, encoding="utf-8", newline="\n")
-    print("ok: reference-style ASCII portrait")
+    print("ok: ASCII portrait and terminal link assets")
 
 
 if __name__ == "__main__":

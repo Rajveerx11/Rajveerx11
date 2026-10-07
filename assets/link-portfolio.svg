@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="44" viewBox="0 0 132 44" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
+<title id="title">Portfolio</title>
+<desc id="desc">Open Rajveer&#x27;s portfolio at rajveer.codes</desc>
+
+<rect x=".5" y=".5" width="131" height="43" rx="5" fill="#102218" stroke="#39d353"/>
+<text x="66" y="27" fill="#39d353" font-size="14" font-weight="600" text-anchor="middle">Portfolio</text>
+</svg>

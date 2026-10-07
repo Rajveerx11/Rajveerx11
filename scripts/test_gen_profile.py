@@ -4,7 +4,7 @@ import json
 import unittest
 import xml.etree.ElementTree as ET
 
-from gen_profile import PORTRAIT_DATA, ROOT, activity_markdown, card, graph, metrics, monthly, portrait, static_svg, validate_rows
+from gen_profile import LINK_BUTTONS, PORTRAIT_DATA, ROOT, activity_markdown, card, graph, link_button, metrics, monthly, portrait, static_svg, validate_rows
 
 NS = "{http://www.w3.org/2000/svg}"
 
@@ -50,6 +50,21 @@ class ProfileTest(unittest.TestCase):
             self.assertEqual(len(list(root.iter(NS + "text"))), len(list(ET.fromstring(animated).iter(NS + "text"))))
             if filename:
                 self.assertEqual(frozen, (ROOT / "assets" / filename).read_text(encoding="utf-8"))
+
+    def test_terminal_links_are_equal_sized_local_and_reproducible(self):
+        self.assertEqual(len(LINK_BUTTONS), 4)
+        self.assertEqual(sum(primary for _, _, _, primary in LINK_BUTTONS), 1)
+        for name, label, description, primary in LINK_BUTTONS:
+            output = link_button(label, description, primary)
+            self.assertEqual(output, (ROOT / f"assets/link-{name}.svg").read_text(encoding="utf-8"))
+            root = ET.fromstring(output)
+            self.assertEqual(root.attrib["viewBox"], "0 0 132 44")
+            self.assertEqual(root.find(NS + "title").text, label)
+            self.assertEqual(root.find(NS + "desc").text, description)
+            self.assertNotIn("<style>", output)
+            self.assertNotIn("<script", output)
+            self.assertNotIn("href=", output)
+            self.assertNotIn("<image", output)
 
     def test_unsafe_or_malformed_rows_fail_closed(self):
         for data in ({"columns": 39, "rows": [" " * 39] * 96},

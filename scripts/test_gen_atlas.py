@@ -107,7 +107,7 @@ class AtlasTest(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         companion = (ROOT / "docs/profile-evidence.md").read_text(encoding="utf-8")
         self.assertNotIn("| ---", readme)
-        self.assertIn("[Accessible text & evidence](docs/profile-evidence.md)", readme)
+        self.assertIn("[Project evidence](docs/profile-evidence.md)", readme)
         for source in ("https://github.com/Rajveerx11/AgentWisper",
                        "https://github.com/Rajveerx11/gfi-scout",
                        "https://github.com/Rajveerx11/repograph-intelligence",
@@ -128,6 +128,11 @@ class AtlasTest(unittest.TestCase):
         self.assertLess(readme.index("./contributions.sh"), readme.index("whoami"))
         self.assertLess(readme.index("whoami"), readme.index("./links.sh"))
         self.assertIn("docs/activity.md", readme)
+        self.assertNotIn("img.shields.io", readme)
+        self.assertEqual(readme.count("![Portfolio]"), 1)
+        for name in ("portfolio", "neuratile", "linkedin", "email"):
+            self.assertIn(f"./assets/link-{name}.svg", readme)
+            self.assertTrue((ROOT / f"assets/link-{name}.svg").is_file())
         for evidence in ("48266fa55f46fff88a966aecf88c0b437e1c5704",
                          "6cdbc5b3b0e0432f328451f949e5ab12c9d83fac",
                          "9ec127a71b818296b5ac201a2bfd7e926e69a206",
