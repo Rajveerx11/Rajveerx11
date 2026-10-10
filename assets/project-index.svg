@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 544" role="img" aria-labelledby="title desc" font-family="ui-monospace, Consolas, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 578" role="img" aria-labelledby="title desc" font-family="ui-monospace, Consolas, monospace">
 <title id="title">Public repository catalog</title>
 <desc id="desc">Public repositories from Rajveerx11 and associated organizations. Forks are marked. Full names, descriptions, and clickable source links are in docs/public-repositories.md.</desc>
-<rect x="1" y="1" width="858" height="542" rx="5" fill="#131514" stroke="#363c35"/>
+<rect x="1" y="1" width="858" height="576" rx="5" fill="#131514" stroke="#363c35"/>
 <text x="32" y="37" fill="#eeeae1" font-size="20" font-family="Segoe UI, Arial, sans-serif">Public repository catalog</text>
 <text x="32" y="64" fill="#adb3a9" font-size="12">Rajveerx11 / associated organizations</text>
 <path d="M1 78H859" stroke="#363c35"/>
@@ -11,22 +11,24 @@
 <text x="412" y="139" text-anchor="end" fill="#adb3a9" font-size="10">Rust</text>
 <text x="32" y="173" fill="#eeeae1" font-size="13">VaultX</text>
 <text x="412" y="173" text-anchor="end" fill="#adb3a9" font-size="10">Kotlin</text>
-<text x="32" y="207" fill="#eeeae1" font-size="13">proof-of-work</text>
-<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="241" fill="#eeeae1" font-size="13">pr-reliability-platform</text>
-<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="275" fill="#eeeae1" font-size="13">neura</text>
+<text x="32" y="207" fill="#eeeae1" font-size="13">skills</text>
+<text x="412" y="207" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
+<text x="32" y="241" fill="#eeeae1" font-size="13">neura</text>
+<text x="412" y="241" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
+<text x="32" y="275" fill="#eeeae1" font-size="13">neura-cockpit-herdr</text>
 <text x="412" y="275" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
-<text x="32" y="309" fill="#eeeae1" font-size="13">AgentWisper</text>
+<text x="32" y="309" fill="#eeeae1" font-size="13">proof-of-work</text>
 <text x="412" y="309" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="343" fill="#eeeae1" font-size="13">skills</text>
-<text x="412" y="343" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
-<text x="32" y="377" fill="#eeeae1" font-size="13">Master-Models</text>
-<text x="412" y="377" text-anchor="end" fill="#adb3a9" font-size="10">Jupyter Notebook</text>
-<text x="32" y="411" fill="#eeeae1" font-size="13">gfi-scout</text>
+<text x="32" y="343" fill="#eeeae1" font-size="13">Master-Models</text>
+<text x="412" y="343" text-anchor="end" fill="#adb3a9" font-size="10">Jupyter Notebook</text>
+<text x="32" y="377" fill="#eeeae1" font-size="13">pr-reliability-platform</text>
+<text x="412" y="377" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
+<text x="32" y="411" fill="#eeeae1" font-size="13">AgentWisper</text>
 <text x="412" y="411" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
-<text x="32" y="445" fill="#eeeae1" font-size="13">Expenso</text>
-<text x="412" y="445" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
+<text x="32" y="445" fill="#eeeae1" font-size="13">gfi-scout</text>
+<text x="412" y="445" text-anchor="end" fill="#adb3a9" font-size="10">Python</text>
+<text x="32" y="479" fill="#eeeae1" font-size="13">Expenso</text>
+<text x="412" y="479" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
 <text x="444" y="105" fill="#eeeae1" font-size="13">Email-Server</text>
 <text x="824" y="105" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
 <text x="444" y="139" fill="#eeeae1" font-size="13">wmux</text>
@@ -49,7 +51,7 @@
 <text x="824" y="411" text-anchor="end" fill="#adb3a9" font-size="10">TypeScript</text>
 <text x="444" y="445" fill="#eeeae1" font-size="13">GPS-App</text>
 <text x="824" y="445" text-anchor="end" fill="#adb3a9" font-size="10">JavaScript</text>
-<path d="M32 496H828" stroke="#363c35"/>
-<text x="32" y="519" fill="#adb3a9" font-size="11">22 public repositories · forks marked · snapshot 2026-10-09</text>
-<text x="828" y="519" text-anchor="end" fill="#ef9773" font-size="11">Full linked index ↗</text>
+<path d="M32 530H828" stroke="#363c35"/>
+<text x="32" y="553" fill="#adb3a9" font-size="11">23 public repositories · forks marked · snapshot 2026-10-10</text>
+<text x="828" y="553" text-anchor="end" fill="#ef9773" font-size="11">Full linked index ↗</text>
 </svg>
