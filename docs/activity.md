@@ -1,8 +1,8 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-10-15 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-10-16 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-10-15 through 2026-10-15 (inclusive).
+Calendar: 2025-10-16 through 2026-10-16 (inclusive).
 Total contributions in this window: **2,761**.
 
 | Metric | Recorded value | Detail |
@@ -41,7 +41,6 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-10-15 | 0 |
 | 2025-10-16 | 0 |
 | 2025-10-17 | 0 |
 | 2025-10-18 | 0 |
@@ -407,9 +406,10 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-10-13 | 22 |
 | 2026-10-14 | 0 |
 | 2026-10-15 | 17 |
+| 2026-10-16 | 0 |
 
 </details>
 
 ## Additional public profile counts
 
-Public merged PRs, all time: 208. Owned public non-forks: 19. Stars across those repositories: 18. Followers at refresh: 15.
+Public merged PRs, all time: 208. Owned public non-forks: 19. Stars across those repositories: 18. Followers at refresh: 14.
