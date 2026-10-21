@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s contribution and streak statistics</title>
-<desc id="desc">current streak: 3 days; longest streak: 30 days; contributions: 2,786; active days: 191 / 366; best day: 106; avg / active day: 14.6. Longest streak is window-scoped, not all time. Snapshot 2026-10-20 UTC. See linked text for daily and monthly counts.</desc>
+<desc id="desc">current streak: 3 days; longest streak: 30 days; contributions: 2,786; active days: 191 / 366; best day: 106; avg / active day: 14.6. Longest streak is window-scoped, not all time. Snapshot 2026-10-21 UTC. See linked text for daily and monthly counts.</desc>
 <style>
 .tile { animation: slide .45s ease-out both; }
 @keyframes slide { from { opacity: .15; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
@@ -151,5 +151,5 @@
 <text x="709.231" y="624.0" fill="#e6edf3" font-size="18" text-anchor="middle">918</text>
 <rect class="bar" x="749.145" y="775.107" width="35.865" height="34.893" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-10: 182 contributions</title></rect>
 <text x="767.077" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Oct</text>
-<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-10-20 .. 2026-10-20 / snapshot 2026-10-20 UTC</text>
+<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-10-21 .. 2026-10-21 / snapshot 2026-10-21 UTC</text>
 </svg>
