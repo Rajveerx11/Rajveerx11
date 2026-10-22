@@ -1,6 +1,6 @@
 # Public repositories
 
-GitHub API snapshot: 2026-10-21 (UTC).
+GitHub API snapshot: 2026-10-22 (UTC).
 
 Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solapur. Forks are identified; inclusion does not imply sole authorship. Private repositories and the profile repository are excluded. Descriptions are supplied by the repositories.
 
@@ -11,13 +11,13 @@ Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solap
 | [Rajveerx11/obsidian-graph-intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) | TypeScript | Non-fork | Used to manage your obsidian vault and notes along with graphs |
 | [neuratile/Tessera](https://github.com/neuratile/Tessera) | Rust | Non-fork | Local-first AI testing IDE. Static analysis → test plans, cases, defect and bug reports — runs fully on your machine. Tauri + Rust + React + Ollama. |
 | [Rajveerx11/VaultX](https://github.com/Rajveerx11/VaultX) | Kotlin | Non-fork | No public description supplied. |
+| [Rajveerx11/neura-cockpit-herdr](https://github.com/Rajveerx11/neura-cockpit-herdr) | JavaScript | Non-fork | Windows-first Herdr 0.9.3 cockpit configuration with visible workers, quota tokens, Markdown previews, and tested WSL helpers |
 | [Rajveerx11/neura](https://github.com/Rajveerx11/neura) | JavaScript | Non-fork | Windows-first engineering-agent harness for Pi with explicit modes, policy guardrails, recovery, and verification. |
 | [Rajveerx11/code-relay](https://github.com/Rajveerx11/code-relay) | JavaScript | Non-fork | Open-source Chrome extension for importing your own code into permitted practice editors. Preview, confirmed full replacement, formatting preservation and temporary undo. MIT licensed. |
 | [Rajveerx11/proof-of-work](https://github.com/Rajveerx11/proof-of-work) | Python | Non-fork | Verification gate that catches AI coding agents faking completed work: re-runs real tests, detects deleted or weakened tests and fake passes, and signs every verdict into a tamper-evident audit log. |
 | [Rajveerx11/AgentWisper](https://github.com/Rajveerx11/AgentWisper) | Python | Non-fork | Minimal local-first voice dictation for developers and coding agents. |
 | [Rajveerx11/gfi-scout](https://github.com/Rajveerx11/gfi-scout) | Python | Non-fork | MCP for Finding Good First Issues for open-source contributions |
 | [Rajveerx11/pr-reliability-platform](https://github.com/Rajveerx11/pr-reliability-platform) | Python | Non-fork | Approval-first GitHub App for evidence-backed AI pull request review. |
-| [Rajveerx11/neura-cockpit-herdr](https://github.com/Rajveerx11/neura-cockpit-herdr) | JavaScript | Non-fork | Windows-first Herdr 0.9.3 cockpit configuration with visible workers, quota tokens, Markdown previews, and tested WSL helpers |
 | [Rajveerx11/skills](https://github.com/Rajveerx11/skills) | JavaScript | Non-fork | My Agent skills collection |
 | [Rajveerx11/Master-Models](https://github.com/Rajveerx11/Master-Models) | Jupyter Notebook | Non-fork | Local specialist-model factory: fine-tuned Qwen3 specialists gated against a stock 30B baseline |
 | [Rajveerx11/Expenso](https://github.com/Rajveerx11/Expenso) | TypeScript | Non-fork | No public description supplied. |
@@ -32,3 +32,4 @@ Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solap
 | [Rajveerx11/Academic-Survival-System](https://github.com/Rajveerx11/Academic-Survival-System) | TypeScript | Non-fork | No public description supplied. |
 | [Rajveerx11/Jaffa-Group-Website](https://github.com/Rajveerx11/Jaffa-Group-Website) | TypeScript | Non-fork | Jaffa Group |
 | [Rajveerx11/GPS-App](https://github.com/Rajveerx11/GPS-App) | JavaScript | Non-fork | App for GPS |
+| [Rajveerx11/DSAProject](https://github.com/Rajveerx11/DSAProject) | JavaScript | Non-fork | No public description supplied. |
