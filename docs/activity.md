@@ -1,16 +1,16 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-10-23 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-10-24 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-10-23 through 2026-10-23 (inclusive).
-Total contributions in this window: **2,797**.
+Calendar: 2025-10-24 through 2026-10-24 (inclusive).
+Total contributions in this window: **2,837**.
 
 | Metric | Recorded value | Detail |
 | --- | ---: | --- |
-| current streak | 5 days | today / yesterday; UTC |
+| current streak | 7 days | today / yesterday; UTC |
 | longest streak | 30 days | within displayed window |
-| contributions | 2,797 | in the last year |
-| active days | 193 / 366 | 53% of displayed days |
+| contributions | 2,837 | in the last year |
+| active days | 195 / 366 | 53% of displayed days |
 | best day | 106 | 2026-09-12 |
 | avg / active day | 14.5 | contributions |
 
@@ -34,14 +34,13 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-07 | 153 |
 | 2026-08 | 430 |
 | 2026-09 | 918 |
-| 2026-10 | 193 |
+| 2026-10 | 233 |
 
 <details>
 <summary>Daily calendar counts (text equivalent of every heatmap cell)</summary>
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-10-23 | 0 |
 | 2025-10-24 | 0 |
 | 2025-10-25 | 0 |
 | 2025-10-26 | 0 |
@@ -406,7 +405,8 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-10-20 | 5 |
 | 2026-10-21 | 2 |
 | 2026-10-22 | 9 |
-| 2026-10-23 | 0 |
+| 2026-10-23 | 39 |
+| 2026-10-24 | 1 |
 
 </details>
 
