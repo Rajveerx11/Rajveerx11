@@ -1,16 +1,16 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-11-05 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-11-06 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-11-05 through 2026-11-05 (inclusive).
-Total contributions in this window: **2,991**.
+Calendar: 2025-11-06 through 2026-11-06 (inclusive).
+Total contributions in this window: **2,997**.
 
 | Metric | Recorded value | Detail |
 | --- | ---: | --- |
-| current streak | 8 days | today / yesterday; UTC |
+| current streak | 9 days | today / yesterday; UTC |
 | longest streak | 30 days | within displayed window |
-| contributions | 2,991 | in the last year |
-| active days | 207 / 366 | 57% of displayed days |
+| contributions | 2,997 | in the last year |
+| active days | 208 / 366 | 57% of displayed days |
 | best day | 106 | 2026-09-12 |
 | avg / active day | 14.4 | contributions |
 
@@ -34,14 +34,13 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-08 | 448 |
 | 2026-09 | 918 |
 | 2026-10 | 320 |
-| 2026-11 | 49 |
+| 2026-11 | 55 |
 
 <details>
 <summary>Daily calendar counts (text equivalent of every heatmap cell)</summary>
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-11-05 | 0 |
 | 2025-11-06 | 0 |
 | 2025-11-07 | 0 |
 | 2025-11-08 | 0 |
@@ -407,9 +406,10 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-11-03 | 6 |
 | 2026-11-04 | 14 |
 | 2026-11-05 | 11 |
+| 2026-11-06 | 6 |
 
 </details>
 
 ## Additional public profile counts
 
-Public merged PRs, all time: 233. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
+Public merged PRs, all time: 234. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
