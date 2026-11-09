@@ -1,18 +1,18 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-11-07 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-11-09 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-11-07 through 2026-11-07 (inclusive).
-Total contributions in this window: **3,004**.
+Calendar: 2025-11-09 through 2026-11-09 (inclusive).
+Total contributions in this window: **3,021**.
 
 | Metric | Recorded value | Detail |
 | --- | ---: | --- |
-| current streak | 10 days | today / yesterday; UTC |
+| current streak | 12 days | today / yesterday; UTC |
 | longest streak | 30 days | within displayed window |
-| contributions | 3,004 | in the last year |
-| active days | 209 / 366 | 57% of displayed days |
+| contributions | 3,021 | in the last year |
+| active days | 211 / 366 | 58% of displayed days |
 | best day | 106 | 2026-09-12 |
-| avg / active day | 14.4 | contributions |
+| avg / active day | 14.3 | contributions |
 
 Longest streak is window-scoped. Best-day ties use the earliest day. Average divides contributions by active days, not all calendar days. Calendar counts follow GitHub contribution rules and may include anonymized private counts; no private repository metadata is published.
 
@@ -34,15 +34,13 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-08 | 448 |
 | 2026-09 | 918 |
 | 2026-10 | 320 |
-| 2026-11 | 62 |
+| 2026-11 | 79 |
 
 <details>
 <summary>Daily calendar counts (text equivalent of every heatmap cell)</summary>
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-11-07 | 0 |
-| 2025-11-08 | 0 |
 | 2025-11-09 | 0 |
 | 2025-11-10 | 0 |
 | 2025-11-11 | 0 |
@@ -407,9 +405,11 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-11-05 | 11 |
 | 2026-11-06 | 7 |
 | 2026-11-07 | 6 |
+| 2026-11-08 | 5 |
+| 2026-11-09 | 12 |
 
 </details>
 
 ## Additional public profile counts
 
-Public merged PRs, all time: 236. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
+Public merged PRs, all time: 239. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
