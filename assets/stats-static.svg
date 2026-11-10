@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s contribution and streak statistics</title>
-<desc id="desc">current streak: 12 days; longest streak: 30 days; contributions: 3,021; active days: 211 / 366; best day: 106; avg / active day: 14.3. Longest streak is window-scoped, not all time. Snapshot 2026-11-09 UTC. See linked text for daily and monthly counts.</desc>
+<desc id="desc">current streak: 12 days; longest streak: 30 days; contributions: 3,023; active days: 211 / 366; best day: 106; avg / active day: 14.3. Longest streak is window-scoped, not all time. Snapshot 2026-11-10 UTC. See linked text for daily and monthly counts.</desc>
 
 <defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
 <rect width="840" height="880" rx="12" fill="url(#surface)"/>
@@ -47,18 +47,18 @@
 <g class="tile" style="animation-delay:0.300s">
 <rect x="20" y="220" width="392" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="44" y="260" fill="#9ba5b0" font-size="22" >$ contributions</text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">694<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,273<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,747<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,126<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,421<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,643<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,802<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,909<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,974<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,007<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,019<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">3,021<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">695<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,274<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,748<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,127<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,423<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,645<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,804<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,911<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,976<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,009<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,021<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">3,023<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="44" y="352" fill="#9ba5b0" font-size="20" >in the last year</text>
 </g>
 <g class="tile" style="animation-delay:0.450s">
@@ -139,7 +139,7 @@
 <text x="651.385" y="624.0" fill="#e6edf3" font-size="18" text-anchor="middle">918</text>
 <rect class="bar" x="691.298" y="748.649" width="35.865" height="61.351" rx="3" fill="#26a641" style="animation-delay:1.960s"><title>2026-10: 320 contributions</title></rect>
 <text x="709.231" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Oct</text>
-<rect class="bar" x="749.145" y="794.854" width="35.865" height="15.146" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-11: 79 contributions</title></rect>
+<rect class="bar" x="749.145" y="794.471" width="35.865" height="15.529" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-11: 81 contributions</title></rect>
 <text x="767.077" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Nov</text>
-<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-09 .. 2026-11-09 / snapshot 2026-11-09 UTC</text>
+<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-10 .. 2026-11-10 / snapshot 2026-11-10 UTC</text>
 </svg>
