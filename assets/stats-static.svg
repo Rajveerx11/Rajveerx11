@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s contribution and streak statistics</title>
-<desc id="desc">current streak: 13 days; longest streak: 30 days; contributions: 3,026; active days: 212 / 366; best day: 106; avg / active day: 14.3. Longest streak is window-scoped, not all time. Snapshot 2026-11-11 UTC. See linked text for daily and monthly counts.</desc>
+<desc id="desc">current streak: 1 days; longest streak: 30 days; contributions: 3,043; active days: 213 / 366; best day: 106; avg / active day: 14.3. Longest streak is window-scoped, not all time. Snapshot 2026-11-12 UTC. See linked text for daily and monthly counts.</desc>
 
 <defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
 <rect width="840" height="880" rx="12" fill="url(#surface)"/>
@@ -13,18 +13,18 @@
 <g class="tile" style="animation-delay:0.000s">
 <rect x="20" y="54" width="392" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="44" y="94" fill="#9ba5b0" font-size="22" >$ current streak</text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">3<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">5<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">8<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">9<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">10<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">11<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">12<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">13<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">13<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">13<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">13<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
-<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-final" opacity="1">13<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">0<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">0<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-step" opacity="0">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
+<text x="44" y="154" fill="#39d353" font-size="54" font-weight="700" class="counter-final" opacity="1">1<tspan font-size="24" font-weight="400" fill="#9ba5b0"> days</tspan></text>
 <text x="44" y="186" fill="#9ba5b0" font-size="20" >today / yesterday; UTC</text>
 </g>
 <g class="tile" style="animation-delay:0.150s">
@@ -47,35 +47,35 @@
 <g class="tile" style="animation-delay:0.300s">
 <rect x="20" y="220" width="392" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="44" y="260" fill="#9ba5b0" font-size="22" >$ contributions</text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">695<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,275<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,749<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,129<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,425<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,648<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,807<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,914<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,979<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,012<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,024<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">3,026<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">699<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,282<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">1,759<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,141<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,439<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,663<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,823<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,930<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">2,995<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,029<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3,041<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="44" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">3,043<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="44" y="352" fill="#9ba5b0" font-size="20" >in the last year</text>
 </g>
 <g class="tile" style="animation-delay:0.450s">
 <rect x="428" y="220" width="392" height="150" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="452" y="260" fill="#9ba5b0" font-size="22" >$ active days</text>
 <text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">49<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">89<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">90<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
 <text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">123<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">149<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">170<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">150<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">171<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
 <text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">186<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">197<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">204<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">209<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">211<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">198<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">205<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">210<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
 <text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">212<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
-<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">212<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">213<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
+<text x="452" y="320" fill="#e6edf3" font-size="54" font-weight="700" class="counter-final" opacity="1">213<tspan font-size="24" font-weight="400" fill="#9ba5b0"> / 366</tspan></text>
 <text x="452" y="352" fill="#9ba5b0" font-size="20" >58% of displayed days</text>
 </g>
 <g class="tile" style="animation-delay:0.600s">
@@ -101,11 +101,11 @@
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">3.3<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">6.0<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">8.3<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">10.0<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">11.4<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">10.1<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">11.5<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">12.5<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">13.2<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
-<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">13.7<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">13.3<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
+<text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">13.8<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">14.1<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">14.2<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
 <text x="452" y="486" fill="#e6edf3" font-size="54" font-weight="700" class="counter-step" opacity="0">14.3<tspan font-size="24" font-weight="400" fill="#9ba5b0"></tspan></text>
@@ -139,7 +139,7 @@
 <text x="651.385" y="624.0" fill="#e6edf3" font-size="18" text-anchor="middle">918</text>
 <rect class="bar" x="691.298" y="748.649" width="35.865" height="61.351" rx="3" fill="#26a641" style="animation-delay:1.960s"><title>2026-10: 320 contributions</title></rect>
 <text x="709.231" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Oct</text>
-<rect class="bar" x="749.145" y="793.895" width="35.865" height="16.105" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-11: 84 contributions</title></rect>
+<rect class="bar" x="749.145" y="790.636" width="35.865" height="19.364" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-11: 101 contributions</title></rect>
 <text x="767.077" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Nov</text>
-<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-11 .. 2026-11-11 / snapshot 2026-11-11 UTC</text>
+<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-12 .. 2026-11-12 / snapshot 2026-11-12 UTC</text>
 </svg>
