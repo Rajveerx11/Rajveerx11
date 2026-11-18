@@ -1,8 +1,8 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-11-17 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-11-18 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-11-17 through 2026-11-17 (inclusive).
+Calendar: 2025-11-18 through 2026-11-18 (inclusive).
 Total contributions in this window: **3,103**.
 
 | Metric | Recorded value | Detail |
@@ -41,7 +41,6 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-11-17 | 0 |
 | 2025-11-18 | 0 |
 | 2025-11-19 | 0 |
 | 2025-11-20 | 0 |
@@ -407,6 +406,7 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-11-15 | 11 |
 | 2026-11-16 | 15 |
 | 2026-11-17 | 2 |
+| 2026-11-18 | 0 |
 
 </details>
 
