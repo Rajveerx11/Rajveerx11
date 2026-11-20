@@ -1,6 +1,6 @@
 # Public repositories
 
-GitHub API snapshot: 2026-11-19 (UTC).
+GitHub API snapshot: 2026-11-20 (UTC).
 
 Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solapur. Forks are identified; inclusion does not imply sole authorship. Private repositories and the profile repository are excluded. Descriptions are supplied by the repositories.
 
@@ -11,6 +11,7 @@ Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solap
 | [Rajveerx11/obsidian-graph-intelligence](https://github.com/Rajveerx11/obsidian-graph-intelligence) | TypeScript | Non-fork | Used to manage your obsidian vault and notes along with graphs |
 | [neuratile/Tessera](https://github.com/neuratile/Tessera) | Rust | Non-fork | Local-first AI testing IDE. Static analysis → test plans, cases, defect and bug reports — runs fully on your machine. Tauri + Rust + React + Ollama. |
 | [Rajveerx11/VaultX](https://github.com/Rajveerx11/VaultX) | Kotlin | Non-fork | No public description supplied. |
+| [Rajveerx11/Master-Models](https://github.com/Rajveerx11/Master-Models) | Jupyter Notebook | Non-fork | Local specialist-model factory: fine-tuned Qwen3 specialists gated against a stock 30B baseline |
 | [Rajveerx11/neura](https://github.com/Rajveerx11/neura) | TypeScript | Non-fork | Windows-first terminal coding assistant with its own agent loop, for engineering and practical learning. Work, Learn and YOLO modes. Development/testing only. |
 | [Rajveerx11/proof-of-work](https://github.com/Rajveerx11/proof-of-work) | Python | Non-fork | Verification gate that catches AI coding agents faking completed work: re-runs real tests, detects deleted or weakened tests and fake passes, and signs every verdict into a tamper-evident audit log. |
 | [Rajveerx11/AgentWisper](https://github.com/Rajveerx11/AgentWisper) | Python | Non-fork | Minimal local-first voice dictation for developers and coding agents. |
@@ -20,7 +21,6 @@ Public repositories from Rajveerx11, neuratile, and Government-Polytechnic-Solap
 | [Rajveerx11/code-relay](https://github.com/Rajveerx11/code-relay) | JavaScript | Non-fork | Open-source Chrome extension for importing your own code into permitted practice editors. Preview, confirmed full replacement, formatting preservation and temporary undo. MIT licensed. |
 | [Rajveerx11/gfi-scout](https://github.com/Rajveerx11/gfi-scout) | Python | Non-fork | MCP for Finding Good First Issues for open-source contributions |
 | [Rajveerx11/skills](https://github.com/Rajveerx11/skills) | JavaScript | Non-fork | My Agent skills collection |
-| [Rajveerx11/Master-Models](https://github.com/Rajveerx11/Master-Models) | Jupyter Notebook | Non-fork | Local specialist-model factory: fine-tuned Qwen3 specialists gated against a stock 30B baseline |
 | [Rajveerx11/Email-Server](https://github.com/Rajveerx11/Email-Server) | JavaScript | Non-fork | Gmail-like Smart Mail UI built with React |
 | [Rajveerx11/wmux](https://github.com/Rajveerx11/wmux) | TypeScript | Fork | Windows terminal multiplexer for AI agents. Port of cmux. |
 | [Rajveerx11/unified-memory-mcp](https://github.com/Rajveerx11/unified-memory-mcp) | TypeScript | Non-fork | Local stdio MCP server: ingests Claude.ai memory + Claude Code logs + Obsidian vault, synthesizes via Ollama or Anthropic, exposes second-brain tools. |
