@@ -1,18 +1,18 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-11-21 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-11-23 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-11-21 through 2026-11-21 (inclusive).
-Total contributions in this window: **3,129**.
+Calendar: 2025-11-23 through 2026-11-23 (inclusive).
+Total contributions in this window: **3,154**.
 
 | Metric | Recorded value | Detail |
 | --- | ---: | --- |
-| current streak | 9 days | today / yesterday; UTC |
+| current streak | 12 days | today / yesterday; UTC |
 | longest streak | 30 days | within displayed window |
-| contributions | 3,129 | in the last year |
-| active days | 221 / 366 | 60% of displayed days |
+| contributions | 3,154 | in the last year |
+| active days | 224 / 366 | 61% of displayed days |
 | best day | 106 | 2026-09-12 |
-| avg / active day | 14.2 | contributions |
+| avg / active day | 14.1 | contributions |
 
 Longest streak is window-scoped. Best-day ties use the earliest day. Average divides contributions by active days, not all calendar days. Calendar counts follow GitHub contribution rules and may include anonymized private counts; no private repository metadata is published.
 
@@ -34,15 +34,13 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-08 | 448 |
 | 2026-09 | 918 |
 | 2026-10 | 320 |
-| 2026-11 | 187 |
+| 2026-11 | 212 |
 
 <details>
 <summary>Daily calendar counts (text equivalent of every heatmap cell)</summary>
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-11-21 | 0 |
-| 2025-11-22 | 0 |
 | 2025-11-23 | 0 |
 | 2025-11-24 | 0 |
 | 2025-11-25 | 0 |
@@ -406,10 +404,12 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-11-18 | 8 |
 | 2026-11-19 | 17 |
 | 2026-11-20 | 1 |
-| 2026-11-21 | 0 |
+| 2026-11-21 | 5 |
+| 2026-11-22 | 5 |
+| 2026-11-23 | 15 |
 
 </details>
 
 ## Additional public profile counts
 
-Public merged PRs, all time: 252. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
+Public merged PRs, all time: 255. Owned public non-forks: 21. Stars across those repositories: 36. Followers at refresh: 13.
