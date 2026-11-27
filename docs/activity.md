@@ -1,13 +1,13 @@
 # GitHub activity snapshot
 
-Snapshot: 2026-11-26 UTC. Daily refresh, not live telemetry.
+Snapshot: 2026-11-27 UTC. Daily refresh, not live telemetry.
 
-Calendar: 2025-11-26 through 2026-11-26 (inclusive).
+Calendar: 2025-11-27 through 2026-11-27 (inclusive).
 Total contributions in this window: **3,172**.
 
 | Metric | Recorded value | Detail |
 | --- | ---: | --- |
-| current streak | 14 days | today / yesterday; UTC |
+| current streak | 0 days | today / yesterday; UTC |
 | longest streak | 30 days | within displayed window |
 | contributions | 3,172 | in the last year |
 | active days | 226 / 366 | 62% of displayed days |
@@ -41,7 +41,6 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 
 | Date | Contributions |
 | --- | ---: |
-| 2025-11-26 | 0 |
 | 2025-11-27 | 0 |
 | 2025-11-28 | 0 |
 | 2025-11-29 | 0 |
@@ -407,6 +406,7 @@ Longest streak is window-scoped. Best-day ties use the earliest day. Average div
 | 2026-11-24 | 12 |
 | 2026-11-25 | 6 |
 | 2026-11-26 | 0 |
+| 2026-11-27 | 0 |
 
 </details>
 
