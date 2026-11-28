@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace">
 <title id="title">Rajveer&#x27;s contribution and streak statistics</title>
-<desc id="desc">current streak: 0 days; longest streak: 30 days; contributions: 3,172; active days: 226 / 366; best day: 106; avg / active day: 14.0. Longest streak is window-scoped, not all time. Snapshot 2026-11-27 UTC. See linked text for daily and monthly counts.</desc>
+<desc id="desc">current streak: 0 days; longest streak: 30 days; contributions: 3,172; active days: 226 / 366; best day: 106; avg / active day: 14.0. Longest streak is window-scoped, not all time. Snapshot 2026-11-28 UTC. See linked text for daily and monthly counts.</desc>
 
 <defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
 <rect width="840" height="880" rx="12" fill="url(#surface)"/>
@@ -141,5 +141,5 @@
 <text x="709.231" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Oct</text>
 <rect class="bar" x="749.145" y="765.904" width="35.865" height="44.096" rx="3" fill="#26a641" style="animation-delay:2.020s"><title>2026-11: 230 contributions</title></rect>
 <text x="767.077" y="839" fill="#9ba5b0" font-size="18" text-anchor="middle">Nov</text>
-<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-27 .. 2026-11-27 / snapshot 2026-11-27 UTC</text>
+<text x="420" y="875" fill="#9ba5b0" font-size="12" text-anchor="middle">window 2025-11-28 .. 2026-11-28 / snapshot 2026-11-28 UTC</text>
 </svg>
